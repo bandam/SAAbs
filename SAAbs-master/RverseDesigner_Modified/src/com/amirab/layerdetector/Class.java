@@ -14,11 +14,14 @@ import java.util.ArrayList;
 public class Class {
     private String name;
     private ArrayList<String> imports;
-    private ArrayList<Stereotype> stereotypes;
     private String tag;
+    private int viewCount;
+    private int modelCount;
+    private int controllerCount;
+    private int unidentifiedCount;
     
     
-    // Constructors
+    
     public Class(){
         imports = new ArrayList();
         name = "";
@@ -30,8 +33,6 @@ public class Class {
         this.tag = tag;
     }
 
-    
-    
     /**
      * @return the name
      */
@@ -54,6 +55,13 @@ public class Class {
     }
 
     /**
+     * @param imports the imports to set
+     */
+    public void setImports(ArrayList<String> imports) {
+        this.imports = imports;
+    }
+
+    /**
      * @return the tag
      */
     public String getTag() {
@@ -66,4 +74,64 @@ public class Class {
     public void setTag(String tag) {
         this.tag = tag;
     }
+
+    /**
+     * @return the view
+     */
+    public int getViewCount() {
+        return viewCount;
+    }
+
+    /**
+     * @param viewCount the view to set
+     */
+    public void setViewCount(int viewCount) {
+        this.viewCount = viewCount;
+    }
+
+    /**
+     * @return the modelCount
+     */
+    public int getModelCount() {
+        return modelCount;
+    }
+
+    /**
+     * @param modelCount the modelCount to set
+     */
+    public void setModelCount(int modelCount) {
+        this.modelCount = modelCount;
+    }
+
+    /**
+     * @return the controllerCount
+     */
+    public int getControllerCount() {
+        return controllerCount;
+    }
+
+    /**
+     * @param controllerCount the controllerCount to set
+     */
+    public void setControllerCount(int controllerCount) {
+        this.controllerCount = controllerCount;
+    }
+
+    /**
+     * @return the unidentifiedCount
+     */
+    public int getUnidentifiedCountCount() {
+        return unidentifiedCount;
+    }
+
+    /**
+     * @param unidentifiedCount the unidentifiedCount to set
+     */
+    public void setUnidentifiedCountCount(int unidentifiedCount) {
+        this.unidentifiedCount = unidentifiedCount;
+    }
+    
+    
+    
+    
 }
