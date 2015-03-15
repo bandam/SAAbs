@@ -1,0 +1,11 @@
+Name,NumCls,NumCls_tc,NumOpsCls,NumInterf,R,H,Ca,Ce,I,A,D,DN,Nesting,ConnComp,Dep_Out,Dep_In,DepPack,MsgSent_Outside,MsgRecv_Outside,MsgSent_within,Diags
+EA_Model.Model.Class Model.controller,3,3,68,0,3,1.3333334,5,5,0.5,0.0,-0.3535535,0.5,2,2,0,0,2,0,0,0,0
+EA_Model.Model.Class Model.fasimulator,1,1,1,0,0,1.0,0,0,1.0,0.0,0.0,0.0,2,1,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.gui,10,10,204,0,27,2.8,2,5,0.71428573,0.0,-0.20203055,0.28571427,2,2,0,0,2,0,0,0,0
+EA_Model.Model.Class Model.models,11,11,221,0,93,8.545455,6,5,0.45454547,0.0,-0.3856947,0.5454545,2,4,0,0,2,0,0,0,0
+EA_Model.Model.Class Model.System,3,3,0,1,1,0.5,0,0,1.0,0.25,0.17677675,0.25,2,3,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.Frameworks,0,0,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,2,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model,2,30,0,0,0,0.5,0,0,1.0,0.0,0.0,0.0,1,2,0,0,0,0,0,0,0
+EA_Model.Model,0,30,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,0,0,0,0,0,0,0,0,0
+EA_PrimitiveTypes_Package.EA_Java_Types_Package,0,0,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,1,0,0,0,0,0,0,0,0
+EA_PrimitiveTypes_Package,0,0,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,11 @@
+Name,EA_Model.Model.Class Model.controller,EA_Model.Model.Class Model.fasimulator,EA_Model.Model.Class Model.gui,EA_Model.Model.Class Model.models,EA_Model.Model.Class Model.System,EA_Model.Model.Class Model.Frameworks,EA_Model.Model.Class Model,EA_Model.Model,EA_PrimitiveTypes_Package.EA_Java_Types_Package,EA_PrimitiveTypes_Package
+EA_Model.Model.Class Model.controller,0,0,1,1,0,0,0,0,0,0
+EA_Model.Model.Class Model.fasimulator,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.gui,1,0,0,1,0,0,0,0,0,0
+EA_Model.Model.Class Model.models,1,0,1,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.System,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.Frameworks,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model,0,0,0,0,0,0,0,0,0,0
+EA_PrimitiveTypes_Package.EA_Java_Types_Package,0,0,0,0,0,0,0,0,0,0
+EA_PrimitiveTypes_Package,0,0,0,0,0,0,0,0,0,0

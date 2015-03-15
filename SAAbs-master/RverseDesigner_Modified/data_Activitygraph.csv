@@ -1,0 +1,2 @@
+Name,ActionStates,ObjFlowStates,PseudoStates,SubactStates,SAction,Trans,ObjFlows,TAction,TGuard,Partitions
+testModel04.action.actions,4,0,0,0,1,0,0,0,0,0

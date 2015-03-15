@@ -1,0 +1,28 @@
+Name,type,Elements,Classes,Interfc,Packages,Assoc,Genrs,Deps,Abstr,Objects,Links,Messages,Stimuli,Actors,UseCase,ExtPts,Extends,Includes
+EA Model.Model.Class Model.Class Model,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.nanoxml.nanoxml,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.net.n3.nanoxml.nanoxml,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.app.app,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.app.action.action,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.beans.beans,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.draw.draw,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.draw.action.action,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.geom.geom,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.gui.gui,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.gui.datatransfer.datatransfer,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.gui.event.event,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.io.io,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.samples.draw.draw,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.samples.net.net,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.samples.net.figures.figures,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.samples.pert.pert,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.samples.pert.figures.figures,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.samples.svg.svg,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.samples.svg.action.action,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.samples.svg.figures.figures,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.undo.undo,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.util.util,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.util.prefs.prefs,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.org.jhotdraw.xml.xml,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.System.System,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA Model.Model.Class Model.Frameworks.Frameworks,ClassDiagram,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

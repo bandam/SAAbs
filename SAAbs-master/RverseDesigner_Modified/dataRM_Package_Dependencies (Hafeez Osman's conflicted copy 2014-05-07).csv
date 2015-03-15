@@ -1,0 +1,7 @@
+Name,EA Model.Class Model.atm.physical,EA Model.Class Model.atm.transaction,EA Model.Class Model.atm,EA Model.Class Model.banking,EA Model.Class Model.simulation,EA Model.Class Model
+EA Model.Class Model.atm.physical,0,0,1,1,0,0
+EA Model.Class Model.atm.transaction,0,0,1,1,0,0
+EA Model.Class Model.atm,1,0,0,0,0,0
+EA Model.Class Model.banking,0,1,1,0,0,0
+EA Model.Class Model.simulation,0,0,1,1,0,0
+EA Model.Class Model,0,0,0,0,0,0

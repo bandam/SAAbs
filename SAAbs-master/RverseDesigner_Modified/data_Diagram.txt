@@ -1,0 +1,6 @@
+Name	type	Elements	Classes	Interfc	Packages	Assoc	Genrs	Deps	Abstr	Objects	Links	Messages	Stimuli	Actors	UseCase	ExtPts	Extends	Includes
+EA Model.Class Model.Class Model	ClassDiagram	53	22	0	0	27	4	0	0	0	0	0	0	0	0	0	0	0
+EA Model.Class Model.banking.banking	ClassDiagram	11	7	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0
+EA Model.Class Model.atm.atm	ClassDiagram	3	2	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+EA Model.Class Model.atm.transaction.transaction	ClassDiagram	10	6	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0
+EA Model.Class Model.atm.physical.physical	ClassDiagram	12	9	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0

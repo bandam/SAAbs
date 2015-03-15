@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+        
+<svg width="240" height="320" viewBox="0 0 240 320" 
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1" baseProfile="tiny">
+            <rect transform="matrix(3.1736495,0.0,0.0,0.7463368,-90.45174,-15.3199215)"  id="_9" x="9.0" y="5.0" width="100" height="50" fill="rgb(225,225,225)" stroke="black" stroke-width="1" opacity="0.5"/>
+
+ <rect transform="matrix(3.1736495,0.0,0.0,0.56806415,-52.451736,290.52115)"  id="_19" x="9.0" y="5.0" width="100" height="50" fill="rgb(225,225,225)" stroke="black" stroke-width="1" opacity="0.5"/>
+
+</svg>
