@@ -5,7 +5,7 @@
 package rversedesigner;
 
 import au.com.bytecode.opencsv.CSVReader;
-import com.amirab.layerdetector.LayerDetector_Main;
+import com.amirab.roleDetector.RoleDetectorMain;
 import java.io.*;
 import java.util.Enumeration;
 import java.util.List;
@@ -2646,8 +2646,8 @@ public ReverseDesignerApp() {
                 new ReverseDesignerApp().setVisible(true);
                 
                 // Andam Added to show to start layer analysis.
-                LayerDetector_Main layerdetector = LayerDetector_Main.getInstance();
-                    layerdetector.start();
+                RoleDetectorMain roleDetectorInstance = RoleDetectorMain.getInstance();
+                    roleDetectorInstance.start();
 
             }
         });

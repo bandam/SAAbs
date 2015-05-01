@@ -4,7 +4,7 @@ package rversedesigner;
  * and open the template in the editor.
  */
 
-import com.amirab.layerdetector.*;
+import com.amirab.roleDetector.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,18 +57,26 @@ public class PaintUML {
         source += "BorderColor SeaGreen \n";
 
         // Andam added Layer Stereotypes
-        source += "BackgroundColor<<Model>> B2BF00\n"
-                + "BorderColor<<Model>> Tomato\n";
-        source += "BackgroundColor<<View>> Wheat\n"
-                + "BorderColor<<View>> Tomato\n";
-        source += "BackgroundColor<<Controller>> DarkKhaki\n"
-                + "BorderColor<<Controller>> Tomato\n";
+        source += "BackgroundColor<<Network/Web>> SteelBlue \n"
+                + "BackgroundColor<<Persistence>> Azure \n"
+                + "BackgroundColor<<User Interface>> Thistle \n"
+                + "BackgroundColor<<Object Model>> CadetBlue  \n"
+                + "BackgroundColor<<Security/Validator>> Cyan \n"
+                + "BackgroundColor<<I/O>> YellowGreen \n"
+                + "BackgroundColor<<Time/Date/Zone>> DarkGoldenRod \n"
+                + "BackgroundColor<<Concurrency>> DarkKhaki \n"
+                + "BackgroundColor<<Exception Handling>> DarkSeaGreen \n"
+                + "BackgroundColor<<Transaction Handling>> Violet \n"
+                + "BackgroundColor<<Messaging>> Lavender \n"
+                + "BackgroundColor<<Event/Event Handling>> LawnGreen \n"
+                + "BackgroundColor<<Parser/Interpreter>> MediumSlateBlue \n"
+                + "BackgroundColor<<Program Logic>> LightBlue ";
 
         source += "classFontSize 32 \n";
         source += "classAttributeFontSize  32 \n";
         source += "} \n";
 
-    //source += "skinparam class ATM classFontSize 32 \n";
+        //source += "skinparam class ATM classFontSize 32 \n";
         source += xmiReader.readClass();
         tempStr += rReader.getRelationshipMatrices();
         source += tempStr;
@@ -126,12 +134,20 @@ public class PaintUML {
         source += "BorderColor SeaGreen \n";
 
         // Andam added Layer Stereotypes
-        source += "BackgroundColor<<Model>> B2BF00 \n"
-                + "BorderColor<<Model>> Tomato\n";
-        source += "BackgroundColor<<View>> Wheat\n"
-                + "BorderColor<<View>> Tomato\n";
-        source += "BackgroundColor<<Controller>> DarkKhaki\n"
-                + "BorderColor<<Controller>> Tomato\n";
+        source += "BackgroundColor<<Network/Web>> SteelBlue \n"
+                + "BackgroundColor<<Persistence>> Azure \n"
+                + "BackgroundColor<<User Interface>> Thistle \n"
+                + "BackgroundColor<<Object Model>> CadetBlue  \n"
+                + "BackgroundColor<<Security/Validator>> Cyan \n"
+                + "BackgroundColor<<I/O>> YellowGreen \n"
+                + "BackgroundColor<<Time/Date/Zone>> DarkGoldenRod \n"
+                + "BackgroundColor<<Concurrency>> DarkKhaki \n"
+                + "BackgroundColor<<Exception Handling>> DarkSeaGreen \n"
+                + "BackgroundColor<<Transaction Handling>> Violet \n"
+                + "BackgroundColor<<Messaging>> Lavender \n"
+                + "BackgroundColor<<Event/Event Handling>> LawnGreen \n"
+                + "BackgroundColor<<Parser/Interpreter>> MediumSlateBlue \n"
+                + "BackgroundColor<<Program Logic>> LightBlue ";
 
         source += "classFontSize 32 \n";
         source += "classAttributeFontSize  32 \n";
@@ -276,17 +292,16 @@ public class PaintUML {
      * @return plantUMLString after tag
      */
     public String andam_tagClassLayers(String source) {
-        LayerDetector_Main layerdetector = LayerDetector_Main.getInstance();
+        RoleDetectorMain roleDetectorInstance = RoleDetectorMain.getInstance();
         if (callCount == 0) {
             callCount = callCount++;
             ///layerdetector.showUnKnownLibraries();
-            return layerdetector.tagPlantUMLString(source);
-            
+            return roleDetectorInstance.tagPlantUMLString(source);
+
         } else {
-            layerdetector.setClasses(new ArrayList<com.amirab.layerdetector.Class>());
-            layerdetector.getFrame().setVisible(true);
-            layerdetector.start();
-            return layerdetector.tagPlantUMLString(source);
+            roleDetectorInstance.setProjectClasses(new ArrayList<com.amirab.roleDetector.Class>());
+            roleDetectorInstance.start();
+            return roleDetectorInstance.tagPlantUMLString(source);
         }
 
     }

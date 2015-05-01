@@ -1,0 +1,70 @@
+Provides the API that defines the contract between the transaction manager and the various parties involved in a distributed transaction namely : resource manager, application, and application server.
+See: Description
+
+Interface Summary 
+Interface	Description
+Status	
+The Status interface defines static variables used for transaction status codes.
+Synchronization	
+The transaction manager supports a synchronization mechanism that allows the interested party to be notified before and after the transaction completes.
+Transaction	
+The Transaction interface allows operations to be performed against the transaction in the target Transaction object.
+TransactionManager	
+The TransactionManager interface defines the methods that allow an application server to manage transaction boundaries.
+TransactionSynchronizationRegistry	
+This interface is intended for use by system level application server components such as persistence managers, resource adapters, as well as EJB and Web application components.
+UserTransaction	
+The UserTransaction interface defines the methods that allow an application to explicitly manage transaction boundaries.
+Enum Summary 
+Enum	Description
+Transactional.TxType	
+The TxType element of the annotation indicates whether a bean method is to be executed within a transaction context where the values provide the following corresponding behavior.
+Exception Summary 
+Exception	Description
+HeuristicCommitException	
+This exception is thrown by the rollback operation on a resource to report that a heuristic decision was made and that all relevant updates have been committed.
+HeuristicMixedException	
+This exception is thrown to report that a heuristic decision was made and that some relevant updates have been committed and others have been rolled back.
+HeuristicRollbackException	
+This exception is thrown by the commit operation to report that a heuristic decision was made and that all relevant updates have been rolled back.
+InvalidTransactionException	
+This exception indicates that the request carried an invalid transaction context.
+NotSupportedException	
+NotSupportedException exception indicates that the request cannot be executed because the operation is not a supported feature.
+RollbackException	
+RollbackException exception is thrown when the transaction has been marked for rollback only or the transaction has been rolled back instead of committed.
+SystemException	
+The SystemException is thrown by the transaction manager to indicate that it has encountered an unexpected error condition that prevents future transaction services from proceeding.
+TransactionalException	
+The TransactionalException thrown from the Transactional interceptors implementation contains the original exception as its nested exception and is a RuntimeException, therefore, by default any transaction that was started as a result of a Transactional annotation earlier in the call stream will be marked for rollback as a result of the TransactionalException being thrown by the Transactional interceptor of the second bean.
+TransactionRequiredException	
+This exception indicates that a request carried a null transaction context, but the target object requires an active transaction.
+TransactionRolledbackException	
+This exception indicates that the transaction associated with processing of the request has been rolled back, or it has been marked to roll back.
+Annotation Types Summary 
+Annotation Type	Description
+Transactional	
+The javax.transaction.Transactional annotation provides the application the ability to declaratively control transaction boundaries on CDI managed beans, as well as classes defined as managed beans by the Java EE specification, at both the class and method level where method level annotations override those at the class level.
+TransactionScoped	
+The javax.transaction.TransactionScoped annotation provides the ability to specify a standard CDI scope to define bean instances whose lifecycle is scoped to the currently active JTA transaction.
+Package javax.transaction Description
+
+Provides the API that defines the contract between the transaction manager and the various parties involved in a distributed transaction namely : resource manager, application, and application server. The implementation of this API is provided by the application server vendor and the resource manager driver vendor.
+
+ typical enterprise application accesses and stores information in one or more databases. Because this information is critical for business operations, it must be accurate, current, and reliable. Data integrity would be lost if multiple programs were allowed to update the same information simultaneously or if a system that failed while processing a business transaction were to leave the affected data only partially updated. By preventing both of these scenarios, software transactions ensure data integrity. Transactions control the concurrent access of data by multiple programs. In the event of a system failure, transactions make sure that after recovery, the data will be in a consistent state.
+
+The following topics are addressed here:
+
+What Is a Transaction?
+
+Container-Managed Transactions
+
+Bean-Managed Transactions
+
+Transaction Timeouts
+
+Updating Multiple Databases
+
+Transactions in Web Components
+
+Further Information about Transactions

@@ -45,6 +45,8 @@
 <jar href="lib/xml-apis-ext.jar"/>
 <jar href="lib/xml-apis.jar"/>
 <jar href="lib/AbsoluteLayout.jar"/>
+<jar href="lib/commons-logging.jar"/>
+<jar href="lib/jwnl.jar"/>
 </resources>
     <application-desc main-class="rversedesigner.ReverseDesignerApp">
     </application-desc>

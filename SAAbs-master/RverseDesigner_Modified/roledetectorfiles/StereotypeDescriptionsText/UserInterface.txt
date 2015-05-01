@@ -1,0 +1,1207 @@
+Contains all of the classes for creating user interfaces and for painting graphics and images.
+See: Description
+
+Interface Summary 
+Interface	Description
+ActiveEvent	
+An interface for events that know how to dispatch themselves.
+Adjustable	
+The interface for objects which have an adjustable numeric value contained within a bounded range of values.
+Composite	
+The Composite interface, along with CompositeContext, defines the methods to compose a draw primitive with the underlying graphics area.
+CompositeContext	
+The CompositeContext interface defines the encapsulated and optimized environment for a compositing operation.
+ItemSelectable	
+The interface for objects which contain a set of items for which zero or more can be selected.
+KeyEventDispatcher	
+A KeyEventDispatcher cooperates with the current KeyboardFocusManager in the targeting and dispatching of all KeyEvents.
+KeyEventPostProcessor	
+A KeyEventPostProcessor cooperates with the current KeyboardFocusManager in the final resolution of all unconsumed KeyEvents.
+LayoutManager	
+Defines the interface for classes that know how to lay out Containers.
+LayoutManager2	
+Defines an interface for classes that know how to layout Containers based on a layout constraints object.
+MenuContainer	
+The super class of all menu related containers.
+Paint	
+This Paint interface defines how color patterns can be generated for Graphics2D operations.
+PaintContext	
+The PaintContext interface defines the encapsulated and optimized environment to generate color patterns in device space for fill or stroke operations on a Graphics2D.
+PrintGraphics	
+An abstract class which provides a print graphics context for a page.
+SecondaryLoop	
+A helper interface to run the nested event loop.
+Shape	
+The Shape interface provides definitions for objects that represent some form of geometric shape.
+Stroke	
+The Stroke interface allows a Graphics2D object to obtain a Shape that is the decorated outline, or stylistic representation of the outline, of the specified Shape.
+Transparency	
+The Transparency interface defines the common transparency modes for implementing classes.
+Class Summary 
+Class	Description
+AlphaComposite	
+The AlphaComposite class implements basic alpha compositing rules for combining source and destination colors to achieve blending and transparency effects with graphics and images.
+AWTEvent	
+The root event class for all AWT events.
+AWTEventMulticaster	
+AWTEventMulticaster implements efficient and thread-safe multi-cast event dispatching for the AWT events defined in the java.awt.event package.
+AWTKeyStroke	
+An AWTKeyStroke represents a key action on the keyboard, or equivalent input device.
+AWTPermission	
+This class is for AWT permissions.
+BasicStroke	
+The BasicStroke class defines a basic set of rendering attributes for the outlines of graphics primitives, which are rendered with a Graphics2D object that has its Stroke attribute set to this BasicStroke.
+BorderLayout	
+A border layout lays out a container, arranging and resizing its components to fit in five regions: north, south, east, west, and center.
+BufferCapabilities	
+Capabilities and properties of buffers.
+BufferCapabilities.FlipContents	
+A type-safe enumeration of the possible back buffer contents after page-flipping
+Button	
+This class creates a labeled button.
+Canvas	
+A Canvas component represents a blank rectangular area of the screen onto which the application can draw or from which the application can trap input events from the user.
+CardLayout	
+A CardLayout object is a layout manager for a container.
+Checkbox	
+A check box is a graphical component that can be in either an "on" (true) or "off" (false) state.
+CheckboxGroup	
+The CheckboxGroup class is used to group together a set of Checkbox buttons.
+CheckboxMenuItem	
+This class represents a check box that can be included in a menu.
+Choice	
+The Choice class presents a pop-up menu of choices.
+Color	
+The Color class is used to encapsulate colors in the default sRGB color space or colors in arbitrary color spaces identified by a ColorSpace.
+Component	
+A component is an object having a graphical representation that can be displayed on the screen and that can interact with the user.
+ComponentOrientation	
+The ComponentOrientation class encapsulates the language-sensitive orientation that is to be used to order the elements of a component or of text.
+Container	
+A generic Abstract Window Toolkit(AWT) container object is a component that can contain other AWT components.
+ContainerOrderFocusTraversalPolicy	
+A FocusTraversalPolicy that determines traversal order based on the order of child Components in a Container.
+Cursor	
+A class to encapsulate the bitmap representation of the mouse cursor.
+DefaultFocusTraversalPolicy	
+A FocusTraversalPolicy that determines traversal order based on the order of child Components in a Container.
+DefaultKeyboardFocusManager	
+The default KeyboardFocusManager for AWT applications.
+Desktop	
+The Desktop class allows a Java application to launch associated applications registered on the native desktop to handle a URI or a file.
+Dialog	
+A Dialog is a top-level window with a title and a border that is typically used to take some form of input from the user.
+Dimension	
+The Dimension class encapsulates the width and height of a component (in integer precision) in a single object.
+DisplayMode	
+The DisplayMode class encapsulates the bit depth, height, width, and refresh rate of a GraphicsDevice.
+Event	
+NOTE: The Event class is obsolete and is available only for backwards compatilibility.
+EventQueue	
+EventQueue is a platform-independent class that queues events, both from the underlying peer classes and from trusted application classes.
+FileDialog	
+The FileDialog class displays a dialog window from which the user can select a file.
+FlowLayout	
+A flow layout arranges components in a directional flow, much like lines of text in a paragraph.
+FocusTraversalPolicy	
+A FocusTraversalPolicy defines the order in which Components with a particular focus cycle root are traversed.
+Font	
+The Font class represents fonts, which are used to render text in a visible way.
+FontMetrics	
+The FontMetrics class defines a font metrics object, which encapsulates information about the rendering of a particular font on a particular screen.
+Frame	
+A Frame is a top-level window with a title and a border.
+GradientPaint	
+The GradientPaint class provides a way to fill a Shape with a linear color gradient pattern.
+Graphics	
+The Graphics class is the abstract base class for all graphics contexts that allow an application to draw onto components that are realized on various devices, as well as onto off-screen images.
+Graphics2D	
+This Graphics2D class extends the Graphics class to provide more sophisticated control over geometry, coordinate transformations, color management, and text layout.
+GraphicsConfigTemplate	
+The GraphicsConfigTemplate class is used to obtain a valid GraphicsConfiguration.
+GraphicsConfiguration	
+The GraphicsConfiguration class describes the characteristics of a graphics destination such as a printer or monitor.
+GraphicsDevice	
+The GraphicsDevice class describes the graphics devices that might be available in a particular graphics environment.
+GraphicsEnvironment	
+The GraphicsEnvironment class describes the collection of GraphicsDevice objects and Font objects available to a Java(tm) application on a particular platform.
+GridBagConstraints	
+The GridBagConstraints class specifies constraints for components that are laid out using the GridBagLayout class.
+GridBagLayout	
+The GridBagLayout class is a flexible layout manager that aligns components vertically, horizontally or along their baseline without requiring that the components be of the same size.
+GridBagLayoutInfo	
+The GridBagLayoutInfo is an utility class for GridBagLayout layout manager.
+GridLayout	
+The GridLayout class is a layout manager that lays out a container's components in a rectangular grid.
+Image	
+The abstract class Image is the superclass of all classes that represent graphical images.
+ImageCapabilities	
+Capabilities and properties of images.
+Insets	
+An Insets object is a representation of the borders of a container.
+JobAttributes	
+A set of attributes which control a print job.
+JobAttributes.DefaultSelectionType	
+A type-safe enumeration of possible default selection states.
+JobAttributes.DestinationType	
+A type-safe enumeration of possible job destinations.
+JobAttributes.DialogType	
+A type-safe enumeration of possible dialogs to display to the user.
+JobAttributes.MultipleDocumentHandlingType	
+A type-safe enumeration of possible multiple copy handling states.
+JobAttributes.SidesType	
+A type-safe enumeration of possible multi-page impositions.
+KeyboardFocusManager	
+The KeyboardFocusManager is responsible for managing the active and focused Windows, and the current focus owner.
+Label	
+A Label object is a component for placing text in a container.
+LinearGradientPaint	
+The LinearGradientPaint class provides a way to fill a Shape with a linear color gradient pattern.
+List	
+The List component presents the user with a scrolling list of text items.
+MediaTracker	
+The MediaTracker class is a utility class to track the status of a number of media objects.
+Menu	
+A Menu object is a pull-down menu component that is deployed from a menu bar.
+MenuBar	
+The MenuBar class encapsulates the platform's concept of a menu bar bound to a frame.
+MenuComponent	
+The abstract class MenuComponent is the superclass of all menu-related components.
+MenuItem	
+All items in a menu must belong to the class MenuItem, or one of its subclasses.
+MenuShortcut	
+The MenuShortcutclass represents a keyboard accelerator for a MenuItem.
+MouseInfo	
+MouseInfo provides methods for getting information about the mouse, such as mouse pointer location and the number of mouse buttons.
+MultipleGradientPaint	
+This is the superclass for Paints which use a multiple color gradient to fill in their raster.
+PageAttributes	
+A set of attributes which control the output of a printed page.
+PageAttributes.ColorType	
+A type-safe enumeration of possible color states.
+PageAttributes.MediaType	
+A type-safe enumeration of possible paper sizes.
+PageAttributes.OrientationRequestedType	
+A type-safe enumeration of possible orientations.
+PageAttributes.OriginType	
+A type-safe enumeration of possible origins.
+PageAttributes.PrintQualityType	
+A type-safe enumeration of possible print qualities.
+Panel	
+Panel is the simplest container class.
+Point	
+A point representing a location in (x,y) coordinate space, specified in integer precision.
+PointerInfo	
+A class that describes the pointer position.
+Polygon	
+The Polygon class encapsulates a description of a closed, two-dimensional region within a coordinate space.
+PopupMenu	
+A class that implements a menu which can be dynamically popped up at a specified position within a component.
+PrintJob	
+An abstract class which initiates and executes a print job.
+RadialGradientPaint	
+The RadialGradientPaint class provides a way to fill a shape with a circular radial color gradient pattern.
+Rectangle	
+A Rectangle specifies an area in a coordinate space that is enclosed by the Rectangle object's upper-left point (x,y) in the coordinate space, its width, and its height.
+RenderingHints	
+The RenderingHints class defines and manages collections of keys and associated values which allow an application to provide input into the choice of algorithms used by other classes which perform rendering and image manipulation services.
+RenderingHints.Key	
+Defines the base type of all keys used along with the RenderingHints class to control various algorithm choices in the rendering and imaging pipelines.
+Robot	
+This class is used to generate native system input events for the purposes of test automation, self-running demos, and other applications where control of the mouse and keyboard is needed.
+Scrollbar	
+The Scrollbar class embodies a scroll bar, a familiar user-interface object.
+ScrollPane	
+A container class which implements automatic horizontal and/or vertical scrolling for a single child component.
+ScrollPaneAdjustable	
+This class represents the state of a horizontal or vertical scrollbar of a ScrollPane.
+SplashScreen	
+The splash screen can be displayed at application startup, before the Java Virtual Machine (JVM) starts.
+SystemColor	
+A class to encapsulate symbolic colors representing the color of native GUI objects on a system.
+SystemTray	
+The SystemTray class represents the system tray for a desktop.
+TextArea	
+A TextArea object is a multi-line region that displays text.
+TextComponent	
+The TextComponent class is the superclass of any component that allows the editing of some text.
+TextField	
+A TextField object is a text component that allows for the editing of a single line of text.
+TexturePaint	
+The TexturePaint class provides a way to fill a Shape with a texture that is specified as a BufferedImage.
+Toolkit	
+This class is the abstract superclass of all actual implementations of the Abstract Window Toolkit.
+TrayIcon	
+A TrayIcon object represents a tray icon that can be added to the system tray.
+Window	
+A Window object is a top-level window with no borders and no menubar.
+Enum Summary 
+Enum	Description
+Component.BaselineResizeBehavior	
+Enumeration of the common ways the baseline of a component can change as the size changes.
+Desktop.Action	
+Represents an action type.
+Dialog.ModalExclusionType	
+Any top-level window can be marked not to be blocked by modal dialogs.
+Dialog.ModalityType	
+Modal dialogs block all input to some top-level windows.
+GraphicsDevice.WindowTranslucency	
+Kinds of translucency supported by the underlying system.
+MultipleGradientPaint.ColorSpaceType	
+The color space in which to perform the gradient interpolation.
+MultipleGradientPaint.CycleMethod	
+The method to use when painting outside the gradient bounds.
+TrayIcon.MessageType	
+The message type determines which icon will be displayed in the caption of the message, and a possible system sound a message may generate upon showing.
+Window.Type	
+Enumeration of available window types.
+Exception Summary 
+Exception	Description
+AWTException	
+Signals that an Abstract Window Toolkit exception has occurred.
+FontFormatException	
+Thrown by method createFont in the Font class to indicate that the specified font is bad.
+HeadlessException	
+Thrown when code that is dependent on a keyboard, display, or mouse is called in an environment that does not support a keyboard, display, or mouse.
+IllegalComponentStateException	
+Signals that an AWT component is not in an appropriate state for the requested operation.
+Error Summary 
+Error	Description
+AWTError	
+Thrown when a serious Abstract Window Toolkit error has occurred.
+Package java.awt Description
+
+Contains all of the classes for creating user interfaces and for painting graphics and images. A user interface object such as a button or a scrollbar is called, in AWT terminology, a component. The Component class is the root of all AWT components. See Component for a detailed description of properties that all AWT components share.
+Some components fire events when a user interacts with the components. The AWTEvent class and its subclasses are used to represent the events that AWT components can fire. See AWTEvent for a description of the AWT event model.
+
+A container is a component that can contain components and other containers. A con tainer can also have a layout manager that controls the visual placement of components in the container. The AWT package contains several layout manager classes and an interface for building your own layout manager. See Container and LayoutManager for more information.
+
+Each Component object is limited in its maximum size and its location because the values are stored as an integer. Also, a platform may further restrict maximum size and location coordinates. The exact maximum values are dependent on the platform. There is no way to change these maximum values, either in Java code or in native code. These limitations also impose restrictions on component layout. If the bounds of a Component object exceed a platform limit, there is no way to properly arrange them within a Container object. The object's bounds are defined by any object's coordinate in combination with its size on a respective axis.
+
+Additional Specification
+
+The AWT Focus Subsystem
+The AWT Modality
+Since:
+JDK1.0
+
+Provides classes that expose basic user interface classes that handle screen layout and interaction with the user.
+Annotations
+ViewDebug.CapturedViewProperty	This annotation can be used to mark fields and methods to be dumped when the view is captured. 
+ViewDebug.ExportedProperty	This annotation can be used to mark fields and methods to be dumped by the view server. 
+ViewDebug.FlagToString	Defines a mapping from a flag to a String. 
+ViewDebug.IntToString	Defines a mapping from an int value to a String. 
+Interfaces
+ActionMode.Callback	Callback interface for action modes. 
+ActionProvider.VisibilityListener	Listens to changes in visibility as reported by refreshVisibility(). 
+Choreographer.FrameCallback	Implement this interface to receive a callback when a new display frame is being rendered. 
+CollapsibleActionView	When a View implements this interface it will receive callbacks when expanded or collapsed as an action view alongside the optional, app-specified callbacks to MenuItem.OnActionExpandListener. 
+ContextMenu	Extension of Menu for context menus providing functionality to modify the header of the context menu. 
+ContextMenu.ContextMenuInfo	Additional information regarding the creation of the context menu. 
+GestureDetector.OnDoubleTapListener	The listener that is used to notify when a double-tap or a confirmed single-tap occur. 
+GestureDetector.OnGestureListener	The listener that is used to notify when gestures occur. 
+InputQueue.Callback	Interface to receive notification of when an InputQueue is associated and dissociated with a thread. 
+KeyEvent.Callback	 
+LayoutInflater.Factory	 
+LayoutInflater.Factory2	 
+LayoutInflater.Filter	Hook to allow clients of the LayoutInflater to restrict the set of Views that are allowed to be inflated. 
+Menu	Interface for managing the items in a menu. 
+MenuItem	Interface for direct access to a previously created menu item. 
+MenuItem.OnActionExpandListener	Interface definition for a callback to be invoked when a menu item marked with SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW is expanded or collapsed. 
+MenuItem.OnMenuItemClickListener	Interface definition for a callback to be invoked when a menu item is clicked. 
+ScaleGestureDetector.OnScaleGestureListener	The listener for receiving notifications when gestures occur. 
+SubMenu	Subclass of Menu for sub menus. 
+SurfaceHolder	Abstract interface to someone holding a display surface. 
+SurfaceHolder.Callback	A client may implement this interface to receive information about changes to the surface. 
+SurfaceHolder.Callback2	Additional callbacks that can be received for SurfaceHolder.Callback. 
+TextureView.SurfaceTextureListener	This listener can be used to be notified when the surface texture associated with this texture view is available. 
+View.OnApplyWindowInsetsListener	Listener for applying window insets on a view in a custom way. 
+View.OnAttachStateChangeListener	Interface definition for a callback to be invoked when this view is attached or detached from its window. 
+View.OnClickListener	Interface definition for a callback to be invoked when a view is clicked. 
+View.OnCreateContextMenuListener	Interface definition for a callback to be invoked when the context menu for this view is being built. 
+View.OnDragListener	Interface definition for a callback to be invoked when a drag is being dispatched to this view. 
+View.OnFocusChangeListener	Interface definition for a callback to be invoked when the focus state of a view changed. 
+View.OnGenericMotionListener	Interface definition for a callback to be invoked when a generic motion event is dispatched to this view. 
+View.OnHoverListener	Interface definition for a callback to be invoked when a hover event is dispatched to this view. 
+View.OnKeyListener	Interface definition for a callback to be invoked when a hardware key event is dispatched to this view. 
+View.OnLayoutChangeListener	Interface definition for a callback to be invoked when the layout bounds of a view changes due to layout processing. 
+View.OnLongClickListener	Interface definition for a callback to be invoked when a view has been clicked and held. 
+View.OnSystemUiVisibilityChangeListener	Interface definition for a callback to be invoked when the status bar changes visibility. 
+View.OnTouchListener	Interface definition for a callback to be invoked when a touch event is dispatched to this view. 
+ViewGroup.OnHierarchyChangeListener	Interface definition for a callback to be invoked when the hierarchy within this view changed. 
+ViewManager	Interface to let you add and remove child views to an Activity. 
+ViewParent	Defines the responsibilities for a class that will be a parent of a View. 
+ViewStub.OnInflateListener	Listener used to receive a notification after a ViewStub has successfully inflated its layout resource. 
+ViewTreeObserver.OnDrawListener	Interface definition for a callback to be invoked when the view tree is about to be drawn. 
+ViewTreeObserver.OnGlobalFocusChangeListener	Interface definition for a callback to be invoked when the focus state within the view tree changes. 
+ViewTreeObserver.OnGlobalLayoutListener	Interface definition for a callback to be invoked when the global layout state or the visibility of views within the view tree changes. 
+ViewTreeObserver.OnPreDrawListener	Interface definition for a callback to be invoked when the view tree is about to be drawn. 
+ViewTreeObserver.OnScrollChangedListener	Interface definition for a callback to be invoked when something in the view tree has been scrolled. 
+ViewTreeObserver.OnTouchModeChangeListener	Interface definition for a callback to be invoked when the touch mode changes. 
+ViewTreeObserver.OnWindowAttachListener	Interface definition for a callback to be invoked when the view hierarchy is attached to and detached from its window. 
+ViewTreeObserver.OnWindowFocusChangeListener	Interface definition for a callback to be invoked when the view hierarchy's window focus state changes. 
+Window.Callback	API from a Window back to its caller. 
+WindowManager	The interface that apps use to talk to the window manager. 
+Classes
+AbsSavedState	A Parcelable implementation that should be used by inheritance hierarchies to ensure the state of all classes along the chain is saved. 
+ActionMode	Represents a contextual mode of the user interface. 
+ActionProvider	An ActionProvider defines rich menu interaction in a single component. 
+Choreographer	Coordinates the timing of animations, input and drawing. 
+ContextThemeWrapper	A ContextWrapper that allows you to modify the theme from what is in the wrapped context. 
+Display	Provides information about the size and density of a logical display. 
+DragEvent	Represents an event that is sent out by the system at various times during a drag and drop operation. 
+FocusFinder	The algorithm used for finding the next focusable view in a given direction from a view that currently has focus. 
+FrameStats	This is the base class for frame statistics. 
+GestureDetector	Detects various gestures and events using the supplied MotionEvents. 
+GestureDetector.SimpleOnGestureListener	A convenience class to extend when you only want to listen for a subset of all the gestures. 
+Gravity	Standard constants and tools for placing an object within a potentially larger container. 
+HapticFeedbackConstants	Constants to be used to perform haptic feedback effects via performHapticFeedback(int)  
+InputDevice	Describes the capabilities of a particular input device. 
+InputDevice.MotionRange	Provides information about the range of values for a particular MotionEvent axis. 
+InputEvent	Common base class for input events. 
+InputQueue	An input queue provides a mechanism for an application to receive incoming input events. 
+KeyCharacterMap	Describes the keys provided by a keyboard device and their associated labels. 
+KeyCharacterMap.KeyData	This class was deprecated in API level 11. instead use getDisplayLabel(int), getNumber(int) and get(int, int).  
+KeyEvent	Object used to report key and button events. 
+KeyEvent.DispatcherState	Use with dispatch(Callback, DispatcherState, Object) for more advanced key dispatching, such as long presses. 
+LayoutInflater	Instantiates a layout XML file into its corresponding View objects. 
+MenuInflater	This class is used to instantiate menu XML files into Menu objects. 
+MotionEvent	Object used to report movement (mouse, pen, finger, trackball) events. 
+MotionEvent.PointerCoords	Transfer object for pointer coordinates. 
+MotionEvent.PointerProperties	Transfer object for pointer properties. 
+OrientationEventListener	Helper class for receiving notifications from the SensorManager when the orientation of the device has changed. 
+OrientationListener	This class was deprecated in API level 3. use OrientationEventListener instead. This class internally uses the OrientationEventListener.  
+ScaleGestureDetector	Detects scaling transformation gestures using the supplied MotionEvents. 
+ScaleGestureDetector.SimpleOnScaleGestureListener	A convenience class to extend when you only want to listen for a subset of scaling-related events. 
+SoundEffectConstants	Constants to be used to play sound effects via playSoundEffect(int)  
+Surface	Handle onto a raw buffer that is being managed by the screen compositor. 
+SurfaceView	Provides a dedicated drawing surface embedded inside of a view hierarchy. 
+TextureView	
+A TextureView can be used to display a content stream. 
+TouchDelegate	Helper class to handle situations where you want a view to have a larger touch area than its actual view bounds. 
+VelocityTracker	Helper for tracking the velocity of touch events, for implementing flinging and other such gestures. 
+View	
+This class represents the basic building block for user interface components. 
+View.AccessibilityDelegate	
+This class represents a delegate that can be registered in a View to enhance accessibility support via composition rather via inheritance. 
+View.BaseSavedState	Base class for derived classes that want to save and restore their own state in onSaveInstanceState(). 
+View.DragShadowBuilder	Creates an image that the system displays during the drag and drop operation. 
+View.MeasureSpec	A MeasureSpec encapsulates the layout requirements passed from parent to child. 
+ViewAnimationUtils	Defines common utilities for working with View's animations. 
+ViewConfiguration	Contains methods to standard constants used in the UI for timeouts, sizes, and distances. 
+ViewDebug	Various debugging/tracing tools related to View and the view hierarchy. 
+ViewGroup	
+A ViewGroup is a special view that can contain other views (called children.) The view group is the base class for layouts and views containers. 
+ViewGroup.LayoutParams	LayoutParams are used by views to tell their parents how they want to be laid out. 
+ViewGroup.MarginLayoutParams	Per-child layout information for layouts that support margins. 
+ViewGroupOverlay	A group overlay is an extra layer that sits on top of a ViewGroup (the "host view") which is drawn after all other content in that view (including the view group's children). 
+ViewOutlineProvider	Interface by which a View builds its Outline, used for shadow casting and clipping. 
+ViewOverlay	An overlay is an extra layer that sits on top of a View (the "host view") which is drawn after all other content in that view (including children, if the view is a ViewGroup). 
+ViewPropertyAnimator	This class enables automatic and optimized animation of select properties on View objects. 
+ViewStub	A ViewStub is an invisible, zero-sized View that can be used to lazily inflate layout resources at runtime. 
+ViewTreeObserver	A view tree observer is used to register listeners that can be notified of global changes in the view tree. 
+Window	Abstract base class for a top-level window look and behavior policy. 
+WindowAnimationFrameStats	This class contains window animation frame statistics. 
+WindowContentFrameStats	This class contains window content frame statistics. 
+WindowId	Safe identifier for a window. 
+WindowId.FocusObserver	Subclass for observing changes to the focus state of an WindowId. 
+WindowInsets	Describes a set of insets for window content. 
+WindowManager.LayoutParams	 
+Enums
+ViewDebug.HierarchyTraceType	This enum was deprecated in API level 16. This enum is now unused  
+ViewDebug.RecyclerTraceType	This enum was deprecated in API level 16. This enum is now unused  
+Exceptions
+InflateException	This exception is thrown by an inflater on error conditions. 
+KeyCharacterMap.UnavailableException	Thrown by load(int) when a key character map could not be loaded. 
+Surface.OutOfResourcesException	Exception thrown when a Canvas couldn't be locked with lockCanvas(Rect), or when a SurfaceTexture could not successfully be allocated. 
+SurfaceHolder.BadSurfaceTypeException	Exception that is thrown from lockCanvas() when called on a Surface whose type is SURFACE_TYPE_PUSH_BUFFERS. 
+WindowManager.BadTokenException	Exception that is thrown when trying to add view whose WindowManager.LayoutParams token is invalid. 
+WindowManager.InvalidDisplayException	Exception that is thrown when calling addView(View, ViewGroup.LayoutParams) to a secondary display that cannot be found. 
+Except as noted, this content is licensed under Apache 2.0. For details and restrictions, see the Content License.
+Android 5.1 r1 — 14 Apr 2015 20:08
+About Android  |  Legal  |  Support
+
+The widget package contains (mostly visual) UI elements to use on your Application screen. You can also design your own.
+
+To create your own widget, extend View or a subclass. To use your widget in layout XML, there are two additional files for you to create. Here is a list of files you'll need to create to implement a custom widget:
+
+Java implementation file - This is the file that implements the behavior of the widget. If you can instantiate the object from layout XML, you will also have to code a constructor that retrieves all the attribute values from the layout XML file.
+XML definition file - An XML file in res/values/ that defines the XML element used to instantiate your widget, and the attributes that it supports. Other applications will use this element and attributes in their in another in their layout XML.
+Layout XML [optional]- An optional XML file inside res/layout/ that describes the layout of your widget. You could also do this in code in your Java file.
+ApiDemos sample application has an example of creating a custom layout XML tag, LabelView. See the following files that demonstrate implementing and using a custom widget:
+
+LabelView.java - The implementation file
+res/values/attrs.xml - Definition file
+res/layout/custom_view_1.xml - Layout file
+Annotations
+RemoteViews.RemoteView	This annotation indicates that a subclass of View is alllowed to be used with the RemoteViews mechanism. 
+Interfaces
+AbsListView.MultiChoiceModeListener	A MultiChoiceModeListener receives events for CHOICE_MODE_MULTIPLE_MODAL. 
+AbsListView.OnScrollListener	Interface definition for a callback to be invoked when the list or grid has been scrolled. 
+AbsListView.RecyclerListener	A RecyclerListener is used to receive a notification whenever a View is placed inside the RecycleBin's scrap heap. 
+AbsListView.SelectionBoundsAdjuster	The top-level view of a list item can implement this interface to allow itself to modify the bounds of the selection shown for that item. 
+ActionMenuView.OnMenuItemClickListener	Interface responsible for receiving menu item click events if the items themselves do not have individual item click listeners. 
+Adapter	An Adapter object acts as a bridge between an AdapterView and the underlying data for that view. 
+AdapterView.OnItemClickListener	Interface definition for a callback to be invoked when an item in this AdapterView has been clicked. 
+AdapterView.OnItemLongClickListener	Interface definition for a callback to be invoked when an item in this view has been clicked and held. 
+AdapterView.OnItemSelectedListener	Interface definition for a callback to be invoked when an item in this view has been selected. 
+Advanceable	This interface can be implemented by any collection-type view which has a notion of progressing through its set of children. 
+AutoCompleteTextView.OnDismissListener	Listener to respond to the AutoCompleteTextView's completion list being dismissed. 
+AutoCompleteTextView.Validator	This interface is used to make sure that the text entered in this TextView complies to a certain format. 
+CalendarView.OnDateChangeListener	The callback used to indicate the user changes the date. 
+Checkable	Defines an extension for views that make them checkable. 
+Chronometer.OnChronometerTickListener	A callback that notifies when the chronometer has incremented on its own. 
+CompoundButton.OnCheckedChangeListener	Interface definition for a callback to be invoked when the checked state of a compound button changed. 
+DatePicker.OnDateChangedListener	The callback used to indicate the user changes\d the date. 
+ExpandableListAdapter	An adapter that links a ExpandableListView with the underlying data. 
+ExpandableListView.OnChildClickListener	Interface definition for a callback to be invoked when a child in this expandable list has been clicked. 
+ExpandableListView.OnGroupClickListener	Interface definition for a callback to be invoked when a group in this expandable list has been clicked. 
+ExpandableListView.OnGroupCollapseListener	Used for being notified when a group is collapsed  
+ExpandableListView.OnGroupExpandListener	Used for being notified when a group is expanded  
+Filter.FilterListener	
+Listener used to receive a notification upon completion of a filtering operation. 
+Filterable	
+Defines a filterable behavior. 
+FilterQueryProvider	This class can be used by external clients of CursorAdapter and CursorTreeAdapter to define how the content of the adapter should be filtered. 
+HeterogeneousExpandableList	Additional methods that when implemented make an ExpandableListAdapter take advantage of the Adapter view type mechanism. 
+ListAdapter	Extended Adapter that is the bridge between a ListView and the data that backs the list. 
+MediaController.MediaPlayerControl	 
+MultiAutoCompleteTextView.Tokenizer	 
+NumberPicker.Formatter	Interface used to format current value into a string for presentation. 
+NumberPicker.OnScrollListener	Interface to listen for the picker scroll state. 
+NumberPicker.OnValueChangeListener	Interface to listen for changes of the current value. 
+PopupMenu.OnDismissListener	Callback interface used to notify the application that the menu has closed. 
+PopupMenu.OnMenuItemClickListener	Interface responsible for receiving menu item click events if the items themselves do not have individual item click listeners. 
+PopupWindow.OnDismissListener	Listener that is called when this popup window is dismissed. 
+RadioGroup.OnCheckedChangeListener	
+Interface definition for a callback to be invoked when the checked radio button changed in this group. 
+RatingBar.OnRatingBarChangeListener	A callback that notifies clients when the rating has been changed. 
+RemoteViewsService.RemoteViewsFactory	An interface for an adapter between a remote collection view (ListView, GridView, etc) and the underlying data for that view. 
+SearchView.OnCloseListener	 
+SearchView.OnQueryTextListener	Callbacks for changes to the query text. 
+SearchView.OnSuggestionListener	Callback interface for selection events on suggestions. 
+SectionIndexer	Interface that may implemented on Adapters to enable fast scrolling between sections of an AbsListView. 
+SeekBar.OnSeekBarChangeListener	A callback that notifies clients when the progress level has been changed. 
+ShareActionProvider.OnShareTargetSelectedListener	Listener for the event of selecting a share target. 
+SimpleAdapter.ViewBinder	This class can be used by external clients of SimpleAdapter to bind values to views. 
+SimpleCursorAdapter.CursorToStringConverter	This class can be used by external clients of SimpleCursorAdapter to define how the Cursor should be converted to a String. 
+SimpleCursorAdapter.ViewBinder	This class can be used by external clients of SimpleCursorAdapter to bind values fom the Cursor to views. 
+SimpleCursorTreeAdapter.ViewBinder	This class can be used by external clients of SimpleCursorTreeAdapter to bind values from the Cursor to views. 
+SlidingDrawer.OnDrawerCloseListener	Callback invoked when the drawer is closed. 
+SlidingDrawer.OnDrawerOpenListener	Callback invoked when the drawer is opened. 
+SlidingDrawer.OnDrawerScrollListener	Callback invoked when the drawer is scrolled. 
+SpinnerAdapter	Extended Adapter that is the bridge between a Spinner and its data. 
+TabHost.OnTabChangeListener	Interface definition for a callback to be invoked when tab changed  
+TabHost.TabContentFactory	Makes the content of a tab when it is selected. 
+TextView.OnEditorActionListener	Interface definition for a callback to be invoked when an action is performed on the editor. 
+TimePicker.OnTimeChangedListener	The callback interface used to indicate the time has been adjusted. 
+Toolbar.OnMenuItemClickListener	Interface responsible for receiving menu item click events if the items themselves do not have individual item click listeners. 
+ViewSwitcher.ViewFactory	Creates views in a ViewSwitcher. 
+WrapperListAdapter	List adapter that wraps another list adapter. 
+ZoomButtonsController.OnZoomListener	Interface that will be called when the user performs an interaction that triggers some action, for example zooming. 
+Classes
+AbsListView	Base class that can be used to implement virtualized lists of items. 
+AbsListView.LayoutParams	AbsListView extends LayoutParams to provide a place to hold the view type. 
+AbsoluteLayout	This class was deprecated in API level 3. Use FrameLayout, RelativeLayout or a custom layout instead.  
+AbsoluteLayout.LayoutParams	Per-child layout information associated with AbsoluteLayout. 
+AbsSeekBar	 
+AbsSpinner	An abstract base class for spinner widgets. 
+ActionMenuView	ActionMenuView is a presentation of a series of menu options as a View. 
+ActionMenuView.LayoutParams	 
+AdapterView<T extends Adapter>	An AdapterView is a view whose children are determined by an Adapter. 
+AdapterView.AdapterContextMenuInfo	Extra menu information provided to the onCreateContextMenu(ContextMenu, View, ContextMenuInfo) callback when a context menu is brought up for this AdapterView. 
+AdapterViewAnimator	Base class for a AdapterView that will perform animations when switching between its views. 
+AdapterViewFlipper	Simple ViewAnimator that will animate between two or more views that have been added to it. 
+AlphabetIndexer	A helper class for adapters that implement the SectionIndexer interface. 
+AnalogClock	This widget display an analogic clock with two hands for hours and minutes. 
+ArrayAdapter<T>	A concrete BaseAdapter that is backed by an array of arbitrary objects. 
+AutoCompleteTextView	
+An editable text view that shows completion suggestions automatically while the user is typing. 
+BaseAdapter	Common base class of common implementation for an Adapter that can be used in both ListView (by implementing the specialized ListAdapter interface) and Spinner (by implementing the specialized SpinnerAdapter interface). 
+BaseExpandableListAdapter	Base class for a ExpandableListAdapter used to provide data and Views from some data to an expandable list view. 
+Button	Represents a push-button widget. 
+CalendarView	This class is a calendar widget for displaying and selecting dates. 
+CheckBox	
+A checkbox is a specific type of two-states button that can be either checked or unchecked. 
+CheckedTextView	An extension to TextView that supports the Checkable interface. 
+Chronometer	Class that implements a simple timer. 
+CompoundButton	
+A button with two states, checked and unchecked. 
+CursorAdapter	Adapter that exposes data from a Cursor to a ListView widget. 
+CursorTreeAdapter	An adapter that exposes data from a series of Cursors to an ExpandableListView widget. 
+DatePicker	Provides a widget for selecting a date. 
+DialerFilter	 
+DigitalClock	This class was deprecated in API level 17. It is recommended you use TextClock instead.  
+EdgeEffect	This class performs the graphical effect used at the edges of scrollable widgets when the user scrolls beyond the content bounds in 2D space. 
+EditText	EditText is a thin veneer over TextView that configures itself to be editable. 
+ExpandableListView	A view that shows items in a vertically scrolling two-level list. 
+ExpandableListView.ExpandableListContextMenuInfo	Extra menu information specific to an ExpandableListView provided to the onCreateContextMenu(ContextMenu, View, ContextMenuInfo) callback when a context menu is brought up for this AdapterView. 
+Filter	
+A filter constrains data with a filtering pattern. 
+Filter.FilterResults	
+Holds the results of a filtering operation. 
+FrameLayout	FrameLayout is designed to block out an area on the screen to display a single item. 
+FrameLayout.LayoutParams	Per-child layout information for layouts that support margins. 
+Gallery	This class was deprecated in API level 16. This widget is no longer supported. Other horizontally scrolling widgets include HorizontalScrollView and ViewPager from the support library.  
+Gallery.LayoutParams	Gallery extends LayoutParams to provide a place to hold current Transformation information along with previous position/transformation info. 
+GridLayout	A layout that places its children in a rectangular grid. 
+GridLayout.Alignment	Alignments specify where a view should be placed within a cell group and what size it should be. 
+GridLayout.LayoutParams	Layout information associated with each of the children of a GridLayout. 
+GridLayout.Spec	A Spec defines the horizontal or vertical characteristics of a group of cells. 
+GridView	A view that shows items in two-dimensional scrolling grid. 
+HeaderViewListAdapter	ListAdapter used when a ListView has header views. 
+HorizontalScrollView	Layout container for a view hierarchy that can be scrolled by the user, allowing it to be larger than the physical display. 
+ImageButton	
+Displays a button with an image (instead of text) that can be pressed or clicked by the user. 
+ImageSwitcher	 
+ImageView	Displays an arbitrary image, such as an icon. 
+LinearLayout	A Layout that arranges its children in a single column or a single row. 
+LinearLayout.LayoutParams	Per-child layout information associated with ViewLinearLayout. 
+ListPopupWindow	A ListPopupWindow anchors itself to a host view and displays a list of choices. 
+ListView	A view that shows items in a vertically scrolling list. 
+ListView.FixedViewInfo	A class that represents a fixed view in a list, for example a header at the top or a footer at the bottom. 
+MediaController	A view containing controls for a MediaPlayer. 
+MultiAutoCompleteTextView	An editable text view, extending AutoCompleteTextView, that can show completion suggestions for the substring of the text where the user is typing instead of necessarily for the entire thing. 
+MultiAutoCompleteTextView.CommaTokenizer	This simple Tokenizer can be used for lists where the items are separated by a comma and one or more spaces. 
+NumberPicker	A widget that enables the user to select a number from a predefined range. 
+OverScroller	This class encapsulates scrolling with the ability to overshoot the bounds of a scrolling operation. 
+PopupMenu	A PopupMenu displays a Menu in a modal popup window anchored to a View. 
+PopupWindow	
+A popup window that can be used to display an arbitrary view. 
+ProgressBar	
+Visual indicator of progress in some operation. 
+QuickContactBadge	Widget used to show an image with the standard QuickContact badge and on-click behavior. 
+RadioButton	
+A radio button is a two-states button that can be either checked or unchecked. 
+RadioGroup	
+This class is used to create a multiple-exclusion scope for a set of radio buttons. 
+RadioGroup.LayoutParams	
+This set of layout parameters defaults the width and the height of the children to WRAP_CONTENT when they are not specified in the XML file. 
+RatingBar	A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. 
+RelativeLayout	A Layout where the positions of the children can be described in relation to each other or to the parent. 
+RelativeLayout.LayoutParams	Per-child layout information associated with RelativeLayout. 
+RemoteViews	A class that describes a view hierarchy that can be displayed in another process. 
+RemoteViewsService	The service to be connected to for a remote adapter to request RemoteViews. 
+ResourceCursorAdapter	An easy adapter that creates views defined in an XML file. 
+ResourceCursorTreeAdapter	A fairly simple ExpandableListAdapter that creates views defined in an XML file. 
+Scroller	
+This class encapsulates scrolling. 
+ScrollView	Layout container for a view hierarchy that can be scrolled by the user, allowing it to be larger than the physical display. 
+SearchView	A widget that provides a user interface for the user to enter a search query and submit a request to a search provider. 
+SeekBar	A SeekBar is an extension of ProgressBar that adds a draggable thumb. 
+ShareActionProvider	This is a provider for a share action. 
+SimpleAdapter	An easy adapter to map static data to views defined in an XML file. 
+SimpleCursorAdapter	An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. 
+SimpleCursorTreeAdapter	An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. 
+SimpleExpandableListAdapter	An easy adapter to map static data to group and child views defined in an XML file. 
+SlidingDrawer	This class was deprecated in API level 17. This class is not supported anymore. It is recommended you base your own implementation on the source code for the Android Open Source Project if you must use it in your application.  
+Space	Space is a lightweight View subclass that may be used to create gaps between components in general purpose layouts. 
+Spinner	A view that displays one child at a time and lets the user pick among them. 
+StackView	 
+Switch	A Switch is a two-state toggle switch widget that can select between two options. 
+TabHost	Container for a tabbed window view. 
+TabHost.TabSpec	A tab has a tab indicator, content, and a tag that is used to keep track of it. 
+TableLayout	
+A layout that arranges its children into rows and columns. 
+TableLayout.LayoutParams	
+This set of layout parameters enforces the width of each child to be MATCH_PARENT and the height of each child to be WRAP_CONTENT, but only if the height is not specified. 
+TableRow	
+A layout that arranges its children horizontally. 
+TableRow.LayoutParams	
+Set of layout parameters used in table rows. 
+TabWidget	Displays a list of tab labels representing each page in the parent's tab collection. 
+TextClock	
+TextClock can display the current date and/or time as a formatted string. 
+TextSwitcher	Specialized ViewSwitcher that contains only children of type TextView. 
+TextView	Displays text to the user and optionally allows them to edit it. 
+TextView.SavedState	User interface state that is stored by TextView for implementing onSaveInstanceState(). 
+TimePicker	A view for selecting the time of day, in either 24 hour or AM/PM mode. 
+Toast	A toast is a view containing a quick little message for the user. The toast class helps you create and show those.  
+ToggleButton	Displays checked/unchecked states as a button with a "light" indicator and by default accompanied with the text "ON" or "OFF". 
+Toolbar	A standard toolbar for use within application content. 
+Toolbar.LayoutParams	Layout information for child views of Toolbars. 
+TwoLineListItem	This class was deprecated in API level 17. This class can be implemented easily by apps using a RelativeLayout or a LinearLayout.  
+VideoView	Displays a video file. 
+ViewAnimator	Base class for a FrameLayout container that will perform animations when switching between its views. 
+ViewFlipper	Simple ViewAnimator that will animate between two or more views that have been added to it. 
+ViewSwitcher	ViewAnimator that switches between two views, and has a factory from which these views are created. 
+ZoomButton	 
+ZoomButtonsController	The ZoomButtonsController handles showing and hiding the zoom controls and positioning it relative to an owner view. 
+ZoomControls	The ZoomControls class displays a simple set of controls used for zooming and provides callbacks to register for events. 
+Enums
+ImageView.ScaleType	Options for scaling the bounds of an image to the bounds of this view. 
+TextView.BufferType	 
+Exceptions
+RemoteViews.ActionException	Exception to send when something goes wrong executing an action  
+
+Provides interfaces and classes for capture, processing, and playback of sampled audio data.
+See: Description
+
+Interface Summary 
+Interface	Description
+Clip	
+The Clip interface represents a special kind of data line whose audio data can be loaded prior to playback, instead of being streamed in real time.
+DataLine	
+DataLine adds media-related functionality to its superinterface, Line.
+Line	
+The Line interface represents a mono or multi-channel audio feed.
+LineListener	
+Instances of classes that implement the LineListener interface can register to receive events when a line's status changes.
+Mixer	
+A mixer is an audio device with one or more lines.
+Port	
+Ports are simple lines for input or output of audio to or from audio devices.
+SourceDataLine	
+A source data line is a data line to which data may be written.
+TargetDataLine	
+A target data line is a type of DataLine from which audio data can be read.
+Class Summary 
+Class	Description
+AudioFileFormat	
+An instance of the AudioFileFormat class describes an audio file, including the file type, the file's length in bytes, the length in sample frames of the audio data contained in the file, and the format of the audio data.
+AudioFileFormat.Type	
+An instance of the Type class represents one of the standard types of audio file.
+AudioFormat	
+AudioFormat is the class that specifies a particular arrangement of data in a sound stream.
+AudioFormat.Encoding	
+The Encoding class names the specific type of data representation used for an audio stream.
+AudioInputStream	
+An audio input stream is an input stream with a specified audio format and length.
+AudioPermission	
+The AudioPermission class represents access rights to the audio system resources.
+AudioSystem	
+The AudioSystem class acts as the entry point to the sampled-audio system resources.
+BooleanControl	
+A BooleanControl provides the ability to switch between two possible settings that affect a line's audio.
+BooleanControl.Type	
+An instance of the BooleanControl.Type class identifies one kind of boolean control.
+CompoundControl	
+A CompoundControl, such as a graphic equalizer, provides control over two or more related properties, each of which is itself represented as a Control.
+CompoundControl.Type	
+An instance of the CompoundControl.Type inner class identifies one kind of compound control.
+Control	
+Lines often have a set of controls, such as gain and pan, that affect the audio signal passing through the line.
+Control.Type	
+An instance of the Type class represents the type of the control.
+DataLine.Info	
+Besides the class information inherited from its superclass, DataLine.Info provides additional information specific to data lines.
+EnumControl	
+A EnumControl provides control over a set of discrete possible values, each represented by an object.
+EnumControl.Type	
+An instance of the EnumControl.Type inner class identifies one kind of enumerated control.
+FloatControl	
+A FloatControl object provides control over a range of floating-point values.
+FloatControl.Type	
+An instance of the FloatControl.Type inner class identifies one kind of float control.
+Line.Info	
+A Line.Info object contains information about a line.
+LineEvent	
+The LineEvent class encapsulates information that a line sends its listeners whenever the line opens, closes, starts, or stops.
+LineEvent.Type	
+The LineEvent.Type inner class identifies what kind of event occurred on a line.
+Mixer.Info	
+The Mixer.Info class represents information about an audio mixer, including the product's name, version, and vendor, along with a textual description.
+Port.Info	
+The Port.Info class extends Line.Info with additional information specific to ports, including the port's name and whether it is a source or a target for its mixer.
+ReverbType	
+The ReverbType class provides methods for accessing various reverberation settings to be applied to an audio signal.
+Exception Summary 
+Exception	Description
+LineUnavailableException	
+A LineUnavailableException is an exception indicating that a line cannot be opened because it is unavailable.
+UnsupportedAudioFileException	
+An UnsupportedAudioFileException is an exception indicating that an operation failed because a file did not contain valid data of a recognized file type and format.
+Package javax.sound.sampled Description
+
+Provides interfaces and classes for capture, processing, and playback of sampled audio data.
+Related Documentation
+
+For overviews, tutorials, examples, and guides, please see:
+Sound
+Since:
+1.3
+Provides a set of "lightweight" (all-Java language) components that, to the maximum degree possible, work the same on all platforms.
+See: Description
+
+Interface Summary 
+Interface	Description
+Action	
+The Action interface provides a useful extension to the ActionListener interface in cases where the same functionality may be accessed by several controls.
+BoundedRangeModel	
+Defines the data model used by components like Sliders and ProgressBars.
+ButtonModel	
+State model for buttons.
+CellEditor	
+This interface defines the methods any general editor should be able to implement.
+ComboBoxEditor	
+The editor component used for JComboBox components.
+ComboBoxModel<E>	
+A data model for a combo box.
+DesktopManager	
+DesktopManager objects are owned by a JDesktopPane object.
+Icon	
+A small fixed size picture, typically used to decorate components.
+JComboBox.KeySelectionManager	
+The interface that defines a KeySelectionManager.
+ListCellRenderer<E>	
+Identifies components that can be used as "rubber stamps" to paint the cells in a JList.
+ListModel<E>	
+This interface defines the methods components like JList use to get the value of each cell in a list and the length of the list.
+ListSelectionModel	
+This interface represents the current state of the selection for any of the components that display a list of values with stable indices.
+MenuElement	
+Any component that can be placed into a menu should implement this interface.
+MutableComboBoxModel<E>	
+A mutable version of ComboBoxModel.
+Painter<T>	
+A painting delegate.
+Renderer	
+Defines the requirements for an object responsible for "rendering" (displaying) a value.
+RootPaneContainer	
+This interface is implemented by components that have a single JRootPane child: JDialog, JFrame, JWindow, JApplet, JInternalFrame.
+Scrollable	
+An interface that provides information to a scrolling container like JScrollPane.
+ScrollPaneConstants	
+Constants used with the JScrollPane component.
+SingleSelectionModel	
+A model that supports at most one indexed selection.
+SpinnerModel	
+A model for a potentially unbounded sequence of object values.
+SwingConstants	
+A collection of constants generally used for positioning and orienting components on the screen.
+UIDefaults.ActiveValue	
+This class enables one to store an entry in the defaults table that's constructed each time it's looked up with one of the getXXX(key) methods.
+UIDefaults.LazyValue	
+This class enables one to store an entry in the defaults table that isn't constructed until the first time it's looked up with one of the getXXX(key) methods.
+WindowConstants	
+Constants used to control the window-closing operation.
+Class Summary 
+Class	Description
+AbstractAction	
+This class provides default implementations for the JFC Action interface.
+AbstractButton	
+Defines common behaviors for buttons and menu items.
+AbstractCellEditor	
+A base class for CellEditors, providing default implementations for the methods in the CellEditor interface except getCellEditorValue().
+AbstractListModel<E>	
+The abstract definition for the data model that provides a List with its contents.
+AbstractSpinnerModel	
+This class provides the ChangeListener part of the SpinnerModel interface that should be suitable for most concrete SpinnerModel implementations.
+ActionMap	
+ActionMap provides mappings from Objects (called keys or Action names) to Actions.
+BorderFactory	
+Factory class for vending standard Border objects.
+Box	
+A lightweight container that uses a BoxLayout object as its layout manager.
+Box.Filler	
+An implementation of a lightweight component that participates in layout but has no view.
+BoxLayout	
+A layout manager that allows multiple components to be laid out either vertically or horizontally.
+ButtonGroup	
+This class is used to create a multiple-exclusion scope for a set of buttons.
+CellRendererPane	
+This class is inserted in between cell renderers and the components that use them.
+ComponentInputMap	
+A ComponentInputMap is an InputMap associated with a particular JComponent.
+DebugGraphics	
+Graphics subclass supporting graphics debugging.
+DefaultBoundedRangeModel	
+A generic implementation of BoundedRangeModel.
+DefaultButtonModel	
+The default implementation of a Button component's data model.
+DefaultCellEditor	
+The default editor for table and tree cells.
+DefaultComboBoxModel<E>	
+The default model for combo boxes.
+DefaultDesktopManager	
+This is an implementation of the DesktopManager.
+DefaultFocusManager	
+This class has been obsoleted by the 1.4 focus APIs.
+DefaultListCellRenderer	
+Renders an item in a list.
+DefaultListCellRenderer.UIResource	
+A subclass of DefaultListCellRenderer that implements UIResource.
+DefaultListModel<E>	
+This class loosely implements the java.util.Vector API, in that it implements the 1.1.x version of java.util.Vector, has no collection class support, and notifies the ListDataListeners when changes occur.
+DefaultListSelectionModel	
+Default data model for list selections.
+DefaultRowSorter<M,I>	
+An implementation of RowSorter that provides sorting and filtering around a grid-based data model.
+DefaultRowSorter.ModelWrapper<M,I>	
+DefaultRowSorter.ModelWrapper is responsible for providing the data that gets sorted by DefaultRowSorter.
+DefaultSingleSelectionModel	
+A generic implementation of SingleSelectionModel.
+FocusManager	
+This class has been obsoleted by the 1.4 focus APIs.
+GrayFilter	
+An image filter that "disables" an image by turning it into a grayscale image, and brightening the pixels in the image.
+GroupLayout	
+GroupLayout is a LayoutManager that hierarchically groups components in order to position them in a Container.
+ImageIcon	
+An implementation of the Icon interface that paints Icons from Images.
+InputMap	
+InputMap provides a binding between an input event (currently only KeyStrokes are used) and an Object.
+InputVerifier	
+The purpose of this class is to help clients support smooth focus navigation through GUIs with text fields.
+InternalFrameFocusTraversalPolicy	
+A FocusTraversalPolicy which can optionally provide an algorithm for determining a JInternalFrame's initial Component.
+JApplet	
+An extended version of java.applet.Applet that adds support for the JFC/Swing component architecture.
+JButton	
+An implementation of a "push" button.
+JCheckBox	
+An implementation of a check box -- an item that can be selected or deselected, and which displays its state to the user.
+JCheckBoxMenuItem	
+A menu item that can be selected or deselected.
+JColorChooser	
+JColorChooser provides a pane of controls designed to allow a user to manipulate and select a color.
+JComboBox<E>	
+A component that combines a button or editable field and a drop-down list.
+JComponent	
+The base class for all Swing components except top-level containers.
+JDesktopPane	
+A container used to create a multiple-document interface or a virtual desktop.
+JDialog	
+The main class for creating a dialog window.
+JEditorPane	
+A text component to edit various kinds of content.
+JFileChooser	
+JFileChooser provides a simple mechanism for the user to choose a file.
+JFormattedTextField	
+JFormattedTextField extends JTextField adding support for formatting arbitrary values, as well as retrieving a particular object once the user has edited the text.
+JFormattedTextField.AbstractFormatter	
+Instances of AbstractFormatter are used by JFormattedTextField to handle the conversion both from an Object to a String, and back from a String to an Object.
+JFormattedTextField.AbstractFormatterFactory	
+Instances of AbstractFormatterFactory are used by JFormattedTextField to obtain instances of AbstractFormatter which in turn are used to format values.
+JFrame	
+An extended version of java.awt.Frame that adds support for the JFC/Swing component architecture.
+JInternalFrame	
+A lightweight object that provides many of the features of a native frame, including dragging, closing, becoming an icon, resizing, title display, and support for a menu bar.
+JInternalFrame.JDesktopIcon	
+This component represents an iconified version of a JInternalFrame.
+JLabel	
+A display area for a short text string or an image, or both.
+JLayer<V extends Component>	
+JLayer is a universal decorator for Swing components which enables you to implement various advanced painting effects as well as receive notifications of all AWTEvents generated within its borders.
+JLayeredPane	
+JLayeredPane adds depth to a JFC/Swing container, allowing components to overlap each other when needed.
+JList<E>	
+A component that displays a list of objects and allows the user to select one or more items.
+JList.DropLocation	
+A subclass of TransferHandler.DropLocation representing a drop location for a JList.
+JMenu	
+An implementation of a menu -- a popup window containing JMenuItems that is displayed when the user selects an item on the JMenuBar.
+JMenuBar	
+An implementation of a menu bar.
+JMenuItem	
+An implementation of an item in a menu.
+JOptionPane	
+JOptionPane makes it easy to pop up a standard dialog box that prompts users for a value or informs them of something.
+JPanel	
+JPanel is a generic lightweight container.
+JPasswordField	
+JPasswordField is a lightweight component that allows the editing of a single line of text where the view indicates something was typed, but does not show the original characters.
+JPopupMenu	
+An implementation of a popup menu -- a small window that pops up and displays a series of choices.
+JPopupMenu.Separator	
+A popup menu-specific separator.
+JProgressBar	
+A component that visually displays the progress of some task.
+JRadioButton	
+An implementation of a radio button -- an item that can be selected or deselected, and which displays its state to the user.
+JRadioButtonMenuItem	
+An implementation of a radio button menu item.
+JRootPane	
+A lightweight container used behind the scenes by JFrame, JDialog, JWindow, JApplet, and JInternalFrame.
+JScrollBar	
+An implementation of a scrollbar.
+JScrollPane	
+Provides a scrollable view of a lightweight component.
+JSeparator	
+JSeparator provides a general purpose component for implementing divider lines - most commonly used as a divider between menu items that breaks them up into logical groupings.
+JSlider	
+A component that lets the user graphically select a value by sliding a knob within a bounded interval.
+JSpinner	
+A single line input field that lets the user select a number or an object value from an ordered sequence.
+JSpinner.DateEditor	
+An editor for a JSpinner whose model is a SpinnerDateModel.
+JSpinner.DefaultEditor	
+A simple base class for more specialized editors that displays a read-only view of the model's current value with a JFormattedTextField.
+JSpinner.ListEditor	
+An editor for a JSpinner whose model is a SpinnerListModel.
+JSpinner.NumberEditor	
+An editor for a JSpinner whose model is a SpinnerNumberModel.
+JSplitPane	
+JSplitPane is used to divide two (and only two) Components.
+JTabbedPane	
+A component that lets the user switch between a group of components by clicking on a tab with a given title and/or icon.
+JTable	
+The JTable is used to display and edit regular two-dimensional tables of cells.
+JTable.DropLocation	
+A subclass of TransferHandler.DropLocation representing a drop location for a JTable.
+JTextArea	
+A JTextArea is a multi-line area that displays plain text.
+JTextField	
+JTextField is a lightweight component that allows the editing of a single line of text.
+JTextPane	
+A text component that can be marked up with attributes that are represented graphically.
+JToggleButton	
+An implementation of a two-state button.
+JToggleButton.ToggleButtonModel	
+The ToggleButton model
+JToolBar	
+JToolBar provides a component that is useful for displaying commonly used Actions or controls.
+JToolBar.Separator	
+A toolbar-specific separator.
+JToolTip	
+Used to display a "Tip" for a Component.
+JTree	
+A control that displays a set of hierarchical data as an outline.
+JTree.DropLocation	
+A subclass of TransferHandler.DropLocation representing a drop location for a JTree.
+JTree.DynamicUtilTreeNode	
+DynamicUtilTreeNode can wrap vectors/hashtables/arrays/strings and create the appropriate children tree nodes as necessary.
+JTree.EmptySelectionModel	
+EmptySelectionModel is a TreeSelectionModel that does not allow anything to be selected.
+JViewport	
+The "viewport" or "porthole" through which you see the underlying information.
+JWindow	
+A JWindow is a container that can be displayed anywhere on the user's desktop.
+KeyStroke	
+A KeyStroke represents a key action on the keyboard, or equivalent input device.
+LayoutFocusTraversalPolicy	
+A SortingFocusTraversalPolicy which sorts Components based on their size, position, and orientation.
+LayoutStyle	
+LayoutStyle provides information about how to position components.
+LookAndFeel	
+LookAndFeel, as the name implies, encapsulates a look and feel.
+MenuSelectionManager	
+A MenuSelectionManager owns the selection in menu hierarchy.
+OverlayLayout	
+A layout manager to arrange components over the top of each other.
+Popup	
+Popups are used to display a Component to the user, typically on top of all the other Components in a particular containment hierarchy.
+PopupFactory	
+PopupFactory, as the name implies, is used to obtain instances of Popups.
+ProgressMonitor	
+A class to monitor the progress of some operation.
+ProgressMonitorInputStream	
+Monitors the progress of reading from some InputStream.
+RepaintManager	
+This class manages repaint requests, allowing the number of repaints to be minimized, for example by collapsing multiple requests into a single repaint for members of a component tree.
+RowFilter<M,I>	
+RowFilter is used to filter out entries from the model so that they are not shown in the view.
+RowFilter.Entry<M,I>	
+An Entry object is passed to instances of RowFilter, allowing the filter to get the value of the entry's data, and thus to determine whether the entry should be shown.
+RowSorter<M>	
+RowSorter provides the basis for sorting and filtering.
+RowSorter.SortKey	
+SortKey describes the sort order for a particular column.
+ScrollPaneLayout	
+The layout manager used by JScrollPane.
+ScrollPaneLayout.UIResource	
+The UI resource version of ScrollPaneLayout.
+SizeRequirements	
+For the convenience of layout managers, calculates information about the size and position of components.
+SizeSequence	
+A SizeSequence object efficiently maintains an ordered list of sizes and corresponding positions.
+SortingFocusTraversalPolicy	
+A FocusTraversalPolicy that determines traversal order by sorting the Components of a focus traversal cycle based on a given Comparator.
+SpinnerDateModel	
+A SpinnerModel for sequences of Dates.
+SpinnerListModel	
+A simple implementation of SpinnerModel whose values are defined by an array or a List.
+SpinnerNumberModel	
+A SpinnerModel for sequences of numbers.
+Spring	
+An instance of the Spring class holds three properties that characterize its behavior: the minimum, preferred, and maximum values.
+SpringLayout	
+A SpringLayout lays out the children of its associated container according to a set of constraints.
+SpringLayout.Constraints	
+A Constraints object holds the constraints that govern the way a component's size and position change in a container controlled by a SpringLayout.
+SwingUtilities	
+A collection of utility methods for Swing.
+SwingWorker<T,V>	
+An abstract class to perform lengthy GUI-interaction tasks in a background thread.
+Timer	
+Fires one or more ActionEvents at specified intervals.
+ToolTipManager	
+Manages all the ToolTips in the system.
+TransferHandler	
+This class is used to handle the transfer of a Transferable to and from Swing components.
+TransferHandler.DropLocation	
+Represents a location where dropped data should be inserted.
+TransferHandler.TransferSupport	
+This class encapsulates all relevant details of a clipboard or drag and drop transfer, and also allows for customizing aspects of the drag and drop experience.
+UIDefaults	
+A table of defaults for Swing components.
+UIDefaults.LazyInputMap	
+LazyInputMap will create a InputMap in its createValue method.
+UIDefaults.ProxyLazyValue	
+This class provides an implementation of LazyValue which can be used to delay loading of the Class for the instance to be created.
+UIManager	
+UIManager manages the current look and feel, the set of available look and feels, PropertyChangeListeners that are notified when the look and feel changes, look and feel defaults, and convenience methods for obtaining various default values.
+UIManager.LookAndFeelInfo	
+Provides a little information about an installed LookAndFeel for the sake of configuring a menu or for initial application set up.
+ViewportLayout	
+The default layout manager for JViewport.
+Enum Summary 
+Enum	Description
+DropMode	
+Drop modes, used to determine the method by which a component tracks and indicates a drop location during drag and drop.
+GroupLayout.Alignment	
+Enumeration of the possible ways ParallelGroup can align its children.
+JTable.PrintMode	
+Printing modes, used in printing JTables.
+LayoutStyle.ComponentPlacement	
+ComponentPlacement is an enumeration of the possible ways two components can be placed relative to each other.
+RowFilter.ComparisonType	
+Enumeration of the possible comparison values supported by some of the default RowFilters.
+SortOrder	
+SortOrder is an enumeration of the possible sort orderings.
+SwingWorker.StateValue	
+Values for the state bound property.
+Exception Summary 
+Exception	Description
+UnsupportedLookAndFeelException	
+An exception that indicates the requested look & feel management classes are not present on the user's system.
+Package javax.swing Description
+
+Provides a set of "lightweight" (all-Java language) components that, to the maximum degree possible, work the same on all platforms. For a programmer's guide to using these components, see Creating a GUI with JFC/Swing, a trail in The Java Tutorial. For other resources, see Related Documentation.
+
+Swing's Threading Policy
+
+In general Swing is not thread safe. All Swing components and related classes, unless otherwise documented, must be accessed on the event dispatching thread.
+Typical Swing applications do processing in response to an event generated from a user gesture. For example, clicking on a JButton notifies all ActionListeners added to the JButton. As all events generated from a user gesture are dispatched on the event dispatching thread, most developers are not impacted by the restriction.
+
+Where the impact lies, however, is in constructing and showing a Swing application. Calls to an application's main method, or methods in Applet, are not invoked on the event dispatching thread. As such, care must be taken to transfer control to the event dispatching thread when constructing and showing an application or applet. The preferred way to transfer control and begin working with Swing is to use invokeLater. The invokeLater method schedules a Runnable to be processed on the event dispatching thread. The following two examples work equally well for transferring control and starting up a Swing application:
+
+public class MyApp implements Runnable {
+    public void run() {
+        // Invoked on the event dispatching thread.
+        // Construct and show GUI.
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new MyApp(args));
+    }
+}
+Or:
+public class MyApp {
+    MyApp(String[] args) {
+        // Invoked on the event dispatching thread. Do any initialization
+        // here.
+    }
+
+    public void show() {
+        // Show the UI.
+    }
+
+    public static void main(final String[] args) {
+        // Schedule a job for the event-dispatching thread:
+        // creating and showing this application's GUI.
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new MyApp(args).show();
+            }
+        });
+    }
+}
+This restriction also applies to models attached to Swing components. For example, if a TableModel is attached to a JTable, the TableModel should only be modified on the event dispatching thread. If you modify the model on a separate thread you run the risk of exceptions and possible display corruption.
+As all events are delivered on the event dispatching thread, care must be taken in event processing. In particular, a long running task, such as network io or computational intensive processing, executed on the event dispatching thread blocks the event dispatching thread from dispatching any other events. While the event dispatching thread is blocked the application is completely unresponsive to user input. Refer to SwingWorker for the preferred way to do such processing when working with Swing.
+
+More information on this topic can be found in the Swing tutorial, in particular the section on How to Use Threads.
+
+Related Documentation
+
+For overviews, tutorials, examples, guides, and other documentation, please see:
+
+The Swing Connection
+The Java Tutorial
+Online Training at the Java Developer ConnectionSM
+Java Foundation Classes (JFC) home page
+
+Provides low level graphics tools such as canvases, color filters, points, and rectangles that let you handle drawing to the screen directly.
+Interfaces
+SurfaceTexture.OnFrameAvailableListener	Callback interface for being notified that a new stream frame is available. 
+Classes
+AvoidXfermode	AvoidXfermode xfermode will draw the src everywhere except on top of the opColor or, depending on the Mode, draw only on top of the opColor. 
+Bitmap	 
+BitmapFactory	Creates Bitmap objects from various sources, including files, streams, and byte-arrays. 
+BitmapFactory.Options	 
+BitmapRegionDecoder	BitmapRegionDecoder can be used to decode a rectangle region from an image. 
+BitmapShader	Shader used to draw a bitmap as a texture. 
+BlurMaskFilter	This takes a mask, and blurs its edge by the specified radius. 
+Camera	A camera instance can be used to compute 3D transformations and generate a matrix that can be applied, for instance, on a Canvas. 
+Canvas	The Canvas class holds the "draw" calls. 
+Color	The Color class defines methods for creating and converting color ints. 
+ColorFilter	A color filter can be used with a Paint to modify the color of each pixel drawn with that paint. 
+ColorMatrix	4x5 matrix for transforming the color and alpha components of a Bitmap. 
+ColorMatrixColorFilter	A color filter that transforms colors through a 4x5 color matrix. 
+ComposePathEffect	 
+ComposeShader	A subclass of shader that returns the composition of two other shaders, combined by an Xfermode subclass. 
+CornerPathEffect	 
+DashPathEffect	 
+DiscretePathEffect	 
+DrawFilter	A DrawFilter subclass can be installed in a Canvas. 
+EmbossMaskFilter	 
+ImageFormat	 
+Interpolator	 
+LayerRasterizer	 
+LightingColorFilter	A color filter that can be used to simulate simple lighting effects. 
+LinearGradient	 
+MaskFilter	MaskFilter is the base class for object that perform transformations on an alpha-channel mask before drawing it. 
+Matrix	The Matrix class holds a 3x3 matrix for transforming coordinates. 
+Movie	 
+NinePatch	The NinePatch class permits drawing a bitmap in nine or more sections. 
+Outline	Defines a simple shape, used for bounding graphical regions. 
+Paint	The Paint class holds the style and color information about how to draw geometries, text and bitmaps. 
+Paint.FontMetrics	Class that describes the various metrics for a font at a given text size. 
+Paint.FontMetricsInt	Convenience method for callers that want to have FontMetrics values as integers. 
+PaintFlagsDrawFilter	 
+Path	The Path class encapsulates compound (multiple contour) geometric paths consisting of straight line segments, quadratic curves, and cubic curves. 
+PathDashPathEffect	 
+PathEffect	PathEffect is the base class for objects in the Paint that affect the geometry of a drawing primitive before it is transformed by the canvas' matrix and drawn. 
+PathMeasure	 
+Picture	A Picture records drawing calls (via the canvas returned by beginRecording) and can then play them back into Canvas (via draw(Canvas) or drawPicture(Picture)).For most content (e.g. 
+PixelFormat	 
+PixelXorXfermode	PixelXorXfermode implements a simple pixel xor (op ^ src ^ dst). 
+Point	Point holds two integer coordinates  
+PointF	PointF holds two float coordinates  
+PorterDuff	 
+PorterDuffColorFilter	A color filter that can be used to tint the source pixels using a single color and a specific Porter-Duff composite mode. 
+PorterDuffXfermode	 
+RadialGradient	 
+Rasterizer	 
+Rect	Rect holds four integer coordinates for a rectangle. 
+RectF	RectF holds four float coordinates for a rectangle. 
+Region	 
+RegionIterator	 
+Shader	Shader is the based class for objects that return horizontal spans of colors during drawing. 
+SumPathEffect	 
+SurfaceTexture	Captures frames from an image stream as an OpenGL ES texture. 
+SweepGradient	 
+Typeface	The Typeface class specifies the typeface and intrinsic style of a font. 
+Xfermode	Xfermode is the base class for objects that are called to implement custom "transfer-modes" in the drawing pipeline. 
+YuvImage	YuvImage contains YUV data and provides a method that compresses a region of the YUV data to a Jpeg. 
+Enums
+AvoidXfermode.Mode	 
+Bitmap.CompressFormat	Specifies the known formats a bitmap can be compressed into  
+Bitmap.Config	Possible bitmap configurations. 
+BlurMaskFilter.Blur	 
+Canvas.EdgeType	 
+Canvas.VertexMode	 
+Interpolator.Result	 
+Matrix.ScaleToFit	Controlls how the src rect should align into the dst rect for setRectToRect(). 
+Paint.Align	Align specifies how drawText aligns its text relative to the [x,y] coordinates. 
+Paint.Cap	The Cap specifies the treatment for the beginning and ending of stroked lines and paths. 
+Paint.Join	The Join specifies the treatment where lines and curve segments join on a stroked path. 
+Paint.Style	The Style specifies if the primitive being drawn is filled, stroked, or both (in the same color). 
+Path.Direction	Specifies how closed shapes (e.g. 
+Path.FillType	Enum for the ways a path may be filled. 
+Path.Op	The logical operations that can be performed when combining two paths. 
+PathDashPathEffect.Style	 
+PorterDuff.Mode	 
+Region.Op	 
+Shader.TileMode	 
+Exceptions

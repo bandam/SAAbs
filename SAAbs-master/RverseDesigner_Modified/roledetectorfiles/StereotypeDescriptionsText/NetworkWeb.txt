@@ -1,0 +1,912 @@
+OverviewPackageClassUseTreeDeprecatedIndexHelp Java™ Platform
+Standard Ed. 7 Prev PackageNext PackageFramesNo Frames
+Package java.net
+Provides the classes for implementing networking applications.
+See: Description
+
+Interface Summary 
+Interface	Description
+ContentHandlerFactory	
+This interface defines a factory for content handlers.
+CookiePolicy	
+CookiePolicy implementations decide which cookies should be accepted and which should be rejected.
+CookieStore	
+A CookieStore object represents a storage for cookie.
+DatagramSocketImplFactory	
+This interface defines a factory for datagram socket implementations.
+FileNameMap	
+A simple interface which provides a mechanism to map between a file name and a MIME type string.
+ProtocolFamily	
+Represents a family of communication protocols.
+SocketImplFactory	
+This interface defines a factory for socket implementations.
+SocketOption<T>	
+A socket option associated with a socket.
+SocketOptions	
+Interface of methods to get/set socket options.
+URLStreamHandlerFactory	
+This interface defines a factory for URL stream protocol handlers.
+Class Summary 
+Class	Description
+Authenticator	
+The class Authenticator represents an object that knows how to obtain authentication for a network connection.
+CacheRequest	
+Represents channels for storing resources in the ResponseCache.
+CacheResponse	
+Represent channels for retrieving resources from the ResponseCache.
+ContentHandler	
+The abstract class ContentHandler is the superclass of all classes that read an Object from a URLConnection.
+CookieHandler	
+A CookieHandler object provides a callback mechanism to hook up a HTTP state management policy implementation into the HTTP protocol handler.
+CookieManager	
+CookieManager provides a concrete implementation of CookieHandler, which separates the storage of cookies from the policy surrounding accepting and rejecting cookies.
+DatagramPacket	
+This class represents a datagram packet.
+DatagramSocket	
+This class represents a socket for sending and receiving datagram packets.
+DatagramSocketImpl	
+Abstract datagram and multicast socket implementation base class.
+HttpCookie	
+An HttpCookie object represents an http cookie, which carries state information between server and user agent.
+HttpURLConnection	
+A URLConnection with support for HTTP-specific features.
+IDN	
+Provides methods to convert internationalized domain names (IDNs) between a normal Unicode representation and an ASCII Compatible Encoding (ACE) representation.
+Inet4Address	
+This class represents an Internet Protocol version 4 (IPv4) address.
+Inet6Address	
+This class represents an Internet Protocol version 6 (IPv6) address.
+InetAddress	
+This class represents an Internet Protocol (IP) address.
+InetSocketAddress	
+This class implements an IP Socket Address (IP address + port number) It can also be a pair (hostname + port number), in which case an attempt will be made to resolve the hostname.
+InterfaceAddress	
+This class represents a Network Interface address.
+JarURLConnection	
+A URL Connection to a Java ARchive (JAR) file or an entry in a JAR file.
+MulticastSocket	
+The multicast datagram socket class is useful for sending and receiving IP multicast packets.
+NetPermission	
+This class is for various network permissions.
+NetworkInterface	
+This class represents a Network Interface made up of a name, and a list of IP addresses assigned to this interface.
+PasswordAuthentication	
+The class PasswordAuthentication is a data holder that is used by Authenticator.
+Proxy	
+This class represents a proxy setting, typically a type (http, socks) and a socket address.
+ProxySelector	
+Selects the proxy server to use, if any, when connecting to the network resource referenced by a URL.
+ResponseCache	
+Represents implementations of URLConnection caches.
+SecureCacheResponse	
+Represents a cache response originally retrieved through secure means, such as TLS.
+ServerSocket	
+This class implements server sockets.
+Socket	
+This class implements client sockets (also called just "sockets").
+SocketAddress	
+This class represents a Socket Address with no protocol attachment.
+SocketImpl	
+The abstract class SocketImpl is a common superclass of all classes that actually implement sockets.
+SocketPermission	
+This class represents access to a network via sockets.
+StandardSocketOptions	
+Defines the standard socket options.
+URI	
+Represents a Uniform Resource Identifier (URI) reference.
+URL	
+Class URL represents a Uniform Resource Locator, a pointer to a "resource" on the World Wide Web.
+URLClassLoader	
+This class loader is used to load classes and resources from a search path of URLs referring to both JAR files and directories.
+URLConnection	
+The abstract class URLConnection is the superclass of all classes that represent a communications link between the application and a URL.
+URLDecoder	
+Utility class for HTML form decoding.
+URLEncoder	
+Utility class for HTML form encoding.
+URLStreamHandler	
+The abstract class URLStreamHandler is the common superclass for all stream protocol handlers.
+Enum Summary 
+Enum	Description
+Authenticator.RequestorType	
+The type of the entity requesting authentication.
+Proxy.Type	
+Represents the proxy type.
+StandardProtocolFamily	
+Defines the standard families of communication protocols.
+Exception Summary 
+Exception	Description
+BindException	
+Signals that an error occurred while attempting to bind a socket to a local address and port.
+ConnectException	
+Signals that an error occurred while attempting to connect a socket to a remote address and port.
+HttpRetryException	
+Thrown to indicate that a HTTP request needs to be retried but cannot be retried automatically, due to streaming mode being enabled.
+MalformedURLException	
+Thrown to indicate that a malformed URL has occurred.
+NoRouteToHostException	
+Signals that an error occurred while attempting to connect a socket to a remote address and port.
+PortUnreachableException	
+Signals that an ICMP Port Unreachable message has been received on a connected datagram.
+ProtocolException	
+Thrown to indicate that there is an error in the underlying protocol, such as a TCP error.
+SocketException	
+Thrown to indicate that there is an error creating or accessing a Socket.
+SocketTimeoutException	
+Signals that a timeout has occurred on a socket read or accept.
+UnknownHostException	
+Thrown to indicate that the IP address of a host could not be determined.
+UnknownServiceException	
+Thrown to indicate that an unknown service exception has occurred.
+URISyntaxException	
+Checked exception thrown to indicate that a string could not be parsed as a URI reference.
+Package java.net Description
+
+Provides the classes for implementing networking applications.
+The java.net package can be roughly divided in two sections:
+
+A Low Level API, which deals with the following abstractions:
+
+Addresses, which are networking identifiers, like IP addresses.
+
+Sockets, which are basic bidirectional data communication mechanisms.
+
+Interfaces, which describe network interfaces.
+
+A High Level API, which deals with the following abstractions:
+
+URIs, which represent Universal Resource Identifiers.
+
+URLs, which represent Universal Resource Locators.
+
+Connections, which represents connections to the resource pointed to by URLs.
+
+Addresses
+
+Addresses are used throughout the java.net APIs as either host identifiers, or socket endpoint identifiers.
+
+The InetAddress class is the abstraction representing an IP (Internet Protocol) address. It has two subclasses:
+
+Inet4Address for IPv4 addresses.
+Inet6Address for IPv6 addresses.
+But, in most cases, there is no need to deal directly with the subclasses, as the InetAddress abstraction should cover most of the needed functionality.
+
+About IPv6
+
+Not all systems have support for the IPv6 protocol, and while the Java networking stack will attempt to detect it and use it transparently when available, it is also possible to disable its use with a system property. In the case where IPv6 is not available, or explicitly disabled, Inet6Address are not valid arguments for most networking operations any more. While methods like InetAddress.getByName(java.lang.String) are guaranteed not to return an Inet6Address when looking up host names, it is possible, by passing literals, to create such an object. In which case, most methods, when called with an Inet6Address will throw an Exception.
+
+Sockets
+
+Sockets are means to establish a communication link between machines over the network. The java.net package provides 4 kinds of Sockets:
+
+Socket is a TCP client API, and will typically be used to connect to a remote host.
+ServerSocket is a TCP server API, and will typically accept connections from client sockets.
+DatagramSocket is a UDP endpoint API and is used to send and receive datagram packets.
+MulticastSocket is a subclass of DatagramSocket used when dealing with multicast groups.
+Sending and receiving with TCP sockets is done through InputStreams and OutputStreams which can be obtained via the Socket.getInputStream() and Socket.getOutputStream() methods.
+
+Interfaces
+
+The NetworkInterface class provides APIs to browse and query all the networking interfaces (e.g. ethernet connection or PPP endpoint) of the local machine. It is through that class that you can check if any of the local interfaces is configured to support IPv6.
+
+High level API
+
+A number of classes in the java.net package do provide for a much higher level of abstraction and allow for easy access to resources on the network. The classes are:
+
+URI is the class representing a Universal Resource Identifier, as specified in RFC 2396. As the name indicates, this is just an Identifier and doesn't provide directly the means to access the resource.
+URL is the class representing a Universal Resource Locator, which is both an older concept for URIs and a means to access the resources.
+URLConnection is created from a URL and is the communication link used to access the resource pointed by the URL. This abstract class will delegate most of the work to the underlying protocol handlers like http or ftp.
+HttpURLConnection is a subclass of URLConnection and provides some additional functionalities specific to the HTTP protocol.
+The recommended usage is to use URI to identify resources, then convert it into a URL when it is time to access the resource. From that URL, you can either get the URLConnection for fine control, or get directly the InputStream.
+
+Here is an example:
+
+URI uri = new URI("http://java.sun.com/");
+URL url = uri.toURL();
+InputStream in = url.openStream();
+
+Protocol Handlers
+
+As mentioned, URL and URLConnection rely on protocol handlers which must be present, otherwise an Exception is thrown. This is the major difference with URIs which only identify resources, and therefore don't need to have access to the protocol handler. So, while it is possible to create an URI with any kind of protocol scheme (e.g. myproto://myhost.mydomain/resource/), a similar URL will try to instantiate the handler for the specified protocol; if it doesn't exist an exception will be thrown.
+By default the protocol handlers are loaded dynamically from the default location. It is, however, possible to add to the search path by setting the java.protocol.handler.pkgs system property. For instance if it is set to myapp.protocols, then the URL code will try, in the case of http, first to load myapp.protocols.http.Handler, then, if this fails, http.Handler from the default location.
+
+Note that the Handler class has to be a subclass of the abstract class URLStreamHandler.
+
+Additional Specification
+
+Networking System Properties
+Since:
+JDK1.0
+OverviewPackageClassUseTreeDeprecatedIndexHelp Java™ Platform
+Standard Ed. 7 Prev PackageNext PackageFramesNo Frames
+Submit a bug or feature 
+For further API reference and developer documentation, see Java SE Documentation. That documentation contains more detailed, developer-targeted descriptions, with conceptual overviews, definitions of terms, workarounds, and working code examples.
+Copyright © 1993, 2014, Oracle and/or its affiliates. All rights reserved.
+
+OverviewPackageClassUseTreeDeprecatedIndexHelp Prev ClassNext ClassFramesNo FramesAll Classes Summary: Nested | Field | Constr | MethodDetail: Field | Constr | Method
+org.apache.http.client
+Interface HttpClient
+
+All Known Implementing Classes:
+AbstractHttpClient, AutoRetryHttpClient, CloseableHttpClient, ContentEncodingHttpClient, DecompressingHttpClient, DefaultHttpClient, SystemDefaultHttpClient
+
+public interface HttpClient
+This interface represents only the most basic contract for HTTP request execution. It imposes no restrictions or particular details on the request execution process and leaves the specifics of state management, authentication and redirect handling up to individual implementations.
+Since:
+4.0
+Method Summary
+
+Methods 
+Modifier and Type	Method and Description
+HttpResponse	execute(HttpHost target, HttpRequest request)
+Executes HTTP request using the default context.
+HttpResponse	execute(HttpHost target, HttpRequest request, HttpContext context)
+Executes HTTP request using the given context.
+<T> T	execute(HttpHost target, HttpRequest request, ResponseHandler<? extends T> responseHandler)
+Executes HTTP request to the target using the default context and processes the response using the given response handler.
+<T> T	execute(HttpHost target, HttpRequest request, ResponseHandler<? extends T> responseHandler, HttpContext context)
+Executes HTTP request to the target using the given context and processes the response using the given response handler.
+HttpResponse	execute(HttpUriRequest request)
+Executes HTTP request using the default context.
+HttpResponse	execute(HttpUriRequest request, HttpContext context)
+Executes HTTP request using the given context.
+<T> T	execute(HttpUriRequest request, ResponseHandler<? extends T> responseHandler)
+Executes HTTP request using the default context and processes the response using the given response handler.
+<T> T	execute(HttpUriRequest request, ResponseHandler<? extends T> responseHandler, HttpContext context)
+Executes HTTP request using the given context and processes the response using the given response handler.
+ClientConnectionManager	getConnectionManager()
+Deprecated. 
+(4.3) use HttpClientBuilder.
+HttpParams	getParams()
+Deprecated. 
+(4.3) use RequestConfig.
+Method Detail
+
+getParams
+@Deprecated
+HttpParams getParams()
+Deprecated. (4.3) use RequestConfig.
+Obtains the parameters for this client. These parameters will become defaults for all requests being executed with this client, and for the parameters of dependent objects in this client.
+Returns:
+the default parameters
+getConnectionManager
+@Deprecated
+ClientConnectionManager getConnectionManager()
+Deprecated. (4.3) use HttpClientBuilder.
+Obtains the connection manager used by this client.
+Returns:
+the connection manager
+execute
+HttpResponse execute(HttpUriRequest request)
+                     throws IOException,
+                            ClientProtocolException
+Executes HTTP request using the default context.
+Parameters:
+request - the request to execute
+Returns:
+the response to the request. This is always a final response, never an intermediate response with an 1xx status code. Whether redirects or authentication challenges will be returned or handled automatically depends on the implementation and configuration of this client.
+Throws:
+IOException - in case of a problem or the connection was aborted
+ClientProtocolException - in case of an http protocol error
+execute
+HttpResponse execute(HttpUriRequest request,
+                   HttpContext context)
+                     throws IOException,
+                            ClientProtocolException
+Executes HTTP request using the given context.
+Parameters:
+request - the request to execute
+context - the context to use for the execution, or null to use the default context
+Returns:
+the response to the request. This is always a final response, never an intermediate response with an 1xx status code. Whether redirects or authentication challenges will be returned or handled automatically depends on the implementation and configuration of this client.
+Throws:
+IOException - in case of a problem or the connection was aborted
+ClientProtocolException - in case of an http protocol error
+execute
+HttpResponse execute(HttpHost target,
+                   HttpRequest request)
+                     throws IOException,
+                            ClientProtocolException
+Executes HTTP request using the default context.
+Parameters:
+target - the target host for the request. Implementations may accept null if they can still determine a route, for example to a default target or by inspecting the request.
+request - the request to execute
+Returns:
+the response to the request. This is always a final response, never an intermediate response with an 1xx status code. Whether redirects or authentication challenges will be returned or handled automatically depends on the implementation and configuration of this client.
+Throws:
+IOException - in case of a problem or the connection was aborted
+ClientProtocolException - in case of an http protocol error
+execute
+HttpResponse execute(HttpHost target,
+                   HttpRequest request,
+                   HttpContext context)
+                     throws IOException,
+                            ClientProtocolException
+Executes HTTP request using the given context.
+Parameters:
+target - the target host for the request. Implementations may accept null if they can still determine a route, for example to a default target or by inspecting the request.
+request - the request to execute
+context - the context to use for the execution, or null to use the default context
+Returns:
+the response to the request. This is always a final response, never an intermediate response with an 1xx status code. Whether redirects or authentication challenges will be returned or handled automatically depends on the implementation and configuration of this client.
+Throws:
+IOException - in case of a problem or the connection was aborted
+ClientProtocolException - in case of an http protocol error
+execute
+<T> T execute(HttpUriRequest request,
+            ResponseHandler<? extends T> responseHandler)
+          throws IOException,
+                 ClientProtocolException
+Executes HTTP request using the default context and processes the response using the given response handler.
+Implementing classes are required to ensure that the content entity associated with the response is fully consumed and the underlying connection is released back to the connection manager automatically in all cases relieving individual ResponseHandlers from having to manage resource deallocation internally.
+
+Parameters:
+request - the request to execute
+responseHandler - the response handler
+Returns:
+the response object as generated by the response handler.
+Throws:
+IOException - in case of a problem or the connection was aborted
+ClientProtocolException - in case of an http protocol error
+execute
+<T> T execute(HttpUriRequest request,
+            ResponseHandler<? extends T> responseHandler,
+            HttpContext context)
+          throws IOException,
+                 ClientProtocolException
+Executes HTTP request using the given context and processes the response using the given response handler.
+Implementing classes are required to ensure that the content entity associated with the response is fully consumed and the underlying connection is released back to the connection manager automatically in all cases relieving individual ResponseHandlers from having to manage resource deallocation internally.
+
+Parameters:
+request - the request to execute
+responseHandler - the response handler
+context - the context to use for the execution, or null to use the default context
+Returns:
+the response object as generated by the response handler.
+Throws:
+IOException - in case of a problem or the connection was aborted
+ClientProtocolException - in case of an http protocol error
+execute
+<T> T execute(HttpHost target,
+            HttpRequest request,
+            ResponseHandler<? extends T> responseHandler)
+          throws IOException,
+                 ClientProtocolException
+Executes HTTP request to the target using the default context and processes the response using the given response handler.
+Implementing classes are required to ensure that the content entity associated with the response is fully consumed and the underlying connection is released back to the connection manager automatically in all cases relieving individual ResponseHandlers from having to manage resource deallocation internally.
+
+Parameters:
+target - the target host for the request. Implementations may accept null if they can still determine a route, for example to a default target or by inspecting the request.
+request - the request to execute
+responseHandler - the response handler
+Returns:
+the response object as generated by the response handler.
+Throws:
+IOException - in case of a problem or the connection was aborted
+ClientProtocolException - in case of an http protocol error
+execute
+<T> T execute(HttpHost target,
+            HttpRequest request,
+            ResponseHandler<? extends T> responseHandler,
+            HttpContext context)
+          throws IOException,
+                 ClientProtocolException
+Executes HTTP request to the target using the given context and processes the response using the given response handler.
+Implementing classes are required to ensure that the content entity associated with the response is fully consumed and the underlying connection is released back to the connection manager automatically in all cases relieving individual ResponseHandlers from having to manage resource deallocation internally.
+
+Parameters:
+target - the target host for the request. Implementations may accept null if they can still determine a route, for example to a default target or by inspecting the request.
+request - the request to execute
+responseHandler - the response handler
+context - the context to use for the execution, or null to use the default context
+Returns:
+the response object as generated by the response handler.
+Throws:
+IOException - in case of a problem or the connection was aborted
+ClientProtocolException - in case of an http protocol error
+OverviewPackageClassUseTreeDeprecatedIndexHelp Prev ClassNext ClassFramesNo FramesAll Classes Summary: Nested | Field | Constr | MethodDetail: Field | Constr | Method
+Copyright © 1999–2014 The Apache Software Foundation. All rights reserved.
+
+
+ConnectivityManager	Class that answers queries about the state of network connectivity. 
+ConnectivityManager.NetworkCallback	Base class for NetworkRequest callbacks. 
+Credentials	A class for representing UNIX credentials passed via ancillary data on UNIX domain sockets. 
+DhcpInfo	A simple object for retrieving the results of a DHCP request. 
+IpPrefix	This class represents an IP prefix, i.e., a contiguous block of IP addresses aligned on a power of two boundary (also known as an "IP subnet"). 
+LinkAddress	Identifies an IP address on a network link. 
+LinkProperties	Describes the properties of a network link. 
+LocalServerSocket	Non-standard class for creating an inbound UNIX-domain socket in the Linux abstract namespace. 
+LocalSocket	Creates a (non-server) socket in the UNIX-domain namespace. 
+LocalSocketAddress	A UNIX-domain (AF_LOCAL) socket address. 
+MailTo	MailTo URL parser This class parses a mailto scheme URL and then can be queried for the parsed parameters. 
+Network	Identifies a Network. 
+NetworkCapabilities	This class represents the capabilities of a network. 
+NetworkInfo	Describes the status of a network interface. 
+NetworkRequest	Defines a request for a network, made through NetworkRequest.Builder and used to request a network via requestNetwork(NetworkRequest, PendingIntent) or listen for changes via registerNetworkCallback(NetworkRequest, ConnectivityManager.NetworkCallback). 
+NetworkRequest.Builder	Builder used to create NetworkRequest objects. 
+Proxy	A convenience class for accessing the user and default proxy settings. 
+ProxyInfo	This class was deprecated in API level 22. Please use openConnection(), Proxy and friends. The Apache HTTP client is no longer maintained and may be removed in a future release. Please visit this webpage for further details.  
+PskKeyManager	Provider of key material for pre-shared key (PSK) key exchange used in TLS-PSK cipher suites. 
+RouteInfo	Represents a network route. 
+SSLCertificateSocketFactory	SSLSocketFactory implementation with several extra features:
+Timeout specification for SSL handshake operations
+Hostname verification in most cases (see WARNINGs below)
+Optional SSL session caching with SSLSessionCache
+Optionally bypass all SSL certificate checks
+The handshake timeout does not apply to actual TCP socket connection. 
+SSLSessionCache	File-based cache of established SSL sessions. 
+TrafficStats	Class that provides network traffic statistics. 
+Uri	Immutable URI reference. 
+Uri.Builder	Helper class for building or manipulating URI references. 
+UrlQuerySanitizer	Sanitizes the Query portion of a URL. 
+UrlQuerySanitizer.IllegalCharacterValueSanitizer	Sanitize values based on which characters they contain. 
+UrlQuerySanitizer.ParameterValuePair	A simple tuple that holds parameter-value pairs. 
+VpnService	VpnService is a base class for applications to extend and build their own VPN solutions. 
+VpnService.Builder	Helper class to create a VPN interface. 
+Enums
+LocalSocketAddress.Namespace	The namespace that this address exists in. 
+NetworkInfo.DetailedState	The fine-grained state of a network connection. 
+NetworkInfo.State	Coarse-grained network state. 
+Exceptions
+ParseException	Thrown when parsing a URL fails. 
+
+Class UrlEncodedFormEntity
+
+java.lang.Object
+org.apache.http.entity.AbstractHttpEntity
+org.apache.http.entity.StringEntity
+org.apache.http.client.entity.UrlEncodedFormEntity
+All Implemented Interfaces:
+Cloneable, HttpEntity
+
+@NotThreadSafe
+public class UrlEncodedFormEntity
+extends StringEntity
+An entity composed of a list of url-encoded pairs. This is typically useful while sending an HTTP POST request.
+Since:
+4.0
+Field Summary
+
+Fields inherited from class org.apache.http.entity.StringEntity
+content
+Fields inherited from class org.apache.http.entity.AbstractHttpEntity
+chunked, contentEncoding, contentType, OUTPUT_BUFFER_SIZE
+Constructor Summary
+
+Constructors 
+Constructor and Description
+UrlEncodedFormEntity(Iterable<? extends NameValuePair> parameters)
+Constructs a new UrlEncodedFormEntity with the list of parameters with the default encoding of HTTP.DEFAULT_CONTENT_CHARSET
+UrlEncodedFormEntity(Iterable<? extends NameValuePair> parameters, Charset charset)
+Constructs a new UrlEncodedFormEntity with the list of parameters in the specified encoding.
+UrlEncodedFormEntity(List<? extends NameValuePair> parameters)
+Constructs a new UrlEncodedFormEntity with the list of parameters with the default encoding of HTTP.DEFAULT_CONTENT_CHARSET
+UrlEncodedFormEntity(List<? extends NameValuePair> parameters, String charset)
+Constructs a new UrlEncodedFormEntity with the list of parameters in the specified encoding.
+Method Summary
+
+Methods inherited from class org.apache.http.entity.StringEntity
+clone, getContent, getContentLength, isRepeatable, isStreaming, writeTo
+Methods inherited from class org.apache.http.entity.AbstractHttpEntity
+consumeContent, getContentEncoding, getContentType, isChunked, setChunked, setContentEncoding, setContentEncoding, setContentType, setContentType, toString
+Methods inherited from class java.lang.Object
+equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+Constructor Detail
+
+UrlEncodedFormEntity
+public UrlEncodedFormEntity(List<? extends NameValuePair> parameters,
+                    String charset)
+                     throws UnsupportedEncodingException
+Constructs a new UrlEncodedFormEntity with the list of parameters in the specified encoding.
+Parameters:
+parameters - list of name/value pairs
+charset - encoding the name/value pairs be encoded with
+Throws:
+UnsupportedEncodingException - if the encoding isn't supported
+UrlEncodedFormEntity
+public UrlEncodedFormEntity(Iterable<? extends NameValuePair> parameters,
+                    Charset charset)
+Constructs a new UrlEncodedFormEntity with the list of parameters in the specified encoding.
+Parameters:
+parameters - iterable collection of name/value pairs
+charset - encoding the name/value pairs be encoded with
+Since:
+4.2
+UrlEncodedFormEntity
+public UrlEncodedFormEntity(List<? extends NameValuePair> parameters)
+                     throws UnsupportedEncodingException
+Constructs a new UrlEncodedFormEntity with the list of parameters with the default encoding of HTTP.DEFAULT_CONTENT_CHARSET
+Parameters:
+parameters - list of name/value pairs
+Throws:
+UnsupportedEncodingException - if the default encoding isn't supported
+UrlEncodedFormEntity
+public UrlEncodedFormEntity(Iterable<? extends NameValuePair> parameters)
+Constructs a new UrlEncodedFormEntity with the list of parameters with the default encoding of HTTP.DEFAULT_CONTENT_CHARSET
+Parameters:
+parameters - iterable collection of name/value pairs
+Since:
+4.2
+
+OverviewPackageClassUseTreeDeprecatedIndexHelp Prev PackageNext PackageFramesNo FramesAll Classes
+Package org.apache.http.client
+Client HTTP communication APIs.
+See: Description
+
+Interface Summary 
+Interface	Description
+AuthCache	
+Abstract AuthScheme cache.
+AuthenticationHandler	Deprecated
+(4.2) use AuthenticationStrategy
+AuthenticationStrategy	
+/** A handler for determining if an HTTP response represents an authentication challenge that was sent back to the client as a result of authentication failure.
+BackoffManager	
+Represents a controller that dynamically adjusts the size of an available connection pool based on feedback from using the connections.
+ConnectionBackoffStrategy	
+When managing a dynamic number of connections for a given route, this strategy assesses whether a given request execution outcome should result in a backoff signal or not, based on either examining the Throwable that resulted or by examining the resulting response (e.g.
+CookieStore	
+This interface represents an abstract store for Cookie objects.
+CredentialsProvider	
+Abstract credentials provider that maintains a collection of user credentials.
+HttpClient	
+This interface represents only the most basic contract for HTTP request execution.
+HttpRequestRetryHandler	
+A handler for determining if an HttpRequest should be retried after a recoverable exception during execution.
+RedirectHandler	Deprecated
+(4.1) use RedirectStrategy
+RedirectStrategy	
+A strategy for determining if an HTTP request should be redirected to a new location in response to an HTTP response received from the target server.
+RequestDirector	Deprecated
+(4.3) No longer used
+ResponseHandler<T>	
+Handler that encapsulates the process of generating a response object from a HttpResponse.
+ServiceUnavailableRetryStrategy	
+Strategy interface that allows API users to plug in their own logic to control whether or not a retry should automatically be done, how many times it should be retried and so on.
+UserTokenHandler	
+A handler for determining if the given execution context is user specific or not.
+Exception Summary 
+Exception	Description
+CircularRedirectException	
+Signals a circular redirect
+ClientProtocolException	
+Signals an error in the HTTP protocol.
+HttpResponseException	
+Signals a non 2xx HTTP response.
+NonRepeatableRequestException	
+Signals failure to retry the request due to non-repeatable request entity.
+RedirectException	
+Signals violation of HTTP specification caused by an invalid redirect
+Package org.apache.http.client Description
+
+Client HTTP communication APIs.
+
+
+Class HttpProtocolParams
+
+java.lang.Object
+org.apache.http.params.HttpProtocolParams
+All Implemented Interfaces:
+CoreProtocolPNames
+Deprecated. 
+(4.3) use configuration classes provided 'org.apache.http.config' and 'org.apache.http.client.config'
+
+@Deprecated
+public final class HttpProtocolParams
+extends Object
+implements CoreProtocolPNames
+Utility class for accessing protocol parameters in HttpParams.
+Since:
+4.0
+Field Summary
+
+Fields inherited from interface org.apache.http.params.CoreProtocolPNames
+HTTP_CONTENT_CHARSET, HTTP_ELEMENT_CHARSET, HTTP_MALFORMED_INPUT_ACTION, HTTP_UNMAPPABLE_INPUT_ACTION, ORIGIN_SERVER, PROTOCOL_VERSION, STRICT_TRANSFER_ENCODING, USE_EXPECT_CONTINUE, USER_AGENT, WAIT_FOR_CONTINUE
+Method Summary
+
+Methods 
+Modifier and Type	Method and Description
+static String	getContentCharset(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.HTTP_CONTENT_CHARSET parameter.
+static String	getHttpElementCharset(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.HTTP_ELEMENT_CHARSET parameter.
+static CodingErrorAction	getMalformedInputAction(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.HTTP_MALFORMED_INPUT_ACTION parameter.
+static CodingErrorAction	getUnmappableInputAction(HttpParams params)
+Deprecated. 
+Obtains the value of the CoreProtocolPNames.HTTP_UNMAPPABLE_INPUT_ACTION parameter.
+static String	getUserAgent(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.USER_AGENT parameter.
+static ProtocolVersion	getVersion(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.PROTOCOL_VERSION parameter.
+static void	setContentCharset(HttpParams params, String charset)
+Deprecated. 
+Sets value of the CoreProtocolPNames.HTTP_CONTENT_CHARSET parameter.
+static void	setHttpElementCharset(HttpParams params, String charset)
+Deprecated. 
+Sets value of the CoreProtocolPNames.HTTP_ELEMENT_CHARSET parameter.
+static void	setMalformedInputAction(HttpParams params, CodingErrorAction action)
+Deprecated. 
+Sets value of the CoreProtocolPNames.HTTP_MALFORMED_INPUT_ACTION parameter.
+static void	setUnmappableInputAction(HttpParams params, CodingErrorAction action)
+Deprecated. 
+Sets the value of the CoreProtocolPNames.HTTP_UNMAPPABLE_INPUT_ACTION parameter.
+static void	setUseExpectContinue(HttpParams params, boolean b)
+Deprecated. 
+Sets value of the CoreProtocolPNames.USE_EXPECT_CONTINUE parameter.
+static void	setUserAgent(HttpParams params, String useragent)
+Deprecated. 
+Sets value of the CoreProtocolPNames.USER_AGENT parameter.
+static void	setVersion(HttpParams params, ProtocolVersion version)
+Deprecated. 
+Sets value of the CoreProtocolPNames.PROTOCOL_VERSION parameter.
+static boolean	useExpectContinue(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.USE_EXPECT_CONTINUE parameter.
+Methods inherited from class java.lang.Object
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+Method Detail
+
+getHttpElementCharset
+public static String getHttpElementCharset(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.HTTP_ELEMENT_CHARSET parameter. If not set, defaults to US-ASCII.
+Parameters:
+params - HTTP parameters.
+Returns:
+HTTP element charset.
+setHttpElementCharset
+public static void setHttpElementCharset(HttpParams params,
+                         String charset)
+Deprecated. 
+Sets value of the CoreProtocolPNames.HTTP_ELEMENT_CHARSET parameter.
+Parameters:
+params - HTTP parameters.
+charset - HTTP element charset.
+getContentCharset
+public static String getContentCharset(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.HTTP_CONTENT_CHARSET parameter. If not set, defaults to ISO-8859-1.
+Parameters:
+params - HTTP parameters.
+Returns:
+HTTP content charset.
+setContentCharset
+public static void setContentCharset(HttpParams params,
+                     String charset)
+Deprecated. 
+Sets value of the CoreProtocolPNames.HTTP_CONTENT_CHARSET parameter.
+Parameters:
+params - HTTP parameters.
+charset - HTTP content charset.
+getVersion
+public static ProtocolVersion getVersion(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.PROTOCOL_VERSION parameter. If not set, defaults to HttpVersion.HTTP_1_1.
+Parameters:
+params - HTTP parameters.
+Returns:
+HTTP protocol version.
+setVersion
+public static void setVersion(HttpParams params,
+              ProtocolVersion version)
+Deprecated. 
+Sets value of the CoreProtocolPNames.PROTOCOL_VERSION parameter.
+Parameters:
+params - HTTP parameters.
+version - HTTP protocol version.
+getUserAgent
+public static String getUserAgent(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.USER_AGENT parameter. If not set, returns null.
+Parameters:
+params - HTTP parameters.
+Returns:
+User agent string.
+setUserAgent
+public static void setUserAgent(HttpParams params,
+                String useragent)
+Deprecated. 
+Sets value of the CoreProtocolPNames.USER_AGENT parameter.
+Parameters:
+params - HTTP parameters.
+useragent - User agent string.
+useExpectContinue
+public static boolean useExpectContinue(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.USE_EXPECT_CONTINUE parameter. If not set, returns false.
+Parameters:
+params - HTTP parameters.
+Returns:
+User agent string.
+setUseExpectContinue
+public static void setUseExpectContinue(HttpParams params,
+                        boolean b)
+Deprecated. 
+Sets value of the CoreProtocolPNames.USE_EXPECT_CONTINUE parameter.
+Parameters:
+params - HTTP parameters.
+b - expect-continue flag.
+getMalformedInputAction
+public static CodingErrorAction getMalformedInputAction(HttpParams params)
+Deprecated. 
+Obtains value of the CoreProtocolPNames.HTTP_MALFORMED_INPUT_ACTION parameter.
+Parameters:
+params - HTTP parameters.
+Returns:
+Action to perform upon receiving a malformed input
+Since:
+4.2
+setMalformedInputAction
+public static void setMalformedInputAction(HttpParams params,
+                           CodingErrorAction action)
+Deprecated. 
+Sets value of the CoreProtocolPNames.HTTP_MALFORMED_INPUT_ACTION parameter.
+Parameters:
+params - HTTP parameters
+action - action to perform on malformed inputs
+Since:
+4.2
+getUnmappableInputAction
+public static CodingErrorAction getUnmappableInputAction(HttpParams params)
+Deprecated. 
+Obtains the value of the CoreProtocolPNames.HTTP_UNMAPPABLE_INPUT_ACTION parameter.
+Parameters:
+params - HTTP parameters
+Returns:
+Action to perform upon receiving a unmapped input
+Since:
+4.2
+setUnmappableInputAction
+public static void setUnmappableInputAction(HttpParams params,
+                            CodingErrorAction action)
+Deprecated. 
+Sets the value of the CoreProtocolPNames.HTTP_UNMAPPABLE_INPUT_ACTION parameter.
+Parameters:
+params - HTTP parameters
+action - action to perform on un mappable inputs
+
+Enum Summary
+WebParam.Mode	The direction in which the parameter flows
+ 
+Annotation Types Summary
+HandlerChain	Associates the Web Service with an externally defined handler chain.
+Oneway	Indicates that the given @WebMethod has only an input message and no output.
+WebMethod	Customizes a method that is exposed as a Web Service operation.
+WebParam	Customizes the mapping of an individual parameter to a Web Service message part and XML element.
+WebResult	Customizes the mapping of the return value to a WSDL part and XML element.
+WebService	Marks a Java class as implementing a Web Service, or a Java interface as defining a Web Service interface.
+
+Customizes a method that is exposed as a Web Service operation. The associated method must be public and its parameters return value, and exceptions must follow the rules defined in JAX-RPC 1.1, section 5. The method is not required to throw java.rmi.RemoteException.
+
+public @interface WebService
+Marks a Java class as implementing a Web Service, or a Java interface as defining a Web Service interface.
+
+OverviewPackageClassUseTreeDeprecatedIndexHelp Java™ Platform
+Standard Ed. 7 Prev PackageNext PackageFramesNo FramesAll Classes
+Package javax.management.remote
+Interfaces for remote access to JMX MBean servers.
+See: Description
+
+Interface Summary 
+Interface	Description
+JMXAddressable	
+Implemented by objects that can have a JMXServiceURL address.
+JMXAuthenticator	
+Interface to define how remote credentials are converted into a JAAS Subject.
+JMXConnector	
+The client end of a JMX API connector.
+JMXConnectorProvider	
+A provider for creating JMX API connector clients using a given protocol.
+JMXConnectorServerMBean	
+MBean interface for connector servers.
+JMXConnectorServerProvider	
+A provider for creating JMX API connector servers using a given protocol.
+MBeanServerForwarder	
+An object of this class implements the MBeanServer interface and wraps another object that also implements that interface.
+Class Summary 
+Class	Description
+JMXConnectionNotification	
+Notification emitted when a client connection is opened or closed or when notifications are lost.
+JMXConnectorFactory	
+Factory to create JMX API connector clients.
+JMXConnectorServer	
+Superclass of every connector server.
+JMXConnectorServerFactory	
+Factory to create JMX API connector servers.
+JMXPrincipal	
+The identity of a remote client of the JMX Remote API.
+JMXServiceURL	
+The address of a JMX API connector server.
+NotificationResult	
+Result of a query for buffered notifications.
+SubjectDelegationPermission	
+Permission required by an authentication identity to perform operations on behalf of an authorization identity.
+TargetedNotification	
+A (Notification, Listener ID) pair.
+Exception Summary 
+Exception	Description
+JMXProviderException	
+Exception thrown by JMXConnectorFactory and JMXConnectorServerFactory when a provider exists for the required protocol but cannot be used for some reason.
+JMXServerErrorException	
+Exception thrown as the result of a remote MBeanServer method invocation when an Error is thrown while processing the invocation in the remote MBean server.
+Package javax.management.remote Description
+
+Interfaces for remote access to JMX MBean servers. This package defines the essential interfaces for making a JMX MBean server manageable remotely. The specification of this functionality is completed by Part III of the JMX Specification, version 1.4 PDF document.
+
+The JMX specification defines the notion of connectors. A connector is attached to a JMX API MBean server and makes it accessible to remote Java clients. The client end of a connector exports essentially the same interface as the MBean server, specifically the MBeanServerConnection interface.
+
+A connector makes an MBean server remotely accessible through a given protocol. The JMX Remote API allows the use of different type of connectors:
+
+The JMX Remote API defines a standard connector, the RMI Connector, which provides remote access to an MBeanServer through RMI.
+The JMX Remote API also defines an optional connector called JMXMP Connector implementing the JMX Message Protocol (JMXMP). As it is optional, it is not part of this bundle (see note below).
+User-defined connector protocols are also possible using the JMXConnectorFactory and, optionally, the Generic Connector (not part of this bundle, see note below).
+Note: the optional packages implementing the optional part of the JMX Remote API are not included in the Java SE Platform but are available from the JMX Remote API Reference Implementation.
+
+Connector addresses
+
+Typically, a connector server has an address, represented by the class JMXServiceURL. An address for the RMI Connector can look like this:
+
+      service:jmx:rmi:///jndi/rmi://myhost:1099/myname
+      
+In this JMXServiceURL, the first rmi: specifies the RMI connector, while the second rmi: specifies the RMI registry into which the RMI connector server has stored its stub.
+
+The example above shows only one form of address. An address for the RMI Connector can take several forms, as detailed in the documentation for the package javax.management.remote.rmi.
+
+Creating a connector server
+
+A connector server is created by constructing an instance of a subclass of JMXConnectorServer. Usually, this instance is created using the method JMXConnectorServerFactory.newJMXConnectorServer.
+
+Typically, a connector server is associated with an MBean server either by registering it in that MBean server, or by supplying the MBean server as a parameter when creating the connector server.
+
+Creating a connector client
+
+A connector client is usually created by supplying the JMXServiceURL of the connector server to connect to to the JMXConnectorFactory.connect method.
+
+For more specialized uses, a connector client can be created by directly instantiating a class that implements the JMXConnector interface, for example the class RMIConnector.
+
+Additional client or server parameters
+
+When creating a connector client or server, it is possible to supply an object of type Map that defines additional parameters. Each entry in this Map has a key that is a string and an associated value whose type is appropriate for that key. The standard keys defined by the JMX Remote API all begin with the string "jmx.remote.". The document JMX Remote API lists these standard keys.
+
+Connection identifiers
+
+Every connection opened by a connector server has a string identifier, called its connection id. This identifier appears in the JMXConnectionNotification events emitted by the connector server, in the list returned by getConnectionIds(), and in the value returned by the client's getConnectionId() method.
+
+As an example, a connection ID can look something like this:
+
+rmi://192.18.1.9 username 1
+      
+The formal grammar for connection ids that follow this convention is as follows (using the grammar notation from section 2.4 of The Java™ Language Specification):
+
+ConnectionId:
+    Protocol : ClientAddressopt Space ClientIdopt Space ArbitraryText
+
+ClientAddress:
+    // HostAddress ClientPortopt
+
+ClientPort
+    : HostPort
+      
+The Protocol is a protocol that would be recognized by JMXConnectorFactory.
+
+The ClientAddress is the address and port of the connecting client, if these can be determined, otherwise nothing. The HostAddress is the Internet address of the host that the client is connecting from, in numeric or DNS form. Numeric IPv6 addresses are enclosed in square brackets []. The HostPort is the decimal port number that the client is connecting from.
+
+The ClientId is the identity of the client entity, typically a string returned by JMXPrincipal.getName(). This string must not contain spaces.
+
+The ArbitraryText is any additional text that the connector server adds when creating the client id. At a minimum, it must be enough to distinguish this connection ID from the ID of any other connection currently opened by this connector server.
+
+Since:
+1.5
+See Also:
+Java Platform documentation on JMX technology, in particular the JMX Specification, version 1.4
+OverviewPackageClassUseTreeDeprecatedIndexHelp Java™ Platform
+Standard Ed. 7 Prev PackageNext PackageFramesNo FramesAll Classes
+Submit a bug or feature 
+For further API reference and developer documentation, see Java SE Documentation. That documentation contains more detailed, developer-targeted descriptions, with conceptual overviews, definitions of terms, workarounds, and working code examples.
+Copyright © 1993, 2014, Oracle and/or its affiliates. All rights reserved.

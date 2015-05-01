@@ -1,0 +1,12 @@
+BackgroundColor<<Network/Web>> SteelBlue 
+BackgroundColor<<Persistence>> Azure 
+BackgroundColor<<User Interface>> Thistle 
+BackgroundColor<<Data Model>> CadetBlue  
+BackgroundColor<<Security/Validator>> Cyan 
+BackgroundColor<<I/O>> YellowGreen 
+BackgroundColor<<Concurrency>> DarkKhaki 
+BackgroundColor<<Exception Handling>> DarkSeaGreen 
+BackgroundColor<<Transaction Handling>> Violet 
+BackgroundColor<<Messaging>> Lavender 
+BackgroundColor<<Event/Event Handling>> LawnGreen 
+BackgroundColor<<Parser/Interpreter>> MediumSlateBlue 

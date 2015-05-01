@@ -1,0 +1,191 @@
+
+Java Message Service
+From Wikipedia, the free encyclopedia
+The Java Message Service (JMS) API is a Java Message Oriented Middleware (MOM) API[1] for sending messages between two or more clients. JMS is a part of the Java Platform, Enterprise Edition, and is defined by a specification developed under the Java Community Process as JSR 914.[2] It is a messaging standard that allows application components based on the Java Enterprise Edition (Java EE) to create, send, receive, and read messages. It allows the communication between different components of a distributed application to be loosely coupled, reliable, and asynchronous.[3]
+
+Contents  [hide] 
+1 General idea of messaging
+1.1 Version history
+2 Elements
+3 Models
+3.1 Point-to-point model
+3.2 Publish/subscribe model
+4 URI scheme
+5 Provider implementations
+6 See also
+7 References
+8 Further reading
+9 External links
+General idea of messaging[edit]
+See also: Message-oriented middleware and Message passing
+Messaging is a form of loosely coupled distributed communication, where in this context the term 'communication' can be understood as an exchange of messages between software components. Message-oriented technologies attempt to relax tightly coupled communication (such as TCP network sockets, CORBA or RMI) by the introduction of an intermediary component. This approach allows software components to communicate 'indirectly' with each other. Benefits of this include message senders not needing to have precise knowledge of their receivers.
+
+The advantages of messaging include the ability to integrate heterogeneous platforms, reduce system bottlenecks, increase scalability, and respond more quickly to change.[4]
+
+Version history[edit]
+JMS 1.0.2b (June 25, 2001)
+JMS 1.1 (April 12, 2002)
+JMS 2.0 (May 21, 2013)
+JMS 2.0 is maintained under the Java Community Process as JSR 343.
+
+Elements[edit]
+The following are JMS elements:[3]
+
+JMS provider
+An implementation of the JMS interface for a Message Oriented Middleware (MOM). Providers are implemented as either a Java JMS implementation or an adapter to a non-Java MOM.
+JMS client
+An application or process that produces and/or receives messages.
+JMS producer/publisher
+A JMS client that creates and sends messages.
+JMS consumer/subscriber
+A JMS client that receives messages.
+JMS message
+An object that contains the data being transferred between JMS clients.
+JMS queue
+A staging area that contains messages that have been sent and are waiting to be read (by only one consumer). Contrary to what the name queue suggests, messages don't have to be received in the order in which they were sent. A JMS queue only guarantees that each message is processed only once.
+JMS topic
+A distribution mechanism for publishing messages that are delivered to multiple subscribers.
+Models[edit]
+The JMS API supports two models:
+
+Point-to-point
+Publish and subscribe
+Point-to-point model[edit]
+In point-to-point messaging system, messages are routed to an individual consumer which maintains a queue of "incoming" messages. This messaging type is built on the concept of message queues, senders, and receivers. Each message is addressed to a specific queue, and the receiving clients extract messages from the queues established to hold their messages. While any number of producers can send messages to the queue, each message is guaranteed to be delivered, and consumed by one consumer. Queues retain all messages sent to them until the messages are consumed or until the messages expire. If no consumers are registered to consume the messages, the queue holds them until a consumer registers to consume them.
+
+Publish/subscribe model[edit]
+The publish/subscribe model supports publishing messages to a particular message topic. Subscribers may register interest in receiving messages on a particular message topic. In this model, neither the publisher nor the subscriber knows about each other. A good analogy for this is an anonymous bulletin board
+
+Zero or more consumers will receive the message.
+There is a timing dependency between publishers and subscribers. The publisher has to create a message topic for clients to subscribe. The subscriber has to remain continuously active to receive messages, unless it has established a durable subscription. In that case, messages published while the subscriber is not connected will be redistributed whenever it reconnects.
+JMS provides a way of separating the application from the transport layer of providing data. The same Java classes can be used to communicate with different JMS providers by using the Java Naming and Directory Interface (JNDI) information for the desired provider. The classes first use a connection factory to connect to the queue or topic, and then use populate and send or publish the messages. On the receiving side, the clients then receive or subscribe to the messages.
+
+URI scheme[edit]
+RFC 6167 defines a jms: URI scheme for the Java Message Service.
+
+Provider implementations[edit]
+To use JMS, one must have a JMS provider that can manage the sessions, queues and topics. Starting from Java EE version 1.4, JMS provider has to be contained in all Java EE application servers. This can be implemented using the message inflow management of the Java EE Connector Architecture, which was first made available in that version.
+
+The following is a list of JMS providers:
+
+Apache ActiveMQ
+Apache Qpid, using AMQP[5]
+Oracle Weblogic (part of the Fusion Middleware suite) and Oracle AQ from Oracle
+EMS from TIBCO
+FFMQ, GNU LGPL licensed
+JBoss Messaging and HornetQ from JBoss
+JORAM, from the OW2 Consortium
+Open Message Queue, from Oracle
+OpenJMS, from The OpenJMS Group
+Solace JMS from Solace Systems
+SAP NetWeaver Process Integration
+SonicMQ from Aurea Software
+SwiftMQ
+Tervela
+Ultra Messaging from 29 West (acquired by Informatica)
+webMethods from Software AG
+WebSphere Application Server from IBM, which provides an inbuilt default messaging provider known as the Service Integration Bus (SIBus), or which can connect to WebSphere MQ as a JMS provider[6]
+WebSphere MQ (formerly MQSeries) from IBM
+FioranoMQ
+A historical comparison matrix of JMS providers from 2005 is available at http://www.theserverside.com/reviews/matrix.tss
+
+See also[edit]
+Message Driven Beans (MDB)
+Message queue - the concept underlying JMS
+Service Oriented Architecture
+Event-driven SOA
+Messaging technologies that do not implement the JMS API include:
+Advanced Message Queuing Protocol (AMQP) – standardized message queue protocol with multiple independent implementations
+Amazon Simple Queue Service - commoditized messaging service provided by Amazon.com for a per-use fee. It allows users to rent access to messaging without having to maintain their own server .
+Data Distribution Service (DDS) - An Object Management Group (OMG) standardized real-time messaging system with over ten implementations that have demonstrated interoperability between publishers and subscribers
+Microsoft Message Queuing - similar technology, implemented for .NET Framework
+References[edit]
+Jump up ^ Curry, Edward. 2004. "Message-Oriented Middleware". In Middleware for Communications, ed. Qusay H Mahmoud, 1-28. Chichester, England: John Wiley and Sons. doi:10.1002/0470862084.ch1. ISBN 978-0-470-86206-3
+Jump up ^ JSR914 - JMS Spec
+^ Jump up to: a b Java Message Service (JMS)
+Jump up ^ Richards et al, pages 3-5
+Jump up ^ "Apache Qpid™: Open Source AMQP Messaging".
+Jump up ^ Wallis, Graham. "Choosing a messaging system: WebSphere MQ vs. the WebSphere Application Server Service Integration Bus". IBM developerWorks.
+Further reading[edit]
+Richards, Mark; Richard Monson-Haefel; David A. Chappell (2009). Java Message Service, Second Edition. O'Reilly. ISBN 978-0-596-52204-9.
+External links[edit]
+Oracle's JMS Overview
+oracle docs
+Oracle's JMS Tutorial
+javax.jms API Javadoc documentation
+Generic Resource Adapter for JMS
+Software AG webMethods Broker[dead link]
+TIBCO Enterprise Message Service
+Review Open Source JMS implementations
+Open Source JMS Implementations
+FioranoMQ JMS Performance Comparison
+Solace Releases World’s Fastest JMS Broker
+default messaging (JMS) in WebSphere Application Server
+JMS in WebSphere MQ
+JMS 2.0 - JSR 343
+[hide] v t e
+Java EE 7 specifications
+Web Application	
+Servlet JavaServer Pages Expression Language JSTL JavaServer Faces WebSocket JSON Processing
+Enterprise Application	
+CDI Dependency Injection Bean Validation Enterprise JavaBeans JPA JMS JTA JavaMail Interceptors JCA Common Annotations Batch Applications Concurrency Utilities
+Web Services	
+JAX-RS Enterprise Web Services JAX-WS Web Services Metadata Java API for XML Messaging JAXR
+Management and Security	
+Java Authentication SPI Java Authorization SPI J2EE Management Debugging for Other Languages
+Related Specs in Java SE	
+JAXB JAXP JDBC JMX JavaBeans Activation Framework Streaming API for XML
+Categories: Java enterprise platformJava specification requestsMessage-oriented middlewareSoftware architecture
+Navigation menu
+Create accountLog inArticleTalkReadEditView history
+
+Main page
+Contents
+Featured content
+Current events
+Random article
+Donate to Wikipedia
+Wikipedia store
+Interaction
+Help
+About Wikipedia
+Community portal
+Recent changes
+Contact page
+Tools
+What links here
+Related changes
+Upload file
+Special pages
+Permanent link
+Page information
+Wikidata item
+Cite this page
+Print/export
+Create a book
+Download as PDF
+Printable version
+Languages
+Català
+Čeština
+Dansk
+Deutsch
+Español
+Français
+한국어
+Italiano
+Lietuvių
+Magyar
+Nederlands
+日本語
+Polski
+Português
+Română
+Русский
+Svenska
+Українська
+中文
+Edit links
+This page was last modified on 2 April 2015, at 08:10.
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policyAbout WikipediaDisclaimersContact WikipediaDevelopersMobile viewWikimedia Foundation Powered by MediaWiki

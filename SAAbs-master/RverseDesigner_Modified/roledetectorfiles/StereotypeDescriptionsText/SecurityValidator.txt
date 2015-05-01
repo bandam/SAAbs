@@ -1,0 +1,441 @@
+Package java.security
+Provides the classes and interfaces for the security framework.
+See: Description
+
+Interface Summary 
+Interface	Description
+AlgorithmConstraints	
+This interface specifies constraints for cryptographic algorithms, keys (key sizes), and other algorithm parameters.
+Certificate	Deprecated
+A new certificate handling package is created in the Java platform.
+DomainCombiner	
+A DomainCombiner provides a means to dynamically update the ProtectionDomains associated with the current AccessControlContext.
+Guard	
+This interface represents a guard, which is an object that is used to protect access to another object.
+Key	
+The Key interface is the top-level interface for all keys.
+KeyStore.Entry	
+A marker interface for KeyStore entry types.
+KeyStore.LoadStoreParameter	
+A marker interface for KeyStore load and store parameters.
+KeyStore.ProtectionParameter	
+A marker interface for keystore protection parameters.
+Policy.Parameters	
+This represents a marker interface for Policy parameters.
+Principal	
+This interface represents the abstract notion of a principal, which can be used to represent any entity, such as an individual, a corporation, and a login id.
+PrivateKey	
+A private key.
+PrivilegedAction<T>	
+A computation to be performed with privileges enabled.
+PrivilegedExceptionAction<T>	
+A computation to be performed with privileges enabled, that throws one or more checked exceptions.
+PublicKey	
+A public key.
+Class Summary 
+Class	Description
+AccessControlContext	
+An AccessControlContext is used to make system resource access decisions based on the context it encapsulates.
+AccessController	
+The AccessController class is used for access control operations and decisions.
+AlgorithmParameterGenerator	
+The AlgorithmParameterGenerator class is used to generate a set of parameters to be used with a certain algorithm.
+AlgorithmParameterGeneratorSpi	
+This class defines the Service Provider Interface (SPI) for the AlgorithmParameterGenerator class, which is used to generate a set of parameters to be used with a certain algorithm.
+AlgorithmParameters	
+This class is used as an opaque representation of cryptographic parameters.
+AlgorithmParametersSpi	
+This class defines the Service Provider Interface (SPI) for the AlgorithmParameters class, which is used to manage algorithm parameters.
+AllPermission	
+The AllPermission is a permission that implies all other permissions.
+AuthProvider	
+This class defines login and logout methods for a provider.
+BasicPermission	
+The BasicPermission class extends the Permission class, and can be used as the base class for permissions that want to follow the same naming convention as BasicPermission.
+CodeSigner	
+This class encapsulates information about a code signer.
+CodeSource	
+This class extends the concept of a codebase to encapsulate not only the location (URL) but also the certificate chains that were used to verify signed code originating from that location.
+DigestInputStream	
+A transparent stream that updates the associated message digest using the bits going through the stream.
+DigestOutputStream	
+A transparent stream that updates the associated message digest using the bits going through the stream.
+GuardedObject	
+A GuardedObject is an object that is used to protect access to another object.
+Identity	Deprecated
+This class is no longer used.
+IdentityScope	Deprecated
+This class is no longer used.
+KeyFactory	
+Key factories are used to convert keys (opaque cryptographic keys of type Key) into key specifications (transparent representations of the underlying key material), and vice versa.
+KeyFactorySpi	
+This class defines the Service Provider Interface (SPI) for the KeyFactory class.
+KeyPair	
+This class is a simple holder for a key pair (a public key and a private key).
+KeyPairGenerator	
+The KeyPairGenerator class is used to generate pairs of public and private keys.
+KeyPairGeneratorSpi	
+This class defines the Service Provider Interface (SPI) for the KeyPairGenerator class, which is used to generate pairs of public and private keys.
+KeyRep	
+Standardized representation for serialized Key objects.
+KeyStore	
+This class represents a storage facility for cryptographic keys and certificates.
+KeyStore.Builder	
+A description of a to-be-instantiated KeyStore object.
+KeyStore.CallbackHandlerProtection	
+A ProtectionParameter encapsulating a CallbackHandler.
+KeyStore.PasswordProtection	
+A password-based implementation of ProtectionParameter.
+KeyStore.PrivateKeyEntry	
+A KeyStore entry that holds a PrivateKey and corresponding certificate chain.
+KeyStore.SecretKeyEntry	
+A KeyStore entry that holds a SecretKey.
+KeyStore.TrustedCertificateEntry	
+A KeyStore entry that holds a trusted Certificate.
+KeyStoreSpi	
+This class defines the Service Provider Interface (SPI) for the KeyStore class.
+MessageDigest	
+This MessageDigest class provides applications the functionality of a message digest algorithm, such as SHA-1 or SHA-256.
+MessageDigestSpi	
+This class defines the Service Provider Interface (SPI) for the MessageDigest class, which provides the functionality of a message digest algorithm, such as MD5 or SHA.
+Permission	
+Abstract class for representing access to a system resource.
+PermissionCollection	
+Abstract class representing a collection of Permission objects.
+Permissions	
+This class represents a heterogeneous collection of Permissions.
+Policy	
+A Policy object is responsible for determining whether code executing in the Java runtime environment has permission to perform a security-sensitive operation.
+PolicySpi	
+This class defines the Service Provider Interface (SPI) for the Policy class.
+ProtectionDomain	
+This ProtectionDomain class encapsulates the characteristics of a domain, which encloses a set of classes whose instances are granted a set of permissions when being executed on behalf of a given set of Principals.
+Provider	
+This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security.
+Provider.Service	
+The description of a security service.
+SecureClassLoader	
+This class extends ClassLoader with additional support for defining classes with an associated code source and permissions which are retrieved by the system policy by default.
+SecureRandom	
+This class provides a cryptographically strong random number generator (RNG).
+SecureRandomSpi	
+This class defines the Service Provider Interface (SPI) for the SecureRandom class.
+Security	
+This class centralizes all security properties and common security methods.
+SecurityPermission	
+This class is for security permissions.
+Signature	
+The Signature class is used to provide applications the functionality of a digital signature algorithm.
+SignatureSpi	
+This class defines the Service Provider Interface (SPI) for the Signature class, which is used to provide the functionality of a digital signature algorithm.
+SignedObject	
+SignedObject is a class for the purpose of creating authentic runtime objects whose integrity cannot be compromised without being detected.
+Signer	Deprecated
+This class is no longer used.
+Timestamp	
+This class encapsulates information about a signed timestamp.
+UnresolvedPermission	
+The UnresolvedPermission class is used to hold Permissions that were "unresolved" when the Policy was initialized.
+URIParameter	
+A parameter that contains a URI pointing to data intended for a PolicySpi or ConfigurationSpi implementation.
+Enum Summary 
+Enum	Description
+CryptoPrimitive	
+An enumeration of cryptographic primitives.
+KeyRep.Type	
+Key type.
+Exception Summary 
+Exception	Description
+AccessControlException	
+This exception is thrown by the AccessController to indicate that a requested access (to a critical system resource such as the file system or the network) is denied.
+DigestException	
+This is the generic Message Digest exception.
+GeneralSecurityException	
+The GeneralSecurityException class is a generic security exception class that provides type safety for all the security-related exception classes that extend from it.
+InvalidAlgorithmParameterException	
+This is the exception for invalid or inappropriate algorithm parameters.
+InvalidKeyException	
+This is the exception for invalid Keys (invalid encoding, wrong length, uninitialized, etc).
+InvalidParameterException	
+This exception, designed for use by the JCA/JCE engine classes, is thrown when an invalid parameter is passed to a method.
+KeyException	
+This is the basic key exception.
+KeyManagementException	
+This is the general key management exception for all operations dealing with key management.
+KeyStoreException	
+This is the generic KeyStore exception.
+NoSuchAlgorithmException	
+This exception is thrown when a particular cryptographic algorithm is requested but is not available in the environment.
+NoSuchProviderException	
+This exception is thrown when a particular security provider is requested but is not available in the environment.
+PrivilegedActionException	
+This exception is thrown by doPrivileged(PrivilegedExceptionAction) and doPrivileged(PrivilegedExceptionAction, AccessControlContext context) to indicate that the action being performed threw a checked exception.
+ProviderException	
+A runtime exception for Provider exceptions (such as misconfiguration errors or unrecoverable internal errors), which may be subclassed by Providers to throw specialized, provider-specific runtime errors.
+SignatureException	
+This is the generic Signature exception.
+UnrecoverableEntryException	
+This exception is thrown if an entry in the keystore cannot be recovered.
+UnrecoverableKeyException	
+This exception is thrown if a key in the keystore cannot be recovered.
+Package java.security Description
+
+Provides the classes and interfaces for the security framework. This includes classes that implement an easily configurable, fine-grained access control security architecture. This package also supports the generation and storage of cryptographic public key pairs, as well as a number of exportable cryptographic operations including those for message digest and signature generation. Finally, this package provides classes that support signed/guarded objects and secure random number generation. Many of the classes provided in this package (the cryptographic and secure random number generator classes in particular) are provider-based. The class itself defines a programming interface to which applications may write. The implementations themselves may then be written by independent third-party vendors and plugged in seamlessly as needed. Therefore application developers may take advantage of any number of provider-based implementations without having to add or rewrite code.
+Package Specification
+
+JavaTM Cryptography Architecture (JCA) Reference Guide
+PKCS #8: Private-Key Information Syntax Standard, Version 1.2, November 1993
+JavaTM Cryptography Architecture Standard Algorithm Name Documentation
+Related Documentation
+
+For further documentation, please see:
+JavaTM SE Platform Security Architecture
+How to Implement a Provider in the JavaTM Cryptography Architecture
+Default Policy Implementation and Policy File Syntax
+Permissions in the JavaTM SE Development Kit (JDK)
+Summary of Tools for JavaTM Platform Security
+keytool ( for Solaris/Linux) ( for Windows)
+jarsigner ( for Solaris/Linux) ( for Windows)
+Since:
+
+Interface Summary 
+Interface	Description
+CommandObject	
+JavaBeans components that are Activation Framework aware implement this interface to find out which command verb they're being asked to perform, and to obtain the DataHandler representing the data they should operate on.
+DataContentHandler	
+The DataContentHandler interface is implemented by objects that can be used to extend the capabilities of the DataHandler's implementation of the Transferable interface.
+DataContentHandlerFactory	
+This interface defines a factory for DataContentHandlers.
+DataSource	
+The DataSource interface provides the JavaBeans Activation Framework with an abstraction of an arbitrary collection of data.
+Class Summary 
+Class	Description
+ActivationDataFlavor	
+The ActivationDataFlavor class is a special subclass of java.awt.datatransfer.DataFlavor.
+CommandInfo	
+The CommandInfo class is used by CommandMap implementations to describe the results of command requests.
+CommandMap	
+The CommandMap class provides an interface to a registry of command objects available in the system.
+DataHandler	
+The DataHandler class provides a consistent interface to data available in many different sources and formats.
+FileDataSource	
+The FileDataSource class implements a simple DataSource object that encapsulates a file.
+FileTypeMap	
+The FileTypeMap is an abstract class that provides a data typing interface for files.
+MailcapCommandMap	
+MailcapCommandMap extends the CommandMap abstract class.
+MimeType	
+A Multipurpose Internet Mail Extension (MIME) type, as defined in RFC 2045 and 2046.
+MimeTypeParameterList	
+A parameter list of a MimeType as defined in RFC 2045 and 2046.
+MimetypesFileTypeMap	
+This class extends FileTypeMap and provides data typing of files via their file extension.
+URLDataSource	
+The URLDataSource class provides an object that wraps a URL object in a DataSource interface.
+Exception Summary 
+Exception	Description
+MimeTypeParseException	
+A class to encapsulate MimeType parsing related exceptions.
+UnsupportedDataTypeException	
+Signals that the requested operation does not support the requested data type.
+
+
+Class Summary 
+Class	Description
+Cipher	
+This class provides the functionality of a cryptographic cipher for encryption and decryption.
+CipherInputStream	
+A CipherInputStream is composed of an InputStream and a Cipher so that read() methods return data that are read in from the underlying InputStream but have been additionally processed by the Cipher.
+CipherOutputStream	
+A CipherOutputStream is composed of an OutputStream and a Cipher so that write() methods first process the data before writing them out to the underlying OutputStream.
+CipherSpi	
+This class defines the Service Provider Interface (SPI) for the Cipher class.
+EncryptedPrivateKeyInfo	
+This class implements the EncryptedPrivateKeyInfo type as defined in PKCS #8.
+ExemptionMechanism	
+This class provides the functionality of an exemption mechanism, examples of which are key recovery, key weakening, and key escrow.
+ExemptionMechanismSpi	
+This class defines the Service Provider Interface (SPI) for the ExemptionMechanism class.
+KeyAgreement	
+This class provides the functionality of a key agreement (or key exchange) protocol.
+KeyAgreementSpi	
+This class defines the Service Provider Interface (SPI) for the KeyAgreement class.
+KeyGenerator	
+This class provides the functionality of a secret (symmetric) key generator.
+KeyGeneratorSpi	
+This class defines the Service Provider Interface (SPI) for the KeyGenerator class.
+Mac	
+This class provides the functionality of a "Message Authentication Code" (MAC) algorithm.
+MacSpi	
+This class defines the Service Provider Interface (SPI) for the Mac class.
+NullCipher	
+The NullCipher class is a class that provides an "identity cipher" -- one that does not tranform the plaintext.
+SealedObject	
+This class enables a programmer to create an object and protect its confidentiality with a cryptographic algorithm.
+SecretKeyFactory	
+This class represents a factory for secret keys.
+SecretKeyFactorySpi	
+This class defines the Service Provider Interface (SPI) for the SecretKeyFactory class.
+Exception Summary 
+Exception	Description
+AEADBadTagException	
+This exception is thrown when a Cipher operating in an AEAD mode (such as GCM/CCM) is unable to verify the supplied authentication tag.
+BadPaddingException	
+This exception is thrown when a particular padding mechanism is expected for the input data but the data is not padded properly.
+ExemptionMechanismException	
+This is the generic ExemptionMechanism exception.
+IllegalBlockSizeException	
+This exception is thrown when the length of data provided to a block cipher is incorrect, i.e., does not match the block size of the cipher.
+NoSuchPaddingException	
+This exception is thrown when a particular padding mechanism is requested but is not available in the environment.
+ShortBufferException	
+This exception is thrown when an output buffer provided by the user is too short to hold the operation result.
+Package javax.crypto Description
+
+Provides the classes and interfaces for cryptographic operations. The cryptographic operations defined in this package include encryption, key generation and key agreement, and Message Authentication Code (MAC) generation.
+Support for encryption includes symmetric, asymmetric, block, and stream ciphers. This package also supports secure streams and sealed objects.
+
+Many of the classes provided in this package are provider-based. The class itself defines a programming interface to which applications may write. The implementations themselves may then be written by independent third-party vendors and plugged in seamlessly as needed. Therefore application developers may take advantage of any number of provider-based implementations without having to add or rewrite code.
+
+This package provides a framework for authentication and authorization.
+See: Description
+
+Interface Summary 
+Interface	Description
+Destroyable	
+Objects such as credentials may optionally implement this interface to provide the capability to destroy its contents.
+Refreshable	
+Objects such as credentials may optionally implement this interface to provide the capability to refresh itself.
+Class Summary 
+Class	Description
+AuthPermission	
+This class is for authentication permissions.
+Policy	Deprecated
+as of JDK version 1.4 -- Replaced by java.security.Policy.
+PrivateCredentialPermission	
+This class is used to protect access to private Credentials belonging to a particular Subject.
+Subject	
+A Subject represents a grouping of related information for a single entity, such as a person.
+SubjectDomainCombiner	
+A SubjectDomainCombiner updates ProtectionDomains with Principals from the Subject associated with this SubjectDomainCombiner.
+Exception Summary 
+Exception	Description
+DestroyFailedException	
+Signals that a destroy operation failed.
+RefreshFailedException	
+Signals that a refresh operation failed.
+Package javax.security.auth Description
+
+This package provides a framework for authentication and authorization. The framework allows authentication to be performed in pluggable fashion. Different authentication modules can be plugged under an application without requiring modifications to the application itself. The authorization component allows specification of access controls based on code location, code signers and code executors (Subjects).
+Since:
+JDK1.4
+
+
+Interface Summary 
+Interface	Description
+Configuration.Parameters	
+This represents a marker interface for Configuration parameters.
+Class Summary 
+Class	Description
+AppConfigurationEntry	
+This class represents a single LoginModule entry configured for the application specified in the getAppConfigurationEntry(String appName) method in the Configuration class.
+AppConfigurationEntry.LoginModuleControlFlag	
+This class represents whether or not a LoginModule is REQUIRED, REQUISITE, SUFFICIENT or OPTIONAL.
+Configuration	
+A Configuration object is responsible for specifying which LoginModules should be used for a particular application, and in what order the LoginModules should be invoked.
+ConfigurationSpi	
+This class defines the Service Provider Interface (SPI) for the Configuration class.
+LoginContext	
+The LoginContext class describes the basic methods used to authenticate Subjects and provides a way to develop an application independent of the underlying authentication technology.
+Exception Summary 
+Exception	Description
+AccountException	
+A generic account exception.
+AccountExpiredException	
+Signals that a user account has expired.
+AccountLockedException	
+Signals that an account was locked.
+AccountNotFoundException	
+Signals that an account was not found.
+CredentialException	
+A generic credential exception.
+CredentialExpiredException	
+Signals that a Credential has expired.
+CredentialNotFoundException	
+Signals that a credential was not found.
+FailedLoginException	
+Signals that user authentication failed.
+LoginException	
+This is the basic login exception.
+
+
+Class Summary 
+Class	Description
+Certificate	
+Abstract class for managing a variety of identity certificates.
+X509Certificate	
+Abstract class for X.509 v1 certificates.
+Exception Summary 
+Exception	Description
+CertificateEncodingException	
+Certificate Encoding Exception.
+CertificateException	
+This exception indicates one of a variety of certificate problems.
+CertificateExpiredException	
+Certificate Expired Exception.
+CertificateNotYetValidException	
+Certificate is not yet valid exception.
+CertificateParsingException	
+Certificate Parsing Exception.
+Package javax.security.cert Description
+
+Provides classes for public key certificates.
+These classes include a simplified version of the java.security.cert package. These classes were developed as part of the Java Secure Socket Extension (JSSE). When JSSE was added to the J2SE version 1.4, this package was added for backward-compatibility reasons only.
+
+New applications should not use this package, but rather java.security.cert.
+Since:
+
+
+Interface Summary
+Configuration<T extends Configuration<T>>	Receives configuration information, selects the appropriate Bean Validation provider and builds the appropriate ValidatorFactory.
+ConstraintValidator<A extends Annotation,T>	Defines the logic to validate a given constraint A for a given object type T.
+ConstraintValidatorContext	Provide contextual data and operation when applying a given constraint validator.
+ConstraintValidatorContext.ConstraintViolationBuilder	ConstraintViolation builder allowing to optionally associate the violation report to a sub path.
+ConstraintValidatorContext.ConstraintViolationBuilder.NodeBuilderCustomizableContext	Represent a node whose context is configurable (ie index, key and isInIterable)
+ConstraintValidatorContext.ConstraintViolationBuilder.NodeBuilderDefinedContext	Represent a node whose context is known (ie index, key and isInIterable)
+ConstraintValidatorContext.ConstraintViolationBuilder.NodeContextBuilder	Represent refinement choices for a node which is in an Iterator or Map.
+ConstraintValidatorFactory	Instantiate a ConstraintValidator instance based off its class.
+ConstraintViolation<T>	Describe a constraint violation.
+MessageInterpolator	Interpolate a given constraint violation message.
+MessageInterpolator.Context	Information related to the interpolation context
+Path	Represent the navigation path from an object to another in an object graph.
+Path.Node	Represents an element of a navigation path
+Payload	Payload type that can be attached to a given constraint declaration.
+TraversableResolver	Contract determining if a property can be accessed by the Bean Validation provider.
+ValidationProviderResolver	Determines the list of Bean Validation providers available in the runtime environment
+Bean Validation providers are identified by the presence of META-INF/services/javax.validation.spi.ValidationProvider files following the Service Provider pattern described here
+
+Each META-INF/services/javax.validation.spi.ValidationProvider file contains the list of ValidationProvider implementations each of them representing a provider.
+
+Validator	Validate bean instances.
+ValidatorContext	Represents the context that is used to create Validator instances.
+ValidatorFactory	Factory returning initialized Validator instances.
+ 
+Class Summary
+Validation	This class is the entry point for Bean Validation.
+ 
+Exception Summary
+ConstraintDeclarationException	Exception raised if a constraint declaration is not legal
+ConstraintDefinitionException	Exception raised if a constraint definition is not legal
+ConstraintViolationException	Reports the result of constraint violations `
+GroupDefinitionException	Exception raised if a group definition is not legal
+UnexpectedTypeException	Exception raised in the case that the constraint validator resolution cannot determine a suitable validator for a given type.
+ValidationException	Base exception of all "unexpected" problems.
+ 
+Annotation Types Summary
+Constraint	Link between a constraint annotation and its constraint validation implementations.
+GroupSequence	Define a group sequence The interface hosting @GroupSequence is representing the group sequence.
+OverridesAttribute	Mark an attribute as overriding the attribute of a composing constraint.
+OverridesAttribute.List	Defines several @OverridesAttribute annotations on the same element
+ReportAsSingleViolation	A constraint annotation hosting this annotation will return the composed annotation error report if any of the composing annotations fail.
+Valid	Mark an association as cascaded.
