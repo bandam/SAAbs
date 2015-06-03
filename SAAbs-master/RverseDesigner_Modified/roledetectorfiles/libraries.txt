@@ -62,8 +62,6 @@ java.util.concurrent.atomic,Concurrency
 java.util.concurrent.locks,Concurrency
 java.util.function,Logic
 java.util.jar,application packaging
-java.util.logging,Logging
-java.util.prefs,Logging
 java.util.regex,Logic
 java.util.stream,Data Manupulator
 java.util.zip,application packaging
@@ -87,12 +85,6 @@ javax.lang.model,Object Model
 javax.lang.model.element,Object Model
 javax.lang.model.type,Object Model
 javax.lang.model.util,Object Model
-javax.management,Logging
-javax.management.loading,Logging
-javax.management.Object Modelmbean,Logging
-javax.management.monitor,Logging
-javax.management.openmbean,Logging
-javax.management.relation,Logging
 javax.management.remote,Network/Web
 javax.management.remote.rmi,Network/Web
 javax.management.timer,Event/Event Handling
@@ -190,7 +182,6 @@ javax.xml.ws.spi.http,Parser/Interpreter
 javax.xml.ws.wsaddressing,Parser/Interpreter
 javax.xml.xpath,Parser/Interpreter
 javax.validation,Security/Validator
-android.util.Log,Logging
 Color,User Interface
 URL,Network/Web
 URI,I/O
@@ -239,12 +230,9 @@ HttpClient,Network/Web
 HttpParams,Network/Web
 HttpPost,Network/Web
 UrlEncodedFormEntity,Network/Web
-android.content.Intent,Program Logic
-android.os.Environment,Program Logic
-android.app.Activity,Program Logic
-android.content.Context,Program Logic
-Intent,Program Logic
-Context,Program Logic
+android.content.Intent,Messaging
+android.os.Environment,I/O
+Intent,Messaging
 GeoPoint,User Interface
 Projection,User Interface
 Path,User Interface
@@ -255,25 +243,21 @@ android.location.Location,Geo Location
 android.location.LocationListener,Geo Location
 android.location.LocationManager,Geo Location
 android.media.MediaPlayer,User Interface
-android.os.Bundle,Program Logic
-android.os.IBinder,Program Logic
-android.os.SystemClock,Program Logic
-android.provider.Settings,Program Logic
+android.os.Bundle,Messaging
 LocationManager,Geo Location
 LocationListener,Geo Location
 Location,Geo Location
-Notification,Program Logic
-TaskStackBuilder,Program Logic
-PendingIntent,Program Logic
-NotificationManager,Program Logic
+Notification,User Interface
+PendingIntent,Messaging
+NotificationManager,Messaging
 MediaPlayer,User Interface
 android.widget.Button,User Interface
 android.widget.EditText,User Interface
 android.widget.Toast,User Interface
-android.content.BroadcastReceiver,Program Logic
-android.content.DialogInterface,Program Logic
-android.content.IntentFilter,Program Logic
-RegisterResponseReceiver,Program Logic
+android.content.BroadcastReceiver,Messaging
+android.content.DialogInterface,User Interface
+android.content.IntentFilter,Messaging
+RegisterResponseReceiver,Messaging
 EditText,User Interface
 Button,User Interface
 TextView,User Interface
@@ -289,11 +273,11 @@ com.google.android.gms.maps.SupportMapFragment,Geo Location
 com.google.android.gms.common.GooglePlayServicesUtil,Transaction Handling
 com.google.android.gms.common.ConnectionResult,Network/Web
 GoogleMap,Geo Location
-Bundle,Program Logic
+Bundle,Messaging
 GoogleMapOptions,Geo Location
-FragmentManager,Program Logic
-Fragment,Program Logic
-SupportMapFragment,Program Logic
+FragmentManager,User Interface
+Fragment,User Interface
+SupportMapFragment,User Interface
 PolygonOptions,Object Model
 Builder,User Interface
 DisplayMetrics,User Interface
@@ -323,29 +307,21 @@ Resources,I/O
 TabHost,User Interface
 TabSpec,User Interface
 android.os.AsyncTask,Concurrency
-android.os.Handler,Program Logic
 android.os.Message,Messaging
 Message,Messaging
-android.support.v4.app.Fragment,Program Logic
-android.support.v4.app.FragmentActivity,Program Logic
-android.support.v4.app.FragmentManager,Program Logic
-android.content.SharedPreferences,Program Logic
-android.content.pm.PackageInfo,Program Logic
-android.content.pm.PackageManager,Program Logic
-android.preference.PreferenceManager,Program Logic
+android.support.v4.app.Fragment,User Interface
+android.support.v4.app.FragmentActivity,User Interface
+android.support.v4.app.FragmentManager,User Interface
+android.content.SharedPreferences,Messaging
+android.preference.PreferenceManager,Persistence
 Editor,User Interface
-SharedPreferences,Program Logic
-PackageInfo,Program Logic
-Activity,Program Logic
+SharedPreferences,Persistence
 android.app.DatePickerDialog,User Interface
 android.app.Dialog,User Interface
 android.widget.DatePicker,User Interface
 CheckBox,User Interface
-Handler,Program Logic
 android.app.NotificationManager,User Interface
-android.app.PendingIntent,Program Logic
-android.app.Service,Program Logic
+android.app.PendingIntent,Messaging
 android.support.v4.app.NotificationCompat,User Interface
-android.support.v4.app.TaskStackBuilder,Program Logic
 android.app.Notification,User Interface
 android.widget.CheckBox,User Interface

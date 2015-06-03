@@ -63,14 +63,13 @@ public class PaintUML {
                 + "BackgroundColor<<Object Model>> CadetBlue  \n"
                 + "BackgroundColor<<Security/Validator>> Cyan \n"
                 + "BackgroundColor<<I/O>> YellowGreen \n"
-                + "BackgroundColor<<Time/Date/Zone>> DarkGoldenRod \n"
                 + "BackgroundColor<<Concurrency>> DarkKhaki \n"
                 + "BackgroundColor<<Exception Handling>> DarkSeaGreen \n"
                 + "BackgroundColor<<Transaction Handling>> Violet \n"
                 + "BackgroundColor<<Messaging>> Lavender \n"
                 + "BackgroundColor<<Event/Event Handling>> LawnGreen \n"
                 + "BackgroundColor<<Parser/Interpreter>> MediumSlateBlue \n"
-                + "BackgroundColor<<Program Logic>> LightBlue ";
+                + "BackgroundColor<<Program Logic>> LightBlue \n";
 
         source += "classFontSize 32 \n";
         source += "classAttributeFontSize  32 \n";
@@ -140,14 +139,13 @@ public class PaintUML {
                 + "BackgroundColor<<Object Model>> CadetBlue  \n"
                 + "BackgroundColor<<Security/Validator>> Cyan \n"
                 + "BackgroundColor<<I/O>> YellowGreen \n"
-                + "BackgroundColor<<Time/Date/Zone>> DarkGoldenRod \n"
                 + "BackgroundColor<<Concurrency>> DarkKhaki \n"
                 + "BackgroundColor<<Exception Handling>> DarkSeaGreen \n"
                 + "BackgroundColor<<Transaction Handling>> Violet \n"
                 + "BackgroundColor<<Messaging>> Lavender \n"
                 + "BackgroundColor<<Event/Event Handling>> LawnGreen \n"
                 + "BackgroundColor<<Parser/Interpreter>> MediumSlateBlue \n"
-                + "BackgroundColor<<Program Logic>> LightBlue ";
+                + "BackgroundColor<<Program Logic>> LightBlue \n";
 
         source += "classFontSize 32 \n";
         source += "classAttributeFontSize  32 \n";

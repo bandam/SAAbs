@@ -24,18 +24,13 @@ import javax.imageio.ImageIO;
  */
 public class Validation extends Application {
 
-    final static String austria = "Austria";
-    final static String brazil = "Brazil";
-    final static String france = "France";
-    final static String italy = "Italy";
-    final static String usa = "USA";
 
     ArrayList<Class> projectClasses;
 
     @Override
     public void start(Stage stage) {
-        projectClasses = RoleDetectorMain.getTaggedProjectClass("C:\\Users\\Andam\\Desktop\\T6\\Data\\CaseStudies\\srcMLFiles\\SAAbs.xml");
-        String directoryOfValidation = "roledetectorfiles\\validation\\Saabs\\";
+        projectClasses = RoleDetectorMain.getTaggedProjectClass("C:\\Users\\Andam\\Desktop\\T6\\Data\\CaseStudies\\srcMLFiles\\Mappish.xml");
+        String directoryOfValidation = "roledetectorfiles\\validation\\Mappish\\";
         stage.setTitle("Bar Chart Sample");
         CategoryAxis xAxis = new CategoryAxis();
         xAxis.setTickLabelRotation(90);
