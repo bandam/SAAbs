@@ -13,7 +13,8 @@ import java.util.ArrayList;
  */
 public class Class {
     private String name;
-    private String stereotypeTag;
+    private String concernStereotypeList;
+    private String biggestConcernSterotype;
     private ArrayList<Stereotype> combinedStereotypes;
     private ArrayList<Stereotype> packageImportStereotypes;
     private ArrayList<Stereotype> semanticStereotypes;
@@ -25,7 +26,7 @@ public class Class {
     
     public Class(){
         name = "";
-        stereotypeTag = "";
+        concernStereotypeList = "";
         this.packageImportStereotypes = new ArrayList();
         this.semanticStereotypes = new ArrayList();
         this.packageImports = new ArrayList();
@@ -36,7 +37,7 @@ public class Class {
     
     public Class(String name, String tag){
         this.name = name;
-        this.stereotypeTag = tag;
+        this.concernStereotypeList = tag;
         this.packageImportStereotypes = new ArrayList();
         this.semanticStereotypes = new ArrayList();
         this.packageImports = new ArrayList();
@@ -71,18 +72,18 @@ public class Class {
     /**
      * @return the tag
      */
-    public String getStereotypeTag() {
-        return stereotypeTag;
+    public String getConcernStereotypeList() {
+        return concernStereotypeList;
     }
 
     /**
      * @param tag the tag to set
      */
-    public void setStereotypeTag(String tag) {
-        this.stereotypeTag = tag;
+    public void setConcernStereotypeList(String tag) {
+        this.concernStereotypeList = tag;
     }
     
-    public void deletePackageImport(String key){
+    public void deleteUnidentifiedPackageImport(String key){
         unidentifiedImports.remove(key);
     }
 
@@ -168,6 +169,20 @@ public class Class {
      */
     public void setCombinedStereotypes(ArrayList<Stereotype> combinedStereotypes) {
         this.combinedStereotypes = combinedStereotypes;
+    }
+
+    /**
+     * @return the biggestConcernSterotype
+     */
+    public String getBiggestConcernSterotype() {
+        return biggestConcernSterotype;
+    }
+
+    /**
+     * @param biggestConcernSterotype the biggestConcernSterotype to set
+     */
+    public void setBiggestConcernSterotype(String biggestConcernSterotype) {
+        this.biggestConcernSterotype = biggestConcernSterotype;
     }
     
     

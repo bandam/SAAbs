@@ -1,327 +1,315 @@
-java.applet,User Interface
-java.awt,User Interface
-java.awt.color,User Interface
-java.awt.datatransfer,User Interface
-java.awt.dnd,User Interface
-java.awt.event,Event/Event Handling
-java.awt.font,User Interface
-java.awt.geom,User Interface
-java.awt.im,User Interface
-java.awt.im.spi,User Interface
-java.awt.image,User Interface
-java.awt.image.renderable,User Interface
-java.awt.print,User Interface
-android.view.LayoutInflater,User Interface
-android.view.View,User Interface
-android.view.ViewGroup,User Interface
-android.widget.BaseAdapter,User Interface
-android.widget.TextView,User Interface
-java.beans,Object Model
-java.beans.beancontext,Object Model
-java.lang.annotation,Program Logic
-java.lang.reflect,Program Logic
-java.net,Network/Web
-org.apache.http.client.HttpClient,Network/Web
-android.net.ParseException,Network/Web
-org.apache.http.client.entity.UrlEncodedFormEntity,Network/Web
-org.apache.http.client.methods.HttpPost,Network/Web
-org.apache.http.impl.client.DefaultHttpClient,Network/Web
-org.apache.http.params.BasicHttpParams,Network/Web
-org.apache.http.params.HttpParams,Network/Web
-org.apache.http.params.HttpProtocolParams,Network/Web
-org.apache.http.protocol.HTTP,Network/Web
-org.apache.http.util.EntityUtils,Network/Web
-org.apache.http.HttpResponse,Network/Web
-org.apache.http.HttpVersion,Network/Web
-org.json.JSONArray,Parser/Interpreter
-org.json.JSONException,Parser/Interpreter
-org.json.JSONObject,Parser/Interpreter
-java.rmi,Third Party System Call
-java.rmi.activation,Third Party System Call
-java.rmi.dgc,Third Party System Call
-java.rmi.registry,Third Party System Call
-java.rmi.server,Third Party System Call
-java.security,Security/Validator
-java.security.acl,Security/Validator
-java.security.cert,Security/Validator
-java.security.interfaces,Security/Validator
-java.security.spec,Security/Validator
+java.applet,User_Interface
+java.awt,User_Interface
+java.awt.color,User_Interface
+java.awt.datatransfer,User_Interface
+java.awt.dnd,User_Interface
+java.awt.event,Event_EventHandling
+java.awt.font,User_Interface
+java.awt.geom,User_Interface
+java.awt.im,User_Interface
+java.awt.im.spi,User_Interface
+java.awt.image,User_Interface
+java.awt.image.renderable,User_Interface
+java.awt.print,User_Interface
+android.view.LayoutInflater,User_Interface
+android.view.View,User_Interface
+android.view.ViewGroup,User_Interface
+android.widget.BaseAdapter,User_Interface
+android.widget.TextView,User_Interface
+java.beans,Object_Model
+java.beans.beancontext,Object_Model
+java.net,Network_Web
+org.apache.http.client.HttpClient,Network_Web
+android.net.ParseException,Network_Web
+org.apache.http.client.entity.UrlEncodedFormEntity,Network_Web
+org.apache.http.client.methods.HttpPost,Network_Web
+org.apache.http.impl.client.DefaultHttpClient,Network_Web
+org.apache.http.params.BasicHttpParams,Network_Web
+org.apache.http.params.HttpParams,Network_Web
+org.apache.http.params.HttpProtocolParams,Network_Web
+org.apache.http.protocol.HTTP,Network_Web
+org.apache.http.util.EntityUtils,Network_Web
+org.apache.http.HttpResponse,Network_Web
+org.apache.http.HttpVersion,Network_Web
+org.json.JSONArray,Parser_Interpreter
+org.json.JSONException,Parser_Interpreter
+org.json.JSONObject,Parser_Interpreter
+java.rmi,Network_Web
+java.rmi.activation,Network_Web
+java.rmi.dgc,Network_Web
+java.rmi.registry,Network_Web
+java.rmi.server,Network_Web
+java.security,Security_Validator
+java.security.acl,Security_Validator
+java.security.cert,Security_Validator
+java.security.interfaces,Security_Validator
+java.security.spec,Security_Validator
 java.sql,Persistence
-java.text,Data Manupulator
-java.text.spi,Data Manupulator
-java.time,Time/Date/Zone
-java.time.chrono,Time/Date/Zone
-java.time.format,Time/Date/Zone
-java.time.temporal,Time/Date/Zone
-java.time.zone,Time/Date/Zone
-java.util.Date,Time/Date/Zone
-java.util.Calendar,Time/Date/Zone
-java.util.GregorianCalendar,Time/Date/Zone
 java.util.concurrent,Concurrency
 java.util.concurrent.atomic,Concurrency
 java.util.concurrent.locks,Concurrency
 java.util.function,Logic
-java.util.jar,application packaging
 java.util.regex,Logic
-java.util.stream,Data Manupulator
-java.util.zip,application packaging
-javax.activation,Security/Validator
-javax.activity,Exception Handling
-javax.annotation,Program Logic
-javax.annotation.processing,Program Logic
-javax.crypto,Security/Validator
-javax.crypto.interfaces,Security/Validator
-javax.crypto.spec,Security/Validator
-javax.imageio,User Interface
-javax.imageio.event,User Interface
-javax.imageio.metadata,User Interface
-javax.imageio.plugins.bmp,User Interface
-javax.imageio.plugins.jpeg,User Interface
-javax.imageio.spi,User Interface
-javax.imageio.stream,User Interface
-javax.jws,Network/Web
-javax.jws.soap,Network/Web
-javax.lang.model,Object Model
-javax.lang.model.element,Object Model
-javax.lang.model.type,Object Model
-javax.lang.model.util,Object Model
-javax.management.remote,Network/Web
-javax.management.remote.rmi,Network/Web
-javax.management.timer,Event/Event Handling
-javax.net,Network/Web
-javax.net.ssl,Network/Web
-javax.print.attribute,I/O
-FileWriter,I/O
-FileInputStream,I/O
-FileChannel,I/O
-javax.print.attribute.standard,I/O
-javax.print.event,I/O
-javax.rmi,Network/Web
-javax.rmi.CORBA,Network/Web
-javax.rmi.ssl,Network/Web
-javax.script,Parser/Interpreter
-javax.security.auth,Security/Validator
-javax.security.auth.callback,Security/Validator
-javax.security.auth.kerberos,Security/Validator
-javax.security.auth.login,Security/Validator
-javax.security.auth.spi,Security/Validator
-javax.security.auth.x500,Security/Validator
-javax.security.cert,Security/Validator
-javax.security.sasl,Security/Validator
-javax.sound.midi,User Interface
-javax.sound.midi.spi,User Interface
-javax.sound.sampled,User Interface
-javax.sound.sampled.spi,User Interface
+javax.activation,Security_Validator
+javax.activity,Exception_Handling
+javax.crypto,Security_Validator
+javax.crypto.interfaces,Security_Validator
+javax.crypto.spec,Security_Validator
+javax.imageio,User_Interface
+javax.imageio.event,User_Interface
+javax.imageio.metadata,User_Interface
+javax.imageio.plugins.bmp,User_Interface
+javax.imageio.plugins.jpeg,User_Interface
+javax.imageio.spi,User_Interface
+javax.imageio.stream,User_Interface
+javax.jws,Network_Web
+javax.jws.soap,Network_Web
+javax.lang.model,Object_Model
+javax.lang.model.element,Object_Model
+javax.lang.model.type,Object_Model
+javax.lang.model.util,Object_Model
+javax.management.remote,Network_Web
+javax.management.remote.rmi,Network_Web
+javax.management.timer,Event_EventHandling
+javax.net,Network_Web
+javax.net.ssl,Network_Web
+javax.print.attribute,IO
+FileWriter,IO
+FileInputStream,IO
+FileChannel,IO
+javax.print.attribute.standard,IO
+javax.print.event,IO
+javax.rmi,Network_Web
+javax.rmi.CORBA,Network_Web
+javax.rmi.ssl,Network_Web
+javax.script,Parser_Interpreter
+javax.security.auth,Security_Validator
+javax.security.auth.callback,Security_Validator
+javax.security.auth.kerberos,Security_Validator
+javax.security.auth.login,Security_Validator
+javax.security.auth.spi,Security_Validator
+javax.security.auth.x500,Security_Validator
+javax.security.cert,Security_Validator
+javax.security.sasl,Security_Validator
+javax.sound.midi,User_Interface
+javax.sound.midi.spi,User_Interface
+javax.sound.sampled,User_Interface
+javax.sound.sampled.spi,User_Interface
 javax.sql,Persistence
 javax.sql.rowset,Persistence
 javax.sql.rowset.serial,Persistence
 javax.sql.rowset.spi,Persistence
-javax.swing,User Interface
-javax.swing.border,User Interface
-javax.swing.colorchooser,User Interface
-javax.swing.event,User Interface
-javax.swing.filechooser,User Interface
-javax.swing.plaf,User Interface
-javax.swing.plaf.basic,User Interface
-javax.swing.plaf.metal,User Interface
-javax.swing.plaf.multi,User Interface
-javax.swing.plaf.nimbus,User Interface
-javax.swing.plaf.synth,User Interface
-javax.swing.table,User Interface
-javax.swing.text,User Interface
-javax.swing.text.html,User Interface
-javax.swing.text.html.parser,User Interface
-javax.swing.text.rtf,User Interface
-javax.swing.tree,User Interface
-javax.swing.undo,User Interface
-android.graphics.Canvas,User Interface
-android.graphics.Color,User Interface
-android.graphics.Paint,User Interface
-android.graphics.Path,User Interface
-android.graphics.Point,User Interface
-com.google.android.maps.GeoPoint,User Interface
-com.google.android.maps.MapController,Geo Location
-com.google.android.maps.MapView,Geo Location
-com.google.android.maps.Overlay,Geo Location
-com.google.android.maps.Projection,Geo Location
-javax.transaction,Transaction Handling
-javax.transaction.xa,Transaction Handling
-javax.xml,Parser/Interpreter
-javax.xml.bind,Parser/Interpreter
-javax.xml.bind.annotation,Parser/Interpreter
-javax.xml.bind.annotation.adapters,Parser/Interpreter
-javax.xml.bind.attachment,Parser/Interpreter
-javax.xml.bind.helpers,Parser/Interpreter
-javax.xml.bind.util,Parser/Interpreter
-javax.xml.crypto,Parser/Interpreter
-javax.xml.crypto.dom,Parser/Interpreter
-javax.xml.crypto.dsig,Parser/Interpreter
-javax.xml.crypto.dsig.dom,Parser/Interpreter
-javax.xml.crypto.dsig.keyinfo,Parser/Interpreter
-javax.xml.crypto.dsig.spec,Parser/Interpreter
-javax.xml.datatype,Parser/Interpreter
-javax.xml.namespace,Parser/Interpreter
-javax.xml.parsers,Parser/Interpreter
-javax.xml.soap,Parser/Interpreter
-javax.xml.stream,Parser/Interpreter
-javax.xml.stream.events,Parser/Interpreter
-javax.xml.stream.util,Parser/Interpreter
-javax.xml.transform,Parser/Interpreter
-javax.xml.transform.dom,Parser/Interpreter
-javax.xml.transform.sax,Parser/Interpreter
-javax.xml.transform.stax,Parser/Interpreter
-javax.xml.transform.stream,Parser/Interpreter
-javax.xml.validation,Parser/Interpreter
-javax.xml.ws,Parser/Interpreter
-javax.xml.ws.handler,Parser/Interpreter
-javax.xml.ws.handler.soap,Parser/Interpreter
-javax.xml.ws.http,Parser/Interpreter
-javax.xml.ws.soap,Parser/Interpreter
-javax.xml.ws.spi,Parser/Interpreter
-javax.xml.ws.spi.http,Parser/Interpreter
-javax.xml.ws.wsaddressing,Parser/Interpreter
-javax.xml.xpath,Parser/Interpreter
-javax.validation,Security/Validator
-Color,User Interface
-URL,Network/Web
-URI,I/O
-JEditorPane,User Interface
-JMenuBar,User Interface
-JPanel,User Interface
-JToolBar,User Interface
-JMenuItem,User Interface
-JTextArea,User Interface
-Separator,User Interface
-JToggleButton,User Interface
-JScrollPane,User Interface
-JButton,User Interface
-JLabel,User Interface
-JCheckBox,User Interface
-GroupLayout,User Interface
-Dimension,User Interface
-JComboBox,User Interface
-JTextField,User Interface
-BufferedImage,User Interface
-Graphics2D,User Interface
-QuadCurve2D,User Interface
+javax.swing,User_Interface
+javax.swing.border,User_Interface
+javax.swing.colorchooser,User_Interface
+javax.swing.event,User_Interface
+javax.swing.filechooser,User_Interface
+javax.swing.plaf,User_Interface
+javax.swing.plaf.basic,User_Interface
+javax.swing.plaf.metal,User_Interface
+javax.swing.plaf.multi,User_Interface
+javax.swing.plaf.nimbus,User_Interface
+javax.swing.plaf.synth,User_Interface
+javax.swing.table,User_Interface
+javax.swing.text,User_Interface
+javax.swing.text.html,User_Interface
+javax.swing.text.html.parser,User_Interface
+javax.swing.text.rtf,User_Interface
+javax.swing.tree,User_Interface
+javax.swing.undo,User_Interface
+android.graphics.Canvas,User_Interface
+android.graphics.Color,User_Interface
+android.graphics.Paint,User_Interface
+android.graphics.Path,User_Interface
+android.graphics.Point,User_Interface
+com.google.android.maps.GeoPoint,User_Interface
+com.google.android.maps.MapController,Geo_Location
+com.google.android.maps.MapView,Geo_Location
+com.google.android.maps.Overlay,Geo_Location
+com.google.android.maps.Projection,Geo_Location
+javax.xml,Parser_Interpreter
+javax.xml.bind,Parser_Interpreter
+javax.xml.bind.annotation,Parser_Interpreter
+javax.xml.bind.annotation.adapters,Parser_Interpreter
+javax.xml.bind.attachment,Parser_Interpreter
+javax.xml.bind.helpers,Parser_Interpreter
+javax.xml.bind.util,Parser_Interpreter
+javax.xml.crypto,Parser_Interpreter
+javax.xml.crypto.dom,Parser_Interpreter
+javax.xml.crypto.dsig,Parser_Interpreter
+javax.xml.crypto.dsig.dom,Parser_Interpreter
+javax.xml.crypto.dsig.keyinfo,Parser_Interpreter
+javax.xml.crypto.dsig.spec,Parser_Interpreter
+javax.xml.datatype,Parser_Interpreter
+javax.xml.namespace,Parser_Interpreter
+javax.xml.parsers,Parser_Interpreter
+javax.xml.soap,Parser_Interpreter
+javax.xml.stream,Parser_Interpreter
+javax.xml.stream.events,Parser_Interpreter
+javax.xml.stream.util,Parser_Interpreter
+javax.xml.transform,Parser_Interpreter
+javax.xml.transform.dom,Parser_Interpreter
+javax.xml.transform.sax,Parser_Interpreter
+javax.xml.transform.stax,Parser_Interpreter
+javax.xml.transform.stream,Parser_Interpreter
+javax.xml.validation,Parser_Interpreter
+javax.xml.ws,Parser_Interpreter
+javax.xml.ws.handler,Parser_Interpreter
+javax.xml.ws.handler.soap,Parser_Interpreter
+javax.xml.ws.http,Parser_Interpreter
+javax.xml.ws.soap,Parser_Interpreter
+javax.xml.ws.spi,Parser_Interpreter
+javax.xml.ws.spi.http,Parser_Interpreter
+javax.xml.ws.wsaddressing,Parser_Interpreter
+javax.xml.xpath,Parser_Interpreter
+javax.validation,Security_Validator
+Color,User_Interface
+URL,Network_Web
+URI,IO
+JEditorPane,User_Interface
+JMenuBar,User_Interface
+JPanel,User_Interface
+JToolBar,User_Interface
+JMenuItem,User_Interface
+JTextArea,User_Interface
+Separator,User_Interface
+JToggleButton,User_Interface
+JScrollPane,User_Interface
+JButton,User_Interface
+JLabel,User_Interface
+JCheckBox,User_Interface
+GroupLayout,User_Interface
+Dimension,User_Interface
+JComboBox,User_Interface
+JTextField,User_Interface
+BufferedImage,User_Interface
+Graphics2D,User_Interface
+QuadCurve2D,User_Interface
 File,Persistence
-ImageIcon,User Interface
-Image,User Interface
-JFileChooser,User Interface
-ObjectOutputStream,I/O
-JSplitPane,User Interface
-LayoutInflater,User Interface
-EventListener,Event/Event Handling
-Formattable,I/O
-Observer,Event/Event Handling
-Base64,Parser/Interpreter
-Base64.Decoder,Parser/Interpreter
-Base64.Encoder,Parser/Interpreter
-EventListenerProxy,Event/Event Handling
-EventObject,Event/Event Handling
-Observable,Event/Event Handling
-PropertyPermission,Security/Validator
-Timer,Event/Event Handling
-TimerTask,Event/Event Handling
-JSONObject,Parser/Interpreter
-HttpResponse,Network/Web
-JSONArray,Parser/Interpreter
-HttpClient,Network/Web
-HttpParams,Network/Web
-HttpPost,Network/Web
-UrlEncodedFormEntity,Network/Web
+ImageIcon,User_Interface
+Image,User_Interface
+JFileChooser,User_Interface
+ObjectOutputStream,IO
+JSplitPane,User_Interface
+LayoutInflater,User_Interface
+EventListener,Event_EventHandling
+Formattable,IO
+Observer,Event_EventHandling
+Base64,Parser_Interpreter
+Base64.Decoder,Parser_Interpreter
+Base64.Encoder,Parser_Interpreter
+EventListenerProxy,Event_EventHandling
+EventObject,Event_EventHandling
+Observable,Event_EventHandling
+PropertyPermission,Security_Validator
+Timer,Event_EventHandling
+TimerTask,Event_EventHandling
+JSONObject,Parser_Interpreter
+HttpResponse,Network_Web
+JSONArray,Parser_Interpreter
+HttpClient,Network_Web
+HttpParams,Network_Web
+HttpPost,Network_Web
+UrlEncodedFormEntity,Network_Web
 android.content.Intent,Messaging
-android.os.Environment,I/O
+android.os.Environment,IO
 Intent,Messaging
-GeoPoint,User Interface
-Projection,User Interface
-Path,User Interface
-Paint,User Interface
-Point,User Interface
-android.location.GpsStatus,Geo Location
-android.location.Location,Geo Location
-android.location.LocationListener,Geo Location
-android.location.LocationManager,Geo Location
-android.media.MediaPlayer,User Interface
+GeoPoint,User_Interface
+Projection,User_Interface
+Path,User_Interface
+Paint,User_Interface
+Point,User_Interface
+android.location.GpsStatus,Geo_Location
+android.location.Location,Geo_Location
+android.location.LocationListener,Geo_Location
+android.location.LocationManager,Geo_Location
+android.media.MediaPlayer,User_Interface
 android.os.Bundle,Messaging
-LocationManager,Geo Location
-LocationListener,Geo Location
-Location,Geo Location
-Notification,User Interface
+LocationManager,Geo_Location
+LocationListener,Geo_Location
+Location,Geo_Location
+Notification,User_Interface
 PendingIntent,Messaging
 NotificationManager,Messaging
-MediaPlayer,User Interface
-android.widget.Button,User Interface
-android.widget.EditText,User Interface
-android.widget.Toast,User Interface
+MediaPlayer,User_Interface
+android.widget.Button,User_Interface
+android.widget.EditText,User_Interface
+android.widget.Toast,User_Interface
 android.content.BroadcastReceiver,Messaging
-android.content.DialogInterface,User Interface
+android.content.DialogInterface,User_Interface
 android.content.IntentFilter,Messaging
 RegisterResponseReceiver,Messaging
-EditText,User Interface
-Button,User Interface
-TextView,User Interface
-IntentFilter,User Interface
-com.google.android.gms.maps.model.LatLng,Object Model
-com.google.android.gms.maps.model.LatLngBounds,Object Model
-com.google.android.gms.maps.model.PolygonOptions,Object Model
-com.google.android.gms.maps.CameraUpdate,Geo Location
-com.google.android.gms.maps.CameraUpdateFactory,Geo Location
-com.google.android.gms.maps.GoogleMap,Geo Location
-com.google.android.gms.maps.GoogleMapOptions,Geo Location
-com.google.android.gms.maps.SupportMapFragment,Geo Location
-com.google.android.gms.common.GooglePlayServicesUtil,Transaction Handling
-com.google.android.gms.common.ConnectionResult,Network/Web
-GoogleMap,Geo Location
+EditText,User_Interface
+Button,User_Interface
+TextView,User_Interface
+IntentFilter,User_Interface
+com.google.android.gms.maps.model.LatLng,Object_Model
+com.google.android.gms.maps.model.LatLngBounds,Object_Model
+com.google.android.gms.maps.model.PolygonOptions,Object_Model
+com.google.android.gms.maps.CameraUpdate,Geo_Location
+com.google.android.gms.maps.CameraUpdateFactory,Geo_Location
+com.google.android.gms.maps.GoogleMap,Geo_Location
+com.google.android.gms.maps.GoogleMapOptions,Geo_Location
+com.google.android.gms.maps.SupportMapFragment,Geo_Location
+com.google.android.gms.common.ConnectionResult,Network_Web
+GoogleMap,Geo_Location
 Bundle,Messaging
-GoogleMapOptions,Geo Location
-FragmentManager,User Interface
-Fragment,User Interface
-SupportMapFragment,User Interface
-PolygonOptions,Object Model
-Builder,User Interface
-DisplayMetrics,User Interface
-Display,User Interface
-CameraUpdate,Geo Location
-AlertDialog,User Interface
-android.app.AlertDialog,User Interface
-android.widget.ArrayAdapter,User Interface
-android.widget.Spinner,User Interface
-Spinner,User Interface
-RecordResponseReceiver,Network/Web
-android.app.AlertDialog,User Interface
-android.app.ListActivity,User Interface
-android.view.ContextMenu,User Interface
-android.view.ContextMenu.ContextMenuInfo,User Interface
-android.view.MenuInflater,User Interface
-android.view.MenuItem,User Interface
-android.widget.AdapterView.AdapterContextMenuInfo,User Interface
-MenuInflater,User Interface
-AdapterContextMenuInfo,User Interface
-android.app.TabActivity,User Interface
-android.content.res.Resources,I/O
-android.widget.TabHost,User Interface
-android.util.DisplayMetrics,User Interface
-android.view.Menu,User Interface
-Resources,I/O
-TabHost,User Interface
-TabSpec,User Interface
+GoogleMapOptions,Geo_Location
+FragmentManager,User_Interface
+Fragment,User_Interface
+SupportMapFragment,User_Interface
+PolygonOptions,Object_Model
+Builder,User_Interface
+DisplayMetrics,User_Interface
+Display,User_Interface
+CameraUpdate,Geo_Location
+AlertDialog,User_Interface
+android.app.AlertDialog,User_Interface
+android.widget.ArrayAdapter,User_Interface
+android.widget.Spinner,User_Interface
+Spinner,User_Interface
+RecordResponseReceiver,Network_Web
+android.app.AlertDialog,User_Interface
+android.app.ListActivity,User_Interface
+android.view.ContextMenu,User_Interface
+android.view.ContextMenu.ContextMenuInfo,User_Interface
+android.view.MenuInflater,User_Interface
+android.view.MenuItem,User_Interface
+android.widget.AdapterView.AdapterContextMenuInfo,User_Interface
+MenuInflater,User_Interface
+AdapterContextMenuInfo,User_Interface
+android.app.TabActivity,User_Interface
+android.content.res.Resources,IO
+android.widget.TabHost,User_Interface
+android.util.DisplayMetrics,User_Interface
+android.view.Menu,User_Interface
+Resources,IO
+TabHost,User_Interface
+TabSpec,User_Interface
 android.os.AsyncTask,Concurrency
 android.os.Message,Messaging
 Message,Messaging
-android.support.v4.app.Fragment,User Interface
-android.support.v4.app.FragmentActivity,User Interface
-android.support.v4.app.FragmentManager,User Interface
+android.support.v4.app.Fragment,User_Interface
+android.support.v4.app.FragmentActivity,User_Interface
+android.support.v4.app.FragmentManager,User_Interface
 android.content.SharedPreferences,Messaging
 android.preference.PreferenceManager,Persistence
-Editor,User Interface
+Editor,User_Interface
 SharedPreferences,Persistence
-android.app.DatePickerDialog,User Interface
-android.app.Dialog,User Interface
-android.widget.DatePicker,User Interface
-CheckBox,User Interface
-android.app.NotificationManager,User Interface
+android.app.DatePickerDialog,User_Interface
+android.app.Dialog,User_Interface
+android.widget.DatePicker,User_Interface
+CheckBox,User_Interface
+android.app.NotificationManager,User_Interface
 android.app.PendingIntent,Messaging
-android.support.v4.app.NotificationCompat,User Interface
-android.app.Notification,User Interface
-android.widget.CheckBox,User Interface
+android.support.v4.app.NotificationCompat,User_Interface
+android.app.Notification,User_Interface
+android.widget.CheckBox,User_Interface
+JSeparator,User_Interface
+JMenu,User_Interface
+JTextPane,User_Interface
+JPopupMenu,User_Interface
+Font,User_Interface
+Polygon,User_Interface
+java.util.Observer,Event_EventHandling
+java.util.Observable,Event_EventHandling

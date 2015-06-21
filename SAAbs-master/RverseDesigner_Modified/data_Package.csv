@@ -1,11 +1,46 @@
 Name,NumCls,NumCls_tc,NumOpsCls,NumInterf,R,H,Ca,Ce,I,A,D,DN,Nesting,ConnComp,Dep_Out,Dep_In,DepPack,MsgSent_Outside,MsgRecv_Outside,MsgSent_within,Diags
-EA_Model.Model.Class Model.controller,3,3,68,0,3,1.3333334,5,5,0.5,0.0,-0.3535535,0.5,2,2,0,0,2,0,0,0,0
-EA_Model.Model.Class Model.fasimulator,1,1,1,0,0,1.0,0,0,1.0,0.0,0.0,0.0,2,1,0,0,0,0,0,0,0
-EA_Model.Model.Class Model.gui,10,10,204,0,27,2.8,2,5,0.71428573,0.0,-0.20203055,0.28571427,2,2,0,0,2,0,0,0,0
-EA_Model.Model.Class Model.models,11,11,221,0,93,8.545455,6,5,0.45454547,0.0,-0.3856947,0.5454545,2,4,0,0,2,0,0,0,0
-EA_Model.Model.Class Model.System,3,3,0,1,1,0.5,0,0,1.0,0.25,0.17677675,0.25,2,3,0,0,0,0,0,0,0
-EA_Model.Model.Class Model.Frameworks,0,0,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,2,0,0,0,0,0,0,0,0
-EA_Model.Model.Class Model,2,30,0,0,0,0.5,0,0,1.0,0.0,0.0,0.0,1,2,0,0,0,0,0,0,0
-EA_Model.Model,0,30,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.android.support.v4.app,1,1,7,0,0,1.0,1,3,0.75,1.0,0.53033024,0.75,5,1,0,0,1,0,0,0,0
+EA_Model.Model.Class Model.android.support.v4,0,1,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,4,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.android.support,0,1,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,3,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.android,0,1,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,2,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.app,9,9,286,0,14,1.6666666,22,10,0.3125,0.5555556,-0.09329882,0.13194442,4,1,0,0,3,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.app,2,2,119,0,0,0.5,2,16,0.8888889,0.0,-0.07856744,0.111111104,5,2,0,0,5,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.animation,12,12,173,1,42,3.3076923,17,6,0.26086956,0.30769232,-0.3050729,0.4314381,6,3,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.view.animation,1,1,22,0,0,1.0,4,0,0.0,0.0,-0.707107,1.0,7,1,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.view,1,2,10,0,0,1.0,1,1,0.5,1.0,0.3535535,0.5,6,1,0,0,1,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.widget,3,3,16,0,0,0.33333334,5,1,0.16666667,0.0,-0.5892558,0.8333333,6,3,0,0,1,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids,0,17,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,5,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.view.menu,14,14,472,2,90,5.6875,17,19,0.5277778,0.1875,-0.20132907,0.2847222,6,4,0,0,3,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.view,2,16,25,2,2,0.75,2,9,0.8181818,0.5,0.22498855,0.31818175,5,3,0,0,3,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.widget,19,19,369,0,32,1.7368422,9,34,0.7906977,0.15789473,-0.036350656,0.051407576,5,8,0,0,6,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal,4,58,88,0,0,0.25,0,14,1.0,0.0,0.0,0.0,4,4,0,0,6,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.view,4,4,27,4,20,2.625,80,2,0.024390243,0.875,-0.071141884,0.10060978,4,3,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.widget,5,5,161,0,5,1.2,6,17,0.73913044,0.0,-0.1844627,0.26086956,4,3,0,0,2,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock,1,77,46,0,0,1.0,7,5,0.41666666,1.0,0.2946279,0.41666663,3,1,0,0,2,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.auth,3,3,28,0,2,1.0,0,0,1.0,0.0,0.0,0.0,4,2,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.data.sort,30,30,115,0,29,1.0,3,0,0.0,0.16666667,-0.5892558,0.8333333,5,1,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.data,12,42,112,1,13,1.0769231,14,0,0.0,0.07692308,-0.6527142,0.9230769,4,1,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.io,7,7,24,1,3,0.5,21,13,0.38235295,0.125,-0.3483542,0.49264705,4,7,0,0,2,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.model.builder,1,1,7,0,0,1.0,0,1,1.0,0.0,0.0,0.0,5,1,0,0,1,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.model.persister,4,4,46,0,0,0.25,4,5,0.5555556,0.0,-0.31426975,0.44444442,5,4,0,0,1,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.model,23,28,109,0,17,0.7826087,27,8,0.22857143,0.0,-0.5454826,0.7714286,4,12,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.pref,13,13,80,0,3,0.30769232,0,4,1.0,0.07692308,0.054392885,0.07692313,4,10,0,0,1,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.provider,76,76,358,0,94,1.25,0,2,1.0,0.05263158,0.037216187,0.052631617,4,2,0,0,1,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.service,26,26,125,0,25,1.0,0,9,1.0,0.07692308,0.054392885,0.07692313,4,3,0,0,4,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.ui.dialog,13,13,132,0,8,0.6923077,0,6,1.0,0.07692308,0.054392885,0.07692313,5,5,0,0,3,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.ui.widget,18,18,192,0,3,0.22222222,21,8,0.27586207,0.22222222,-0.3549081,0.5019157,5,16,0,0,1,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.ui,49,80,563,0,36,0.75510204,0,64,1.0,0.14285715,0.10101532,0.1428572,4,14,0,0,12,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.util.actionmodecompat,5,5,105,1,11,2.0,8,9,0.5294118,0.33333334,-0.097053856,0.13725483,5,1,0,0,1,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.util,23,28,286,0,0,0.04347826,63,7,0.1,0.0,-0.6363963,0.9,4,23,0,0,3,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek,0,303,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,3,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.mobeta.android.dslv,16,16,308,0,20,1.3125,1,15,0.9375,0.25,0.13258256,0.1875,5,7,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.mobeta.android,0,16,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,4,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.mobeta,0,16,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,3,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com,0,396,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,2,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.se.emilsjolander.stickylistheaders,6,6,147,1,15,2.2857144,4,8,0.6666667,0.14285715,-0.13468704,0.19047618,4,1,0,0,2,0,0,0,0
+EA_Model.Model.Class Model.se.emilsjolander,0,6,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,3,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.se,0,6,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,2,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model,2,405,0,0,0,0.5,0,0,1.0,0.0,0.0,0.0,1,2,0,0,0,0,0,0,0
+EA_Model.Model,0,405,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,0,0,0,0,0,0,0,0,0
 EA_PrimitiveTypes_Package.EA_Java_Types_Package,0,0,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,1,0,0,0,0,0,0,0,0
 EA_PrimitiveTypes_Package,0,0,0,0,0,0.0,0,0,1.0,1.0,0.707107,1.0,0,0,0,0,0,0,0,0,0

@@ -30,9 +30,9 @@ public class RoleDetectorMain {
 
     private static ArrayList<Class> projectClasses;
     static ArrayList<LibraryItem> predefinedLibItems;
-    static String stereotypePredictor = "Import/Variable Type Analysis";
+    private static String stereotypePredictor = "Import/Variable Type Analysis";
 
-    final static String libraryItemsFileLoc = "C:\\Users\\Andam\\Desktop\\T6\\roleDetector\\libraries.txt";
+    final static String libraryItemsFileLoc = "roledetectorfiles\\libraries.txt";
 
     public static void main(String[] args) {
         start();
@@ -116,24 +116,40 @@ public class RoleDetectorMain {
         printProjectClassesInfo(projectClasses);
     }
 
-    public static ArrayList<Class> getTaggedProjectClass(String projectSource) {
-        projectSourceFile = projectSource;
-        projectClasses = PackageImportTagger.startTagger(projectClasses, projectSourceFile);
-        SemanticsTagger semanticsTagger = new SemanticsTagger();
-        semanticsTagger.startTagger(projectSourceFile, projectClasses);
-        setOverallClassStereotype(projectClasses);
-        normalizeProjectClassStereotypes(projectClasses);
-        setCombinedStereotypes(projectClasses);
+    public static ArrayList<Class> getTaggedProjectClass() {
+        
+    //        projectClasses = PackageImportTagger.startTagger(projectClasses, projectSourceFile);
+    //        SemanticsTagger semanticsTagger = new SemanticsTagger();
+    //        semanticsTagger.startTagger(projectSourceFile, projectClasses);
+    //        setOverallClassStereotype(projectClasses);
+    //        normalizeProjectClassStereotypes(projectClasses);
+    //        setCombinedStereotypes(projectClasses);
 
         return projectClasses;
     }
 
     public static void printProjectClassesInfo(ArrayList<Class> projectClasses) {
         DecimalFormat df = new DecimalFormat("#.000");
+
+        System.out.println("Number of Classes in project: " + projectClasses.size() + "\n");
+        for (Class c : projectClasses) {
+            System.out.print(c.getName());
+            System.out.print("," + c.getPackageImportStereotypes().size());
+            System.out.print("," + c.getSemanticStereotypes().size());
+            System.out.print("," + c.getCombinedStereotypes().size());
+            System.out.println();
+        }
+
         System.out.println("Number of Classes in project: " + projectClasses.size()+ "\n");
         for (Class c : projectClasses) {
-            System.out.println(c.getName() + "\n");
-
+            System.out.print(c.getName());
+//            System.out.print("," + c.getPackageImports().size());
+//            System.out.print("," +  c.getUnidentifiedImports().size()) ;
+//            System.out.println();
+//        }
+            for(String uimport: c.getUnidentifiedImports()){
+                System.out.println(uimport);
+            }
             System.out.println("Package Import Stereotypes:\n -----------------------------------------");
             for (Stereotype stereotype : c.getPackageImportStereotypes()) {
                 System.out.println(stereotype.getName() + "\t" + df.format(stereotype.getCount()));
@@ -189,7 +205,7 @@ public class RoleDetectorMain {
 
     private static void setOverallClassStereotype(ArrayList<Class> projectClasses) {
 
-        DecimalFormat df = new DecimalFormat("#.000");
+        DecimalFormat df = new DecimalFormat("#.00");
 
         for (Class c : projectClasses) {
 
@@ -217,45 +233,27 @@ public class RoleDetectorMain {
             //System.out.println(totalStereotypePoints);
 
             if (totalStereotypePoints == 0) {
-                classStereotype = "<<Object Model>><<" + ((int) ((1 / 1) * 100)) + "%>>";
-            }
+                classStereotype = "<<Object_Model>><<" + df.format((int) ((1 / 1) * 100)) + "%>>";
+                c.setBiggestConcernSterotype("Object_Model");
+            } else {
+                for (Stereotype stereotype : selectedStereotypeToUse) {
+                    if (!stereotype.getName().equals("unidentified")) {
+                        c.setBiggestConcernSterotype(selectedStereotypeToUse.get(0).getName());
 
-            int stereotypeToShow = 5;
-            for (Stereotype stereotype : selectedStereotypeToUse) {
-                if ((!(stereotype.getName().equals("unidentified"))) && (stereotypeToShow > 1)) {
-                    //&& (!(stereotype.getName().equals("Collection"))) && (!(stereotype.getName().equals("I/O"))) ) {
-
-                    if (stereotypeToShow == 5) {
-                        classStereotype = "<<" + stereotype.getName() + ">><<" + df.format((((double) stereotype.getCount() / (double) totalStereotypePoints) * 100)) + "%>>";
-                        stereotypeToShow = stereotypeToShow - 1;
-                    } else {
-                        classStereotype += "<<" + stereotype.getName() + ">><<" + df.format((((double) stereotype.getCount() / (double) totalStereotypePoints) * 100)) + "%>>";
-                        stereotypeToShow = stereotypeToShow - 1;
+                        classStereotype += "<<" + stereotype.getName() + ">><<" + df.format(stereotype.getCount()) + "%>>";
                     }
 
                 }
-            }
 
-            // Show stereotype "I/O" if present
-//            Stereotype inputOutput = c.findStereotype("I/O", c.getPackageImportStereotypes());
-//            if (inputOutput != null) {
-//                classStereotype += "<<" + inputOutput.getName() + ">><<" + df.format((((double) inputOutput.getCount() / (double) totalStereotypePoints) * 100)) + "%>>";
-//            }
-//
-//            // Show stereotype "Collection if present
-//            Stereotype collection = c.findStereotype("Collection", c.getPackageImportStereotypes());
-//            if (collection != null) {
-//                classStereotype += "<<" + collection.getName() + ">><<" + df.format((((double) collection.getCount() / (double) totalStereotypePoints) * 100)) + "%>>";
-//            }
-            // Tag class with max stereotype
-            c.setStereotypeTag(classStereotype);
+            }
+            c.setConcernStereotypeList(classStereotype);
         }
     }
 
     public static String tagPlantUMLString(String plantUMLString) {
         String temp = plantUMLString;
         for (Class c : projectClasses) {
-            temp = temp.replace(" " + c.getName() + " \n", " " + c.getName() + c.getStereotypeTag() + " \n");
+            temp = temp.replace(" " + c.getName() + " \n", " " + c.getName() + c.getConcernStereotypeList() + " \n");
         }
 
         // Debug PrintOut
@@ -289,18 +287,18 @@ public class RoleDetectorMain {
 
     private static void normalizeStereotypes(ArrayList<Stereotype> stereotypes) {
         DecimalFormat df = new DecimalFormat("#.00");
-
         double totalScoreOfSteroetypes = 0.0;
+
+        // Get the total of all stereotypes
         for (Stereotype stereotype : stereotypes) {
-            //System.out.println("stereotypeCount: " + stereotype.getCount());
-            totalScoreOfSteroetypes += stereotype.getCount();
+            if (!stereotype.getName().equals("unidentified")) {
+                totalScoreOfSteroetypes += stereotype.getCount();
+            }
         }
 
         for (Stereotype stereotype : stereotypes) {
-            if (totalScoreOfSteroetypes > 0.0) {
-                stereotype.setCount(Double.valueOf(df.format((stereotype.getCount() / totalScoreOfSteroetypes) * 100)));
-            } else {
-                stereotype.setCount(totalScoreOfSteroetypes);
+            if (!stereotype.getName().equals("unidentified")) {
+                stereotype.setCount(Double.valueOf(df.format((((double) stereotype.getCount() / (double) totalScoreOfSteroetypes) * 100))));
             }
         }
     }
@@ -319,4 +317,12 @@ public class RoleDetectorMain {
         projectClasses = aProjectClasses;
     }
 
+    /**
+     * @return the stereotypePredictor
+     */
+    public static String getStereotypePredictor() {
+        return stereotypePredictor;
+    }
+
+    
 }

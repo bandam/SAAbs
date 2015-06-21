@@ -57,7 +57,7 @@ public class PackageImportTagger {
             }
 
             // Remove all imports from class package imports
-            c.setPackageImports((ArrayList<String>) new ArrayList());
+            //c.setPackageImports((ArrayList<String>) new ArrayList());
         }
     }
 
@@ -76,16 +76,19 @@ public class PackageImportTagger {
 
             // Add unidentified import to list inside class
             if (importStereotype.equals("unidentified") && (q == importParts.length - 1)) {
-                currentClass.getUnidentifiedImports().add(importString);
+
+                if (!isUnusedType(importString)) {
+                    currentClass.getUnidentifiedImports().add(importString);
+                }
             }
 
             // Append . to next string f
             importString += ".";
         }
         //System.out.println(" " + importStereotype + "\n");
- 
+
         // Add import stereotype to class stereotype list if its not already there
-        Stereotype foundStereotypeToIncrease = currentClass.findStereotype(importStereotype,currentClass.getPackageImportStereotypes());
+        Stereotype foundStereotypeToIncrease = currentClass.findStereotype(importStereotype, currentClass.getPackageImportStereotypes());
         if (foundStereotypeToIncrease != null) {
             foundStereotypeToIncrease.setCount(foundStereotypeToIncrease.getCount() + 1);
         } else {
@@ -149,7 +152,7 @@ public class PackageImportTagger {
                 // add stereotype count in found class to unidentified import class
                 if (foundImportClass != null) {
                     //Decrease count of unidentified imports and add identified import to to be removed list
-                    c.findStereotype("unidentified",c.getPackageImportStereotypes()).setCount(c.findStereotype("unidentified",c.getPackageImportStereotypes()).getCount() - 1);
+                    c.findStereotype("unidentified", c.getPackageImportStereotypes()).setCount(c.findStereotype("unidentified", c.getPackageImportStereotypes()).getCount() - 1);
                     importsResolved.add(unidentifiedImport);
 
                     //check if there are any stereotypes in found class
@@ -157,7 +160,7 @@ public class PackageImportTagger {
 
                         if (!(s.getName().equals("unidentified"))) {
                             // check if stereotype in found class also exists in unidentified import item class
-                            Stereotype stereotypeToIncrease = c.findStereotype(s.getName(),c.getPackageImportStereotypes());
+                            Stereotype stereotypeToIncrease = c.findStereotype(s.getName(), c.getPackageImportStereotypes());
                             // Add found class stereotype to class stereotype list if its not already there
                             if (stereotypeToIncrease != null) {
                                 stereotypeToIncrease.setCount(stereotypeToIncrease.getCount() + s.getCount());
@@ -172,11 +175,32 @@ public class PackageImportTagger {
 
             if (importsResolved.size() > 0) {
                 for (String importString : importsResolved) {
-                    c.deletePackageImport(importString);
+                    c.deleteUnidentifiedPackageImport(importString);
                 }
             }
 
         }
+    }
+
+    public static boolean isUnusedType(String c) {
+
+        String[] unusedtypes = {"double", "boolean", "int", "String", "ArrayList", "Double", "java.io.File", "java.util.logging.Level",
+            "java.util.ArrayList", "long", "java.util.Arrays"
+            , "java.util.List" , "java.util.Collections"
+            , ""
+            , "java.util.HashMap"
+            , "java.util.HashSet"
+            ,"java.util.LinkedHashMap"
+            , "java.util.List"
+            , "java.util.Map", "TreePath","float","Object", "Integer"};
+
+        for (String ut : unusedtypes) {
+            if (c.equals(ut)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public static void main(String[] args) {

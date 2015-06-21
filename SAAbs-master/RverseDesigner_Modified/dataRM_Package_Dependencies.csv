@@ -1,11 +1,46 @@
-Name,EA_Model.Model.Class Model.controller,EA_Model.Model.Class Model.fasimulator,EA_Model.Model.Class Model.gui,EA_Model.Model.Class Model.models,EA_Model.Model.Class Model.System,EA_Model.Model.Class Model.Frameworks,EA_Model.Model.Class Model,EA_Model.Model,EA_PrimitiveTypes_Package.EA_Java_Types_Package,EA_PrimitiveTypes_Package
-EA_Model.Model.Class Model.controller,0,0,1,1,0,0,0,0,0,0
-EA_Model.Model.Class Model.fasimulator,0,0,0,0,0,0,0,0,0,0
-EA_Model.Model.Class Model.gui,1,0,0,1,0,0,0,0,0,0
-EA_Model.Model.Class Model.models,1,0,1,0,0,0,0,0,0,0
-EA_Model.Model.Class Model.System,0,0,0,0,0,0,0,0,0,0
-EA_Model.Model.Class Model.Frameworks,0,0,0,0,0,0,0,0,0,0
-EA_Model.Model.Class Model,0,0,0,0,0,0,0,0,0,0
-EA_Model.Model,0,0,0,0,0,0,0,0,0,0
-EA_PrimitiveTypes_Package.EA_Java_Types_Package,0,0,0,0,0,0,0,0,0,0
-EA_PrimitiveTypes_Package,0,0,0,0,0,0,0,0,0,0
+Name,EA_Model.Model.Class Model.android.support.v4.app,EA_Model.Model.Class Model.android.support.v4,EA_Model.Model.Class Model.android.support,EA_Model.Model.Class Model.android,EA_Model.Model.Class Model.com.actionbarsherlock.app,EA_Model.Model.Class Model.com.actionbarsherlock.internal.app,EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.animation,EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.view.animation,EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.view,EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.widget,EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids,EA_Model.Model.Class Model.com.actionbarsherlock.internal.view.menu,EA_Model.Model.Class Model.com.actionbarsherlock.internal.view,EA_Model.Model.Class Model.com.actionbarsherlock.internal.widget,EA_Model.Model.Class Model.com.actionbarsherlock.internal,EA_Model.Model.Class Model.com.actionbarsherlock.view,EA_Model.Model.Class Model.com.actionbarsherlock.widget,EA_Model.Model.Class Model.com.actionbarsherlock,EA_Model.Model.Class Model.com.boardgamegeek.auth,EA_Model.Model.Class Model.com.boardgamegeek.data.sort,EA_Model.Model.Class Model.com.boardgamegeek.data,EA_Model.Model.Class Model.com.boardgamegeek.io,EA_Model.Model.Class Model.com.boardgamegeek.model.builder,EA_Model.Model.Class Model.com.boardgamegeek.model.persister,EA_Model.Model.Class Model.com.boardgamegeek.model,EA_Model.Model.Class Model.com.boardgamegeek.pref,EA_Model.Model.Class Model.com.boardgamegeek.provider,EA_Model.Model.Class Model.com.boardgamegeek.service,EA_Model.Model.Class Model.com.boardgamegeek.ui.dialog,EA_Model.Model.Class Model.com.boardgamegeek.ui.widget,EA_Model.Model.Class Model.com.boardgamegeek.ui,EA_Model.Model.Class Model.com.boardgamegeek.util.actionmodecompat,EA_Model.Model.Class Model.com.boardgamegeek.util,EA_Model.Model.Class Model.com.boardgamegeek,EA_Model.Model.Class Model.com.mobeta.android.dslv,EA_Model.Model.Class Model.com.mobeta.android,EA_Model.Model.Class Model.com.mobeta,EA_Model.Model.Class Model.com,EA_Model.Model.Class Model.se.emilsjolander.stickylistheaders,EA_Model.Model.Class Model.se.emilsjolander,EA_Model.Model.Class Model.se,EA_Model.Model.Class Model,EA_Model.Model,EA_PrimitiveTypes_Package.EA_Java_Types_Package,EA_PrimitiveTypes_Package
+EA_Model.Model.Class Model.android.support.v4.app,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.android.support.v4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.android.support,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.android,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.app,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.app,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.animation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.view.animation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.view,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids.widget,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.nineoldandroids,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.view.menu,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.view,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal.widget,0,0,0,0,1,0,1,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.internal,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.view,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock.widget,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.actionbarsherlock,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.auth,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.data.sort,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.data,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.io,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.model.builder,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.model.persister,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.model,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.pref,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.provider,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.service,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.ui.dialog,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.ui.widget,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.ui,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0,0,1,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.util.actionmodecompat,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek.util,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.boardgamegeek,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.mobeta.android.dslv,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.mobeta.android,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com.mobeta,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.com,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.se.emilsjolander.stickylistheaders,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.se.emilsjolander,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model.se,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model.Class Model,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_Model.Model,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_PrimitiveTypes_Package.EA_Java_Types_Package,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA_PrimitiveTypes_Package,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

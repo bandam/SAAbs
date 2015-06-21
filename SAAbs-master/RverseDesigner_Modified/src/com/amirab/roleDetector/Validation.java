@@ -29,7 +29,7 @@ public class Validation extends Application {
 
     @Override
     public void start(Stage stage) {
-        projectClasses = RoleDetectorMain.getTaggedProjectClass("C:\\Users\\Andam\\Desktop\\T6\\Data\\CaseStudies\\srcMLFiles\\Mappish.xml");
+        projectClasses = RoleDetectorMain.getTaggedProjectClass();
         String directoryOfValidation = "roledetectorfiles\\validation\\Mappish\\";
         stage.setTitle("Bar Chart Sample");
         CategoryAxis xAxis = new CategoryAxis();

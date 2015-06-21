@@ -257,7 +257,7 @@ public class PackageImportsExtractor {
                 System.out.println(stereotype.getName() + "\t" + stereotype.getCount());
             }
 
-            System.out.println("class stereotype: " + c.getStereotypeTag());
+            System.out.println("class stereotype: " + c.getConcernStereotypeList());
 
             if (!c.getUnidentifiedImports().isEmpty()) {
                 System.out.println("Package Imports"
