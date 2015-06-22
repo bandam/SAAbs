@@ -364,8 +364,6 @@ public class PaintUML {
         plantUMLCls = xmiReader.getClassPlantUML() + tempStr;
         source += "@enduml";
 
-        // Andam call to tag function
-        //source = andam_tagClassLayers(source);
 
         System.out.println("This is source : " + source);
         classList = xmiReader.getClassList();
@@ -436,9 +434,6 @@ public class PaintUML {
         }
         source += "@enduml";
 
-        // Andam call to tag function
-        source = andam_tagClassLayers(source);
-
         System.out.println("source : " + source);
 
         SourceStringReader reader = new SourceStringReader(source);
@@ -460,27 +455,6 @@ public class PaintUML {
         } catch (IOException e) {
             System.out.println("Exception ");
         }
-    }
-
-    /**
-     * Added this extra function to tag the classes
-     *
-     * @param source plantUMLString before tag
-     * @return plantUMLString after tag
-     */
-    public String andam_tagClassLayers(String source) {
-        RoleDetectorMain roleDetectorInstance = RoleDetectorMain.getInstance();
-        if (callCount == 0) {
-            callCount = callCount++;
-            ///layerdetector.showUnKnownLibraries();
-            return roleDetectorInstance.tagPlantUMLString(source);
-
-        } else {
-            roleDetectorInstance.setProjectClasses(new ArrayList<com.amirab.roleDetector.Class>());
-            roleDetectorInstance.start();
-            return roleDetectorInstance.tagPlantUMLString(source);
-        }
-
     }
 
 }

@@ -17,7 +17,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import com.amirab.roleDetector.Class;
 import com.amirab.roleDetector.RoleDetectorMain;
-import com.amirab.roleDetector.Stereotype;
 import static rversedesigner.PaintUML.callCount;
 
 /**
@@ -27,6 +26,7 @@ import static rversedesigner.PaintUML.callCount;
 public class ReadXMI {
 
     List<String> classList = new ArrayList<>();
+    ArrayList<String> tempClassList = new ArrayList<>();
     List<String> classListPack = new ArrayList<>();
     protected String xmiFile = "";
     protected int xmiConfig = 0;
@@ -39,9 +39,11 @@ public class ReadXMI {
         xmiFile = fileName;
         xmiConfig = XMIConf;
         classList = classgen;
+        tempClassList = (ArrayList)classgen.clone();
     }
 
     public String readClass() {
+        classList = (ArrayList) tempClassList.clone();
         String metaModelURL = ""; // metamodel definition to use
         String xmiTransURL = "";   // XMI tranformations to use
         String plantUMLXMI = "";
@@ -419,6 +421,8 @@ public class ReadXMI {
 
     public String readConcernDetectorPackDiagram() {
         ArrayList<Class> concernDetectorClasses = getConcernDetectorClasses();
+        ArrayList<String> tempClasses = new ArrayList();
+        
 
         String metaModelURL = ""; // metamodel definition to use
         String xmiTransURL = "";   // XMI tranformations to use
@@ -489,6 +493,7 @@ public class ReadXMI {
                 plantUMLXMI += "class " + biggestConcernName + "." + classList.get(cntClsList) + concernClass.getConcernStereotypeList() + " \n";
                 plantUMLClass += "class " + biggestConcernName + "." + classList.get(cntClsList) + concernClass.getConcernStereotypeList() + " \n";
                 plantUMLGetSetOut += "class " + biggestConcernName + "." + classList.get(cntClsList) + concernClass.getConcernStereotypeList() + " \n";
+                tempClasses.add(biggestConcernName + "." + classList.get(cntClsList));
             } else {
                 plantUMLXMI += "class " + classList.get(cntClsList) + " \n";
                 plantUMLClass += "class " + classList.get(cntClsList) + " \n";
@@ -507,7 +512,7 @@ public class ReadXMI {
 
                         if (concernClass != null) {
                             String biggestConcernName = concernClass.getBiggestConcernSterotype();
-                            biggestConcernName = biggestConcernName;
+                          
 
                             if (classList.get(i).equalsIgnoreCase(me.getOwner().getName())) {
                                 plantUMLXMI += "class " + biggestConcernName + "." + me.getOwner().getName() + "{\n";
@@ -586,21 +591,17 @@ public class ReadXMI {
                 }
             }
         }
+        
+       classList = tempClasses;
+        
         return plantUMLXMI;
     }
 
     public ArrayList<Class> getConcernDetectorClasses() {
         RoleDetectorMain roleDetectorInstance = RoleDetectorMain.getInstance();
-        if (callCount == 0) {
-            callCount = callCount++;
-            ///layerdetector.showUnKnownLibraries();
+   
             return roleDetectorInstance.getTaggedProjectClass();
-
-        } else {
-            roleDetectorInstance.setProjectClasses(new ArrayList<com.amirab.roleDetector.Class>());
-            roleDetectorInstance.start();
-            return roleDetectorInstance.getTaggedProjectClass();
-        }
+        
 
     }
 

@@ -4,9 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="JavaEEbegining">
             <file>file:/C:/Users/Andam/Desktop/T6/SAAbs_Modified/SAAbs-master/RverseDesigner_Modified/src/rversedesigner/ReadXMI.java</file>
-            <file>file:/C:/Users/Andam/Desktop/T6/SAAbs_Modified/SAAbs-master/RverseDesigner_Modified/src/com/amirab/roleDetector/RoleDetectorMain.java</file>
-            <file>file:/C:/Users/Andam/Desktop/T6/SAAbs_Modified/SAAbs-master/RverseDesigner_Modified/src/com/amirab/roleDetector/Validation.java</file>
+            <file>file:/C:/Users/Andam/Desktop/T6/SAAbs_Modified/SAAbs-master/RverseDesigner_Modified/src/rversedesigner/PaintUML.java</file>
+            <file>file:/C:/Users/Andam/Desktop/T6/SAAbs_Modified/SAAbs-master/RverseDesigner_Modified/src/rversedesigner/DisplaySVG.java</file>
             <file>file:/C:/Users/Andam/Desktop/T6/SAAbs_Modified/SAAbs-master/RverseDesigner_Modified/src/rversedesigner/RelationshipReader.java</file>
+            <file>file:/C:/Users/Andam/Desktop/T6/SAAbs_Modified/SAAbs-master/RverseDesigner_Modified/src/rversedesigner/ReverseDesignerApp.java</file>
         </group>
     </open-files>
 </project-private>
